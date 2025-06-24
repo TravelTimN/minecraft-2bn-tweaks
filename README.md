@@ -22,3 +22,22 @@ Instead of just allowing reverse crafting from stairs and slabs, we offer revers
 | 1.21.0 | [Download](back-to-blocks/1.21.0/2bn-back-to-blocks/2bn-back-to-blocks.zip) |
 | 1.20.4 | [Download](back-to-blocks/1.20.4/2bn-reverse-crafting-VTmodified/2bn-reverse-crafting-VTmodified.zip) |
 
+
+
+
+## [Craftable Dyes](craftable-dyes/)
+
+Sometimes [dyes](https://minecraft.wiki/w/Dye) can be tough to obtain, or take forever to smelt. We've added a solution to allow easier access to the following dyes:
+
+| Dye | Recipe | How |
+| --- | --- | --- |
+| black | coal / charcoal | crafting table |
+| green | kelp | crafting table |
+
+### Download
+
+| Version | Download (.zip) |
+| --- | --- |
+| 1.21.6 | Coming Soon |
+| 1.21.4 | [Download](craftable-dyes/1.21.4/2bn-craftable-dyes/2bn-craftable-dyes_1.21.4.zip) |
+
