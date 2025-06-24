@@ -112,6 +112,15 @@ Running low on your favorite pottery sherds? Now you can craft more - well, tech
 
 ## ✨ [Craftable Rarities](craftable-rarities/)
 
+Sometimes items are quite difficult to collect, or perhaps you're trying to obtain a stack of everything as part of the [BlazeandCaves](https://docs.google.com/spreadsheets/d/1zlRBAkHZhoMlGBbLIvKGxY4wufVVpAhYko48QH6LDNs/edit?gid=0#gid=0) "super challenges". We've made it possible to craft a few of the more *difficult-to-obtain* items:
+
+- [Disc Fragment 5](https://minecraft.wiki/w/Disc_Fragment)
+- [Echo Shard](https://minecraft.wiki/w/Echo_Shard)
+- [Heart of the Sea](https://minecraft.wiki/w/Heart_of_the_Sea)
+- [Enchanted Golden Apple](https://minecraft.wiki/w/Enchanted_Golden_Apple)
+
+![craftable rarities](craftable-rarities/screenshots/craftable-rarities.png)
+
 ### Download 2BN Craftable Rarities
 
 | Version | Download (.zip) |
