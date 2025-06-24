@@ -1,0 +1,53 @@
+{
+    "parent": "minecraft:recipes/root",
+    "criteria": {
+        "has_block": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "tag": "universal_dyeing:concrete"
+                    }
+                ]
+            }
+        },
+        "has_dye": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "tag": "universal_dyeing:dyes"
+                    }
+                ]
+            }
+        }
+    },
+    "requirements": [
+        [
+            "has_block"
+        ],
+        [
+            "has_dye"
+        ]
+    ],
+    "rewards": {
+        "recipes": [
+            "universal_dyeing:white_concrete",
+            "universal_dyeing:orange_concrete",
+            "universal_dyeing:magenta_concrete",
+            "universal_dyeing:light_blue_concrete",
+            "universal_dyeing:yellow_concrete",
+            "universal_dyeing:lime_concrete",
+            "universal_dyeing:pink_concrete",
+            "universal_dyeing:gray_concrete",
+            "universal_dyeing:light_gray_concrete",
+            "universal_dyeing:cyan_concrete",
+            "universal_dyeing:purple_concrete",
+            "universal_dyeing:blue_concrete",
+            "universal_dyeing:brown_concrete",
+            "universal_dyeing:green_concrete",
+            "universal_dyeing:red_concrete",
+            "universal_dyeing:black_concrete"
+        ]
+    }
+}
