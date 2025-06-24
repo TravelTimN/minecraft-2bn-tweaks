@@ -55,3 +55,17 @@ Some players are terrified of visiting the End dimension, and therefore have to 
 
 ---
 
+## [Craftable Music Discs](craftable-music-discs/)
+
+Music fans, listen up! Gone are the days where you must hunt for your favorite [music disc](https://minecraft.wiki/w/Music_Disc). Now you can craft your favorites, and twerk along to the beat!
+
+![music discs](craftable-music-discs/screenshots/2bn-craftable-music-discs.png)
+
+### Download
+
+| Version | Download (.zip) |
+| --- | --- |
+| 1.21.0 | [Download](craftable-music-discs/1.21.0/2bn-craftable-music-discs/2bn-craftable-music-discs.zip) |
+| 1.20.4 | [Download](craftable-music-discs/1.20.4/2bn-craftable-discs/2bn-craftable-discs.zip) |
+
+---
