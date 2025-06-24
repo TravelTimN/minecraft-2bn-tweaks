@@ -1,0 +1,17 @@
+# Normalize all text files to LF in the repo
+* text=auto
+
+# Explicitly set common Minecraft-related files to LF
+*.mcmeta text eol=lf
+*.json text eol=lf
+*.mcfunction text eol=lf
+*.txt text eol=lf
+
+# Treat binary files properly (no line ending changes)
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.ogg binary
+*.nbt binary
+*.mcpack binary
+*.zip binary
