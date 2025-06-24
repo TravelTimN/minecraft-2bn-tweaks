@@ -1,0 +1,23 @@
+{
+    "type": "crafting_shaped",
+    "result": {
+        "item": "minecraft:elytra",
+        "count": 1
+    },
+    "pattern": [
+        "NNN",
+        "PNP",
+        "F F"
+    ],
+    "key": {
+        "N": {
+            "item": "minecraft:netherite_ingot"
+        },
+        "P": {
+            "item": "minecraft:phantom_membrane"
+        },
+        "F": {
+            "item": "minecraft:feather"
+        }
+    }
+}

@@ -1,0 +1,47 @@
+{
+    "parent": "minecraft:recipes/root",
+    "criteria": {
+        "has_netherite_ingot": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:netherite_ingot"
+                    }
+                ]
+            }
+        },
+        "has_phantom_membrane": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:phantom_membrane"
+                    }
+                ]
+            }
+        },
+        "has_feather": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:feather"
+                    }
+                ]
+            }
+        }
+    },
+    "requirements": [
+        [
+            "has_netherite_ingot",
+            "has_phantom_membrane",
+            "has_feather"
+        ]
+    ],
+    "rewards": {
+        "recipes": [
+            "craftable_elytra:elytra"
+        ]
+    }
+}
