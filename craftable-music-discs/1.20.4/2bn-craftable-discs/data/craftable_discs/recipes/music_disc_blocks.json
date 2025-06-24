@@ -1,0 +1,20 @@
+{
+    "type": "crafting_shaped",
+    "result": {
+        "item": "minecraft:music_disc_blocks",
+        "count": 1
+    },
+    "pattern": [
+        "CCC",
+        "CIC",
+        "CCC"
+    ],
+    "key": {
+        "C": {
+            "item": "minecraft:coal"
+        },
+        "I": {
+            "item": "minecraft:orange_glazed_terracotta"
+        }
+    }
+}

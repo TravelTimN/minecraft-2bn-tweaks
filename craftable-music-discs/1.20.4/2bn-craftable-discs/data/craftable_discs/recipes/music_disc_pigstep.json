@@ -1,0 +1,20 @@
+{
+    "type": "crafting_shaped",
+    "result": {
+        "item": "minecraft:music_disc_pigstep",
+        "count": 1
+    },
+    "pattern": [
+        "CCC",
+        "CIC",
+        "CCC"
+    ],
+    "key": {
+        "C": {
+            "item": "minecraft:red_nether_bricks"
+        },
+        "I": {
+            "item": "minecraft:gold_block"
+        }
+    }
+}
