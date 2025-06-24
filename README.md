@@ -17,13 +17,11 @@ Instead of just allowing reverse crafting from stairs and slabs, we offer revers
 
 | Version | Download (.zip) |
 | --- | --- |
-| 1.21.6 | Coming Soon |
 | 1.21.4 | [Download](back-to-blocks/1.21.4/2bn-back-to-blocks/2bn-back-to-blocks_1.21.4.zip) |
 | 1.21.0 | [Download](back-to-blocks/1.21.0/2bn-back-to-blocks/2bn-back-to-blocks.zip) |
 | 1.20.4 | [Download](back-to-blocks/1.20.4/2bn-reverse-crafting-VTmodified/2bn-reverse-crafting-VTmodified.zip) |
 
-
-
+---
 
 ## [Craftable Dyes](craftable-dyes/)
 
@@ -38,6 +36,22 @@ Sometimes [dyes](https://minecraft.wiki/w/Dye) can be tough to obtain, or take f
 
 | Version | Download (.zip) |
 | --- | --- |
-| 1.21.6 | Coming Soon |
 | 1.21.4 | [Download](craftable-dyes/1.21.4/2bn-craftable-dyes/2bn-craftable-dyes_1.21.4.zip) |
+
+---
+
+## [Craftable Elytra](craftable-elytra/)
+
+Some players are terrified of visiting the End dimension, and therefore have to pay other players to obtain [Elytra](https://minecraft.wiki/w/Elytra) or Shulker Boxes for them. It might take a bit longer and be rather expensive, but some may consider it far better than going to the End. Plus, for hardcore players, this means potentially having wings before defeating the dragon, Jane!
+
+![elytra](craftable-elytra/1.20.4/2bn-craftable-elytra/screenshots/craftable-elytra.png)
+
+### Download
+
+| Version | Download (.zip) |
+| --- | --- |
+| 1.21.0 | [Download](craftable-elytra/1.21.0/2bn-craftable-elytra/2bn-craftable-elytra.zip) |
+| 1.20.4 | [Download](craftable-elytra/1.20.4/2bn-craftable-elytra/2bn-craftable-elytra.zip) |
+
+---
 
