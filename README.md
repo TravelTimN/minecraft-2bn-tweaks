@@ -4,20 +4,21 @@
 
 ## Table of Contents
 
-1. [**Back to Blocks**](#back-to-blocks)
-    - [Downloads](#download-2bn-back-to-blocks)
-2. [**Craftable Dyes**](#craftable-dyes)
-    - [Downloads](#download-2bn-craftable-dyes)
-3. [**Craftable Elytra**](#craftable-elytra)
-    - [Downloads](#download-2bn-craftable-elytra)
-4. [**Craftable Music Discs**](#craftable-music-discs)
-    - [Downloads](#download-2bn-craftable-music-discs)
-5. [**Craftable Pottery Sherds**](#craftable-pottery-sherds)
-    - [Downloads](#download-2bn-craftable-pottery-sherds)
+| | Crafting Tweaks | |
+| :---: | --- | ---: |
+| ♻️ | [**Back to Blocks**](#️-back-to-blocks) | [💾](#download-2bn-back-to-blocks) |
+| 🎨 | [**Craftable Dyes**](#-craftable-dyes) | [💾](#download-2bn-craftable-dyes) |
+| 🪽 | [**Craftable Elytra**](#-craftable-elytra) | [💾](#download-2bn-craftable-elytra) |
+| 💿 | [**Craftable Music Discs**](#-craftable-music-discs) | [💾](#download-2bn-craftable-music-discs) |
+| 🏺 | [**Craftable Pottery Sherds**](#-craftable-pottery-sherds) | [💾](#download-2bn-craftable-pottery-sherds) |
+| ✨ | [**Craftable Rarities**](#-craftable-rarities) | [💾](#download-2bn-craftable-rarities) |
+| 💀 | [**Craftable Skulls**](#-craftable-skulls) | [💾](#download-2bn-craftable-skulls) |
+| ➕🧱 | [**More Blocks**](#-more-blocks) | [💾](#download-2bn-more-blocks) |
+| ♻️🌈 | [**Universal Dyeing**](#️-universal-dyeing) | [💾](#download-2bn-universal-dyeing) |
 
 ---
 
-## [Back to Blocks](back-to-blocks/)
+## ♻️ [Back to Blocks](back-to-blocks/)
 
 Original inspiration taken from [Vanilla Tweaks: Crafting Tweaks](https://vanillatweaks.net/picker/crafting-tweaks), and enhanced to include more reverse crafting recipes.
 
@@ -40,7 +41,7 @@ Instead of just allowing reverse crafting from stairs and slabs, we offer revers
 
 ---
 
-## [Craftable Dyes](craftable-dyes/)
+## 🎨 [Craftable Dyes](craftable-dyes/)
 
 Sometimes [dyes](https://minecraft.wiki/w/Dye) can be tough to obtain, or take forever to smelt. We've added a solution to allow easier access to the following dyes:
 
@@ -57,7 +58,7 @@ Sometimes [dyes](https://minecraft.wiki/w/Dye) can be tough to obtain, or take f
 
 ---
 
-## [Craftable Elytra](craftable-elytra/)
+## 🪽 [Craftable Elytra](craftable-elytra/)
 
 Some players are terrified of visiting the End dimension, and therefore have to pay other players to obtain [Elytra](https://minecraft.wiki/w/Elytra) or Shulker Boxes for them. It might take a bit longer and be rather expensive, but some may consider it far better than going to the End. Plus, for hardcore players, this means potentially having wings before defeating the dragon, Jane!
 
@@ -72,7 +73,7 @@ Some players are terrified of visiting the End dimension, and therefore have to 
 
 ---
 
-## [Craftable Music Discs](craftable-music-discs/)
+## 💿 [Craftable Music Discs](craftable-music-discs/)
 
 Music fans, listen up! Gone are the days where you must hunt for your favorite [music disc](https://minecraft.wiki/w/Music_Disc). Now you can craft your favorites, and twerk along to the beat!
 
@@ -87,7 +88,7 @@ Music fans, listen up! Gone are the days where you must hunt for your favorite [
 
 ---
 
-## [Craftable Pottery Sherds](craftable-pottery-sherds/)
+## 🏺 [Craftable Pottery Sherds](craftable-pottery-sherds/)
 
 Running low on your favorite pottery sherds? Now you can craft more - well, technically, triplicate them! Just combine:
 
@@ -108,3 +109,48 @@ Running low on your favorite pottery sherds? Now you can craft more - well, tech
 | 1.20.4 | [Download](craftable-pottery-sherds/1.20.4/2bn-craftable-sherds/2bn-craftable-sherds.zip) |
 
 ---
+
+## ✨ [Craftable Rarities](craftable-rarities/)
+
+### Download 2BN Craftable Rarities
+
+| Version | Download (.zip) |
+| --- | --- |
+| 1.21.0 | [Download]() |
+| 1.20.4 | [Download]() |
+
+---
+
+## 💀 [Craftable Skulls](craftable-skulls/)
+
+### Download 2BN Craftable Skulls
+
+| Version | Download (.zip) |
+| --- | --- |
+| 1.21.0 | [Download]() |
+| 1.20.4 | [Download]() |
+
+---
+
+## ➕🧱 [More Blocks](more-blocks/)
+
+### Download 2BN More Blocks
+
+| Version | Download (.zip) |
+| --- | --- |
+| 1.21.4 | [Download]() |
+
+---
+
+## ♻️🌈 [Universal Dyeing](universal-dyeing/)
+
+### Download 2BN Universal Dyeing
+
+| Version | Download (.zip) |
+| --- | --- |
+| 1.21.4 | [Download]() |
+| 1.21.0 | [Download]() |
+| 1.20.4 | [Download]() |
+
+---
+
