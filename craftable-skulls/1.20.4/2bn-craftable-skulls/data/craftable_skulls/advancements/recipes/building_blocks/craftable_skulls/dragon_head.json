@@ -1,0 +1,47 @@
+{
+    "parent": "minecraft:recipes/root",
+    "criteria": {
+        "has_wither_skeleton_skull": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:wither_skeleton_skull"
+                    }
+                ]
+            }
+        },
+        "has_dragon_breath": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:dragon_breath"
+                    }
+                ]
+            }
+        },
+        "has_black_dye": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:black_dye"
+                    }
+                ]
+            }
+        }
+    },
+    "requirements": [
+        [
+            "has_wither_skeleton_skull",
+            "has_dragon_breath",
+            "has_black_dye"
+        ]
+    ],
+    "rewards": {
+        "recipes": [
+            "craftable_skulls:dragon_head"
+        ]
+    }
+}

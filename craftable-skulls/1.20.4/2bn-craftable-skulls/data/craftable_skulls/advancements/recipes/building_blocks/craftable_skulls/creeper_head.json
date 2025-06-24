@@ -1,0 +1,47 @@
+{
+    "parent": "minecraft:recipes/root",
+    "criteria": {
+        "has_wither_skeleton_skull": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:wither_skeleton_skull"
+                    }
+                ]
+            }
+        },
+        "has_gunpowder": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:gunpowder"
+                    }
+                ]
+            }
+        },
+        "has_lime_dye": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:lime_dye"
+                    }
+                ]
+            }
+        }
+    },
+    "requirements": [
+        [
+            "has_wither_skeleton_skull",
+            "has_gunpowder",
+            "has_lime_dye"
+        ]
+    ],
+    "rewards": {
+        "recipes": [
+            "craftable_skulls:creeper_head"
+        ]
+    }
+}

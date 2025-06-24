@@ -1,0 +1,47 @@
+{
+    "parent": "minecraft:recipes/root",
+    "criteria": {
+        "has_wither_skeleton_skull": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:wither_skeleton_skull"
+                    }
+                ]
+            }
+        },
+        "has_bone": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:bone"
+                    }
+                ]
+            }
+        },
+        "has_light_gray_dye": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:light_gray_dye"
+                    }
+                ]
+            }
+        }
+    },
+    "requirements": [
+        [
+            "has_wither_skeleton_skull",
+            "has_bone",
+            "has_light_gray_dye"
+        ]
+    ],
+    "rewards": {
+        "recipes": [
+            "craftable_skulls:zombie_head"
+        ]
+    }
+}
