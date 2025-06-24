@@ -1,0 +1,19 @@
+{
+    "result": {
+        "id": "minecraft:red_sandstone",
+        "count": 8
+    },
+    "type": "crafting_shapeless",
+    "ingredients": [
+        "minecraft:sandstone",
+        "minecraft:sandstone",
+        "minecraft:sandstone",
+        "minecraft:sandstone",
+        "minecraft:sandstone",
+        "minecraft:sandstone",
+        "minecraft:sandstone",
+        "minecraft:sandstone",
+        "minecraft:red_dye"
+    ],
+    "group": "sandstone_dyeing"
+}

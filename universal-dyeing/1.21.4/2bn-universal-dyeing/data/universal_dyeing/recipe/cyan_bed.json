@@ -1,0 +1,29 @@
+{
+    "type": "crafting_shapeless",
+    "ingredients": [
+        [
+            "minecraft:red_bed",
+            "minecraft:orange_bed",
+            "minecraft:yellow_bed",
+            "minecraft:lime_bed",
+            "minecraft:green_bed",
+            "minecraft:cyan_bed",
+            "minecraft:light_blue_bed",
+            "minecraft:blue_bed",
+            "minecraft:purple_bed",
+            "minecraft:magenta_bed",
+            "minecraft:pink_bed",
+            "minecraft:brown_bed",
+            "minecraft:black_bed",
+            "minecraft:gray_bed",
+            "minecraft:light_gray_bed",
+            "minecraft:white_bed"
+        ],
+        "#universal_dyeing:dyes/cyan_dye"
+    ],
+    "result": {
+        "id": "minecraft:cyan_bed",
+        "count": 1
+    },
+    "group": "universal_dyeing_bed"
+}

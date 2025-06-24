@@ -1,0 +1,10 @@
+{
+	"pack": {
+		"pack_format": 48,
+		"supported_formats": {
+			"min_inclusive": 48,
+			"max_inclusive": 61
+		},
+		"description": "§61.21.4 : 2BN QOL - Universal Dyeing\n§evanillatweaks.net (modified)"
+	}
+}
