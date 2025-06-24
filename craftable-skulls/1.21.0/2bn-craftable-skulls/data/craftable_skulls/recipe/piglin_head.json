@@ -1,0 +1,23 @@
+{
+    "type": "crafting_shaped",
+    "pattern": [
+        "IDI",
+        "DSD",
+        "IDI"
+    ],
+    "key": {
+        "S": {
+            "item": "wither_skeleton_skull"
+        },
+        "I": {
+            "item": "gold_ingot"
+        },
+        "D": {
+            "item": "pink_dye"
+        }
+    },
+    "result": {
+        "id": "piglin_head",
+        "count": 1
+    }
+}

@@ -1,0 +1,23 @@
+{
+    "type": "crafting_shaped",
+    "pattern": [
+        "IDI",
+        "DSD",
+        "IDI"
+    ],
+    "key": {
+        "S": {
+            "item": "wither_skeleton_skull"
+        },
+        "I": {
+            "item": "bone"
+        },
+        "D": {
+            "item": "light_gray_dye"
+        }
+    },
+    "result": {
+        "id": "skeleton_skull",
+        "count": 1
+    }
+}
