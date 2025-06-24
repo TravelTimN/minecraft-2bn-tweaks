@@ -11,7 +11,9 @@
 3. [**Craftable Elytra**](#craftable-elytra)
     - [Downloads](#download-2bn-craftable-elytra)
 4. [**Craftable Music Discs**](#craftable-music-discs)
-    - [Downloads](#download-2bn-music-discs)
+    - [Downloads](#download-2bn-craftable-music-discs)
+5. [**Craftable Pottery Sherds**](#craftable-pottery-sherds)
+    - [Downloads](#download-2bn-craftable-pottery-sherds)
 
 ---
 
@@ -76,11 +78,33 @@ Music fans, listen up! Gone are the days where you must hunt for your favorite [
 
 ![music discs](craftable-music-discs/screenshots/2bn-craftable-music-discs.png)
 
-### Download 2BN Music Discs
+### Download 2BN Craftable Music Discs
 
 | Version | Download (.zip) |
 | --- | --- |
 | 1.21.0 | [Download](craftable-music-discs/1.21.0/2bn-craftable-music-discs/2bn-craftable-music-discs.zip) |
 | 1.20.4 | [Download](craftable-music-discs/1.20.4/2bn-craftable-discs/2bn-craftable-discs.zip) |
+
+---
+
+## [Craftable Pottery Sherds](craftable-pottery-sherds/)
+
+Running low on your favorite pottery sherds? Now you can craft more - well, technically, triplicate them! Just combine:
+
+- 1 sherd of your choice
+- 1 terracotta
+- 7 bricks
+
+... and you'll receive 4 identical sherds in return - that's a net gain of +3!
+
+![pottery sherds](craftable-pottery-sherds/screenshots/pottery-sherds.png)
+
+### Download 2BN Craftable Pottery Sherds
+
+| Version | Download (.zip) |
+| --- | --- |
+| 1.21.4 | [Download](craftable-pottery-sherds/1.21.4/2bn-craftable-pottery-sherds/2bn-craftable-pottery-sherds_1.21.4.zip) |
+| 1.21.0 | [Download](craftable-pottery-sherds/1.21.0/2bn-craftable-pottery-sherds/2bn-craftable-pottery-sherds.zip) |
+| 1.20.4 | [Download](craftable-pottery-sherds/1.20.4/2bn-craftable-sherds/2bn-craftable-sherds.zip) |
 
 ---
