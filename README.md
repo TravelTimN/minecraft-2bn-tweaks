@@ -146,18 +146,30 @@ Do you hate working with creepers? Especially charged creepers? So do we! Now yo
 
 | Version | Download (.zip) |
 | --- | --- |
-| 1.21.0 | [Download 💾]() |
-| 1.20.4 | [Download 💾]() |
+| 1.21.0 | [Download 💾](craftable-skulls/1.21.0/2bn-craftable-skulls/2bn-craftable-skulls.zip) |
+| 1.20.4 | [Download 💾](craftable-skulls/1.20.4/2bn-craftable-skulls/2bn-craftable-skulls.zip) |
 
 ---
 
 ## ➕🧱 [More Blocks](more-blocks/)
 
+Original inspiration taken from [Vanilla Tweaks: Crafting Tweaks](https://vanillatweaks.net/picker/crafting-tweaks), and enhanced to include more blocks from other crafting types.
+
+| Block | Vanilla | More Blocks |
+| --- | :---: | :---: |
+| [Trapdoors](https://minecraft.wiki/w/Trapdoor) | 3 | 12 |
+| [Wood](https://minecraft.wiki/w/Wood) | 3 | 4 |
+| [Hyphae](https://minecraft.wiki/w/Wood#Crimson) | 3 | 4 |
+| [Stairs](https://minecraft.wiki/w/Stairs) | 4 | 8 |
+| [Bricks](https://minecraft.wiki/w/Bricks) | 1 | 8 |
+
+The difference between Vanilla Tweaks and 2BN More Blocks, is that we provide even more possibilities and variations that weren't originally considered in the VT pack.
+
 ### Download 2BN More Blocks
 
 | Version | Download (.zip) |
 | --- | --- |
-| 1.21.4 | [Download 💾]() |
+| 1.21.4 | [Download 💾](more-blocks/1.21.4/2bn-more-blocks/2bn-more-blocks_1.21.4.zip) |
 
 ---
 
