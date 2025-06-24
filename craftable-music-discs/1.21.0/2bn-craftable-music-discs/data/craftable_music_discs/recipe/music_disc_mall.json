@@ -1,0 +1,20 @@
+{
+    "type": "crafting_shaped",
+    "pattern": [
+        "AAA",
+        "ABA",
+        "AAA"
+    ],
+    "key": {
+        "A": {
+            "item": "coal"
+        },
+        "B": {
+            "item": "purple_glazed_terracotta"
+        }
+    },
+    "result": {
+        "id": "music_disc_mall",
+        "count": 1
+    }
+}

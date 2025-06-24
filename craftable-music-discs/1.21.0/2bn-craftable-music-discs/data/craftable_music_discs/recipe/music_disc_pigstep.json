@@ -1,0 +1,20 @@
+{
+    "type": "crafting_shaped",
+    "pattern": [
+        "AAA",
+        "ABA",
+        "AAA"
+    ],
+    "key": {
+        "A": {
+            "item": "red_nether_bricks"
+        },
+        "B": {
+            "item": "gold_block"
+        }
+    },
+    "result": {
+        "id": "music_disc_pigstep",
+        "count": 1
+    }
+}

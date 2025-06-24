@@ -1,0 +1,20 @@
+{
+    "type": "crafting_shaped",
+    "pattern": [
+        "AAA",
+        "ABA",
+        "AAA"
+    ],
+    "key": {
+        "A": {
+            "item": "oxidized_copper"
+        },
+        "B": {
+            "item": "gold_block"
+        }
+    },
+    "result": {
+        "id": "music_disc_creator",
+        "count": 1
+    }
+}
