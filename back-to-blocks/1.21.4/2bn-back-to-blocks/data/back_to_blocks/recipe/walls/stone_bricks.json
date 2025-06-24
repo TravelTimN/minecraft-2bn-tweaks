@@ -1,0 +1,13 @@
+{
+    "result": {
+        "id": "minecraft:stone_bricks",
+        "count": 1
+    },
+    "type": "crafting_shapeless",
+    "ingredients": [
+        [
+            "minecraft:stone_brick_wall"
+        ]
+    ],
+    "group": "walls_to_blocks"
+}

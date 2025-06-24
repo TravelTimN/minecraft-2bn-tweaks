@@ -1,0 +1,13 @@
+{
+    "result": {
+        "id": "minecraft:polished_deepslate",
+        "count": 1
+    },
+    "type": "crafting_shapeless",
+    "ingredients": [
+        [
+            "minecraft:polished_deepslate_wall"
+        ]
+    ],
+    "group": "walls_to_blocks"
+}

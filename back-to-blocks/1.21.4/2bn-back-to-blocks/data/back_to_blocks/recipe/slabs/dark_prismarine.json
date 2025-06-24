@@ -1,0 +1,14 @@
+{
+    "result": {
+        "id": "minecraft:dark_prismarine",
+        "count": 1
+    },
+    "type": "crafting_shapeless",
+    "ingredients": [
+        [
+            "minecraft:dark_prismarine_slab",
+            "minecraft:dark_prismarine_slab"
+        ]
+    ],
+    "group": "slabs_to_blocks"
+}

@@ -1,0 +1,13 @@
+{
+    "result": {
+        "id": "minecraft:acacia_planks",
+        "count": 1
+    },
+    "type": "crafting_shapeless",
+    "ingredients": [
+        [
+            "minecraft:acacia_trapdoor"
+        ]
+    ],
+    "group": "trapdoors_to_blocks"
+}

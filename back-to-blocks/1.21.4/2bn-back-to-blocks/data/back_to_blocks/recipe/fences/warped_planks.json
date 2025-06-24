@@ -1,0 +1,13 @@
+{
+    "result": {
+        "id": "minecraft:warped_planks",
+        "count": 1
+    },
+    "type": "crafting_shapeless",
+    "ingredients": [
+        [
+            "minecraft:warped_fence"
+        ]
+    ],
+    "group": "fences_to_blocks"
+}

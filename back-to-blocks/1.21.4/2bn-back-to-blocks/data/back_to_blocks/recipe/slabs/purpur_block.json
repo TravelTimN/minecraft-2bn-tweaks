@@ -1,0 +1,14 @@
+{
+    "result": {
+        "id": "minecraft:purpur_block",
+        "count": 1
+    },
+    "type": "crafting_shapeless",
+    "ingredients": [
+        [
+            "minecraft:purpur_slab",
+            "minecraft:purpur_slab"
+        ]
+    ],
+    "group": "slabs_to_blocks"
+}

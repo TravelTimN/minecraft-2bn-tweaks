@@ -1,0 +1,13 @@
+{
+    "result": {
+        "id": "minecraft:iron_ingot",
+        "count": 1
+    },
+    "type": "crafting_shapeless",
+    "ingredients": [
+        [
+            "minecraft:iron_trapdoor"
+        ]
+    ],
+    "group": "trapdoors_to_blocks"
+}

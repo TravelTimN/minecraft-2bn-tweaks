@@ -1,0 +1,13 @@
+{
+    "result": {
+        "id": "minecraft:birch_planks",
+        "count": 1
+    },
+    "type": "crafting_shapeless",
+    "ingredients": [
+        [
+            "minecraft:birch_boat"
+        ]
+    ],
+    "group": "boats_to_blocks"
+}

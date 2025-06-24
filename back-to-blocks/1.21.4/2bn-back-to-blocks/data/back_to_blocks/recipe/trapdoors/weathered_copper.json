@@ -1,0 +1,13 @@
+{
+    "result": {
+        "id": "minecraft:weathered_copper",
+        "count": 1
+    },
+    "type": "crafting_shapeless",
+    "ingredients": [
+        [
+            "minecraft:weathered_copper_trapdoor"
+        ]
+    ],
+    "group": "trapdoors_to_blocks"
+}

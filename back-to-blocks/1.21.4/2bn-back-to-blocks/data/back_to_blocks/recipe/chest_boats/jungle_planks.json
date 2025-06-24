@@ -1,0 +1,13 @@
+{
+    "result": {
+        "id": "minecraft:jungle_planks",
+        "count": 1
+    },
+    "type": "crafting_shapeless",
+    "ingredients": [
+        [
+            "minecraft:jungle_chest_boat"
+        ]
+    ],
+    "group": "chest_boats_to_blocks"
+}

@@ -1,0 +1,13 @@
+{
+    "result": {
+        "id": "minecraft:acacia_planks",
+        "count": 1
+    },
+    "type": "crafting_shapeless",
+    "ingredients": [
+        [
+            "minecraft:acacia_button"
+        ]
+    ],
+    "group": "buttons_to_blocks"
+}

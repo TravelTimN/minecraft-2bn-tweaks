@@ -1,0 +1,14 @@
+{
+    "result": {
+        "id": "minecraft:polished_tuff",
+        "count": 1
+    },
+    "type": "crafting_shapeless",
+    "ingredients": [
+        [
+            "minecraft:polished_tuff_slab",
+            "minecraft:polished_tuff_slab"
+        ]
+    ],
+    "group": "slabs_to_blocks"
+}

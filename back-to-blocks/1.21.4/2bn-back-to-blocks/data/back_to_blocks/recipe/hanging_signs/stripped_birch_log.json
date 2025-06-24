@@ -1,0 +1,13 @@
+{
+    "result": {
+        "id": "minecraft:stripped_birch_log",
+        "count": 1
+    },
+    "type": "crafting_shapeless",
+    "ingredients": [
+        [
+            "minecraft:birch_hanging_sign"
+        ]
+    ],
+    "group": "hanging_signs_to_blocks"
+}

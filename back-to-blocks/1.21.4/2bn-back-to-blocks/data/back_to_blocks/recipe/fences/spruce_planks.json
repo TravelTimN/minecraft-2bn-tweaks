@@ -1,0 +1,13 @@
+{
+    "result": {
+        "id": "minecraft:spruce_planks",
+        "count": 1
+    },
+    "type": "crafting_shapeless",
+    "ingredients": [
+        [
+            "minecraft:spruce_fence"
+        ]
+    ],
+    "group": "fences_to_blocks"
+}

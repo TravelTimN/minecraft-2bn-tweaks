@@ -1,0 +1,13 @@
+{
+    "result": {
+        "id": "minecraft:bamboo_planks",
+        "count": 1
+    },
+    "type": "crafting_shapeless",
+    "ingredients": [
+        [
+            "minecraft:bamboo_chest_raft"
+        ]
+    ],
+    "group": "chest_boats_to_blocks"
+}

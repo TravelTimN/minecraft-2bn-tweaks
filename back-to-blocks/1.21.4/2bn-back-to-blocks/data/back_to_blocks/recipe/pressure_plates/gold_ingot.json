@@ -1,0 +1,13 @@
+{
+    "result": {
+        "id": "minecraft:gold_ingot",
+        "count": 1
+    },
+    "type": "crafting_shapeless",
+    "ingredients": [
+        [
+            "minecraft:light_weighted_pressure_plate"
+        ]
+    ],
+    "group": "pressure_plates_to_blocks"
+}

@@ -1,0 +1,13 @@
+{
+    "result": {
+        "id": "minecraft:andesite",
+        "count": 1
+    },
+    "type": "crafting_shapeless",
+    "ingredients": [
+        [
+            "minecraft:andesite_wall"
+        ]
+    ],
+    "group": "walls_to_blocks"
+}

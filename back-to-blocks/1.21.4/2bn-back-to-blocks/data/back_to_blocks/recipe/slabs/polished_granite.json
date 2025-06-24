@@ -1,0 +1,14 @@
+{
+    "result": {
+        "id": "minecraft:polished_granite",
+        "count": 1
+    },
+    "type": "crafting_shapeless",
+    "ingredients": [
+        [
+            "minecraft:polished_granite_slab",
+            "minecraft:polished_granite_slab"
+        ]
+    ],
+    "group": "slabs_to_blocks"
+}
