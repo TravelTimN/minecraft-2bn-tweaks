@@ -1,0 +1,17 @@
+{
+    "result": {
+        "id": "minecraft:arms_up_pottery_sherd",
+        "count": 4
+    },
+    "type": "crafting_shaped",
+    "pattern": [
+        "BSB",
+        "BTB",
+        "BBB"
+    ],
+    "key": {
+        "B": "minecraft:brick",
+        "T": "minecraft:terracotta",
+        "S": "minecraft:arms_up_pottery_sherd"
+    }
+}
