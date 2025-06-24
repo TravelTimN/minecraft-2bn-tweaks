@@ -1,0 +1,16 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "group": "stairs",
+    "key": {
+        "#": "minecraft:mud_bricks"
+    },
+    "pattern": [
+        "#  ",
+        "## ",
+        "###"
+    ],
+    "result": {
+        "count": 8,
+        "id": "minecraft:mud_brick_stairs"
+    }
+}

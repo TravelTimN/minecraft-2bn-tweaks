@@ -1,0 +1,16 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "group": "stairs",
+    "key": {
+        "#": "minecraft:granite"
+    },
+    "pattern": [
+        "#  ",
+        "## ",
+        "###"
+    ],
+    "result": {
+        "count": 8,
+        "id": "minecraft:granite_stairs"
+    }
+}
