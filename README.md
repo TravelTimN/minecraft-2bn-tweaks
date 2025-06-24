@@ -1,5 +1,20 @@
 # 2BN Minecraft Custom Crafting
 
+---
+
+## Table of Contents
+
+1. [**Back to Blocks**](#back-to-blocks)
+    - [Downloads](#download-2bn-back-to-blocks)
+2. [**Craftable Dyes**](#craftable-dyes)
+    - [Downloads](#download-2bn-craftable-dyes)
+3. [**Craftable Elytra**](#craftable-elytra)
+    - [Downloads](#download-2bn-craftable-elytra)
+4. [**Craftable Music Discs**](#craftable-music-discs)
+    - [Downloads](#download-2bn-music-discs)
+
+---
+
 ## [Back to Blocks](back-to-blocks/)
 
 Original inspiration taken from [Vanilla Tweaks: Crafting Tweaks](https://vanillatweaks.net/picker/crafting-tweaks), and enhanced to include more reverse crafting recipes.
@@ -13,7 +28,7 @@ Instead of just allowing reverse crafting from stairs and slabs, we offer revers
 | [quartz](https://minecraft.wiki/w/Block_of_Quartz) | [signs](https://minecraft.wiki/w/Sign) | [slabs](https://minecraft.wiki/w/Slab) | [stairs](https://minecraft.wiki/w/Stairs) |
 | [trapdoors](https://minecraft.wiki/w/Trapdoor) | | | |
 
-### Download
+### Download 2BN Back to Blocks
 
 | Version | Download (.zip) |
 | --- | --- |
@@ -32,7 +47,7 @@ Sometimes [dyes](https://minecraft.wiki/w/Dye) can be tough to obtain, or take f
 | black | coal / charcoal | crafting table |
 | green | kelp | crafting table |
 
-### Download
+### Download 2BN Craftable Dyes
 
 | Version | Download (.zip) |
 | --- | --- |
@@ -46,7 +61,7 @@ Some players are terrified of visiting the End dimension, and therefore have to 
 
 ![elytra](craftable-elytra/screenshots/craftable-elytra.png)
 
-### Download
+### Download 2BN Craftable Elytra
 
 | Version | Download (.zip) |
 | --- | --- |
@@ -61,7 +76,7 @@ Music fans, listen up! Gone are the days where you must hunt for your favorite [
 
 ![music discs](craftable-music-discs/screenshots/2bn-craftable-music-discs.png)
 
-### Download
+### Download 2BN Music Discs
 
 | Version | Download (.zip) |
 | --- | --- |
