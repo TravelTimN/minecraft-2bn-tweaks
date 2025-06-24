@@ -44,7 +44,7 @@ Sometimes [dyes](https://minecraft.wiki/w/Dye) can be tough to obtain, or take f
 
 Some players are terrified of visiting the End dimension, and therefore have to pay other players to obtain [Elytra](https://minecraft.wiki/w/Elytra) or Shulker Boxes for them. It might take a bit longer and be rather expensive, but some may consider it far better than going to the End. Plus, for hardcore players, this means potentially having wings before defeating the dragon, Jane!
 
-![elytra](craftable-elytra/1.20.4/2bn-craftable-elytra/screenshots/craftable-elytra.png)
+![elytra](craftable-elytra/screenshots/craftable-elytra.png)
 
 ### Download
 
