@@ -132,6 +132,16 @@ Sometimes items are quite difficult to collect, or perhaps you're trying to obta
 
 ## 💀 [Craftable Skulls](craftable-skulls/)
 
+Do you hate working with creepers? Especially charged creepers? So do we! Now you can use wither skulls (which are far easier to obtain) to craft your favorite [mob head](https://minecraft.wiki/w/Head).
+
+- [Creeper Head](https://minecraft.wiki/w/Creeper_Head)
+- [Skeleton Skull](https://minecraft.wiki/w/Skeleton_Skull)
+- [Zombie Head](https://minecraft.wiki/w/Zombie_Head)
+- [Piglin Head](https://minecraft.wiki/w/Piglin_Head)
+- [Dragon Head](https://minecraft.wiki/w/Dragon_Head)
+
+![craftable skulls](craftable-skulls/screenshots/craftable-skulls.png)
+
 ### Download 2BN Craftable Skulls
 
 | Version | Download (.zip) |
