@@ -1,0 +1,15 @@
+{
+    "type": "crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "minecraft:andesite_slab"
+        },
+        {
+            "item": "minecraft:andesite_slab"
+        }
+    ],
+    "result": {
+        "item": "minecraft:andesite"
+    },
+    "group": "slabs_to_blocks"
+}

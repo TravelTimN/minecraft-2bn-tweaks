@@ -1,0 +1,13 @@
+{
+    "type": "crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "minecraft:mangrove_chest_boat"
+        }
+    ],
+    "result": {
+        "item": "minecraft:mangrove_planks",
+        "count": 13
+    },
+    "group": "chest_boats_to_block"
+}

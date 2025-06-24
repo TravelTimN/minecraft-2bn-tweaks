@@ -1,0 +1,13 @@
+{
+    "type": "crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "minecraft:dark_oak_door"
+        }
+    ],
+    "result": {
+        "item": "minecraft:dark_oak_planks",
+        "count": 2
+    },
+    "group": "doors_to_block"
+}

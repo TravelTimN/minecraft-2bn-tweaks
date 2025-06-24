@@ -1,0 +1,12 @@
+{
+    "type": "crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "minecraft:stone_brick_stairs"
+        }
+    ],
+    "result": {
+        "item": "minecraft:stone_bricks"
+    },
+    "group": "stairs_to_block"
+}

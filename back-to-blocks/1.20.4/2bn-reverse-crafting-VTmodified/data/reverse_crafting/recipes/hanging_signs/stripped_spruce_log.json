@@ -1,0 +1,12 @@
+{
+    "type": "crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "minecraft:spruce_hanging_sign"
+        }
+    ],
+    "result": {
+        "item": "minecraft:stripped_spruce_log"
+    },
+    "group": "hanging_signs_to_block"
+}

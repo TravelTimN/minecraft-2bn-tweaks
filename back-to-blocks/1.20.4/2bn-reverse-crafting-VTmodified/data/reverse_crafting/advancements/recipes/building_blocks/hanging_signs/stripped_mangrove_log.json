@@ -1,0 +1,32 @@
+{
+    "parent": "minecraft:recipes/root",
+    "criteria": {
+        "has_hanging_sign": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:stripped_mangrove_log"
+                    }
+                ]
+            }
+        },
+        "has_the_recipe": {
+            "trigger": "minecraft:recipe_unlocked",
+            "conditions": {
+                "recipe": "reverse_crafting:hanging_signs/stripped_mangrove_log"
+            }
+        }
+    },
+    "requirements": [
+        [
+            "has_hanging_sign",
+            "has_the_recipe"
+        ]
+    ],
+    "rewards": {
+        "recipes": [
+            "reverse_crafting:hanging_signs/stripped_mangrove_log"
+        ]
+    }
+}

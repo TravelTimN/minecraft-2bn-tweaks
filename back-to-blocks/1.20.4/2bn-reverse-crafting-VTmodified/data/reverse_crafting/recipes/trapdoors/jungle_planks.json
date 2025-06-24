@@ -1,0 +1,12 @@
+{
+    "type": "crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "minecraft:jungle_trapdoor"
+        }
+    ],
+    "result": {
+        "item": "minecraft:jungle_planks"
+    },
+    "group": "trapdoors_to_blocks"
+}

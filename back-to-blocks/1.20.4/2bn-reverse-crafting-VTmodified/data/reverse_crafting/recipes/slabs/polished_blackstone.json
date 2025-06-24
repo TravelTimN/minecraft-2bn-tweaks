@@ -1,0 +1,15 @@
+{
+    "type": "crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "minecraft:polished_blackstone_slab"
+        },
+        {
+            "item": "minecraft:polished_blackstone_slab"
+        }
+    ],
+    "result": {
+        "item": "minecraft:polished_blackstone"
+    },
+    "group": "slabs_to_blocks"
+}

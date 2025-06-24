@@ -1,0 +1,15 @@
+{
+    "type": "crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "minecraft:red_sandstone_slab"
+        },
+        {
+            "item": "minecraft:red_sandstone_slab"
+        }
+    ],
+    "result": {
+        "item": "minecraft:chiseled_red_sandstone"
+    },
+    "group": "slabs_to_blocks"
+}

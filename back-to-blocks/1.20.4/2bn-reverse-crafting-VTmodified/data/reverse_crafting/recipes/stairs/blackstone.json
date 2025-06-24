@@ -1,0 +1,12 @@
+{
+    "type": "crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "minecraft:blackstone_stairs"
+        }
+    ],
+    "result": {
+        "item": "minecraft:blackstone"
+    },
+    "group": "stairs_to_block"
+}

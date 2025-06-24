@@ -1,0 +1,12 @@
+{
+    "type": "crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "minecraft:mangrove_fence"
+        }
+    ],
+    "result": {
+        "item": "minecraft:mangrove_planks"
+    },
+    "group": "fences_to_blocks"
+}

@@ -1,0 +1,12 @@
+{
+    "type": "crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "minecraft:cherry_button"
+        }
+    ],
+    "result": {
+        "item": "minecraft:cherry_planks"
+    },
+    "group": "buttons_to_block"
+}

@@ -1,0 +1,13 @@
+{
+    "type": "crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "minecraft:mangrove_door"
+        }
+    ],
+    "result": {
+        "item": "minecraft:mangrove_planks",
+        "count": 2
+    },
+    "group": "doors_to_block"
+}

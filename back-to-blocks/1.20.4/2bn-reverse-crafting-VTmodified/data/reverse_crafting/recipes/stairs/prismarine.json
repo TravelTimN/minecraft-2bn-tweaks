@@ -1,0 +1,12 @@
+{
+    "type": "crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "minecraft:prismarine_stairs"
+        }
+    ],
+    "result": {
+        "item": "minecraft:prismarine"
+    },
+    "group": "stairs_to_block"
+}

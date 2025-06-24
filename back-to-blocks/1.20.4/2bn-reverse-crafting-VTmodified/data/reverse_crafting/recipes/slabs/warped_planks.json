@@ -1,0 +1,15 @@
+{
+    "type": "crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "minecraft:warped_slab"
+        },
+        {
+            "item": "minecraft:warped_slab"
+        }
+    ],
+    "result": {
+        "item": "minecraft:warped_planks"
+    },
+    "group": "slabs_to_blocks"
+}
