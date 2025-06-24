@@ -35,9 +35,9 @@ Instead of just allowing reverse crafting from stairs and slabs, we offer revers
 
 | Version | Download (.zip) |
 | --- | --- |
-| 1.21.4 | [Download](back-to-blocks/1.21.4/2bn-back-to-blocks/2bn-back-to-blocks_1.21.4.zip) |
-| 1.21.0 | [Download](back-to-blocks/1.21.0/2bn-back-to-blocks/2bn-back-to-blocks.zip) |
-| 1.20.4 | [Download](back-to-blocks/1.20.4/2bn-reverse-crafting-VTmodified/2bn-reverse-crafting-VTmodified.zip) |
+| 1.21.4 | [Download 💾](back-to-blocks/1.21.4/2bn-back-to-blocks/2bn-back-to-blocks_1.21.4.zip) |
+| 1.21.0 | [Download 💾](back-to-blocks/1.21.0/2bn-back-to-blocks/2bn-back-to-blocks.zip) |
+| 1.20.4 | [Download 💾](back-to-blocks/1.20.4/2bn-reverse-crafting-VTmodified/2bn-reverse-crafting-VTmodified.zip) |
 
 ---
 
@@ -54,7 +54,7 @@ Sometimes [dyes](https://minecraft.wiki/w/Dye) can be tough to obtain, or take f
 
 | Version | Download (.zip) |
 | --- | --- |
-| 1.21.4 | [Download](craftable-dyes/1.21.4/2bn-craftable-dyes/2bn-craftable-dyes_1.21.4.zip) |
+| 1.21.4 | [Download 💾](craftable-dyes/1.21.4/2bn-craftable-dyes/2bn-craftable-dyes_1.21.4.zip) |
 
 ---
 
@@ -68,8 +68,8 @@ Some players are terrified of visiting the End dimension, and therefore have to 
 
 | Version | Download (.zip) |
 | --- | --- |
-| 1.21.0 | [Download](craftable-elytra/1.21.0/2bn-craftable-elytra/2bn-craftable-elytra.zip) |
-| 1.20.4 | [Download](craftable-elytra/1.20.4/2bn-craftable-elytra/2bn-craftable-elytra.zip) |
+| 1.21.0 | [Download 💾](craftable-elytra/1.21.0/2bn-craftable-elytra/2bn-craftable-elytra.zip) |
+| 1.20.4 | [Download 💾](craftable-elytra/1.20.4/2bn-craftable-elytra/2bn-craftable-elytra.zip) |
 
 ---
 
@@ -83,8 +83,8 @@ Music fans, listen up! Gone are the days where you must hunt for your favorite [
 
 | Version | Download (.zip) |
 | --- | --- |
-| 1.21.0 | [Download](craftable-music-discs/1.21.0/2bn-craftable-music-discs/2bn-craftable-music-discs.zip) |
-| 1.20.4 | [Download](craftable-music-discs/1.20.4/2bn-craftable-discs/2bn-craftable-discs.zip) |
+| 1.21.0 | [Download 💾](craftable-music-discs/1.21.0/2bn-craftable-music-discs/2bn-craftable-music-discs.zip) |
+| 1.20.4 | [Download 💾](craftable-music-discs/1.20.4/2bn-craftable-discs/2bn-craftable-discs.zip) |
 
 ---
 
@@ -104,9 +104,9 @@ Running low on your favorite pottery sherds? Now you can craft more - well, tech
 
 | Version | Download (.zip) |
 | --- | --- |
-| 1.21.4 | [Download](craftable-pottery-sherds/1.21.4/2bn-craftable-pottery-sherds/2bn-craftable-pottery-sherds_1.21.4.zip) |
-| 1.21.0 | [Download](craftable-pottery-sherds/1.21.0/2bn-craftable-pottery-sherds/2bn-craftable-pottery-sherds.zip) |
-| 1.20.4 | [Download](craftable-pottery-sherds/1.20.4/2bn-craftable-sherds/2bn-craftable-sherds.zip) |
+| 1.21.4 | [Download 💾](craftable-pottery-sherds/1.21.4/2bn-craftable-pottery-sherds/2bn-craftable-pottery-sherds_1.21.4.zip) |
+| 1.21.0 | [Download 💾](craftable-pottery-sherds/1.21.0/2bn-craftable-pottery-sherds/2bn-craftable-pottery-sherds.zip) |
+| 1.20.4 | [Download 💾](craftable-pottery-sherds/1.20.4/2bn-craftable-sherds/2bn-craftable-sherds.zip) |
 
 ---
 
@@ -125,8 +125,8 @@ Sometimes items are quite difficult to collect, or perhaps you're trying to obta
 
 | Version | Download (.zip) |
 | --- | --- |
-| 1.21.0 | [Download]() |
-| 1.20.4 | [Download]() |
+| 1.21.0 | [Download 💾](craftable-rarities/1.21.0/2bn-craftable-rarities/2bn-craftable-rarities.zip) |
+| 1.20.4 | [Download 💾](craftable-rarities/1.20.4/2bn-craftable-rarities/2bn-craftable-rarities.zip) |
 
 ---
 
@@ -136,8 +136,8 @@ Sometimes items are quite difficult to collect, or perhaps you're trying to obta
 
 | Version | Download (.zip) |
 | --- | --- |
-| 1.21.0 | [Download]() |
-| 1.20.4 | [Download]() |
+| 1.21.0 | [Download 💾]() |
+| 1.20.4 | [Download 💾]() |
 
 ---
 
@@ -147,7 +147,7 @@ Sometimes items are quite difficult to collect, or perhaps you're trying to obta
 
 | Version | Download (.zip) |
 | --- | --- |
-| 1.21.4 | [Download]() |
+| 1.21.4 | [Download 💾]() |
 
 ---
 
@@ -157,9 +157,9 @@ Sometimes items are quite difficult to collect, or perhaps you're trying to obta
 
 | Version | Download (.zip) |
 | --- | --- |
-| 1.21.4 | [Download]() |
-| 1.21.0 | [Download]() |
-| 1.20.4 | [Download]() |
+| 1.21.4 | [Download 💾]() |
+| 1.21.0 | [Download 💾]() |
+| 1.20.4 | [Download 💾]() |
 
 ---
 
