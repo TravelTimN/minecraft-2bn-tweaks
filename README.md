@@ -20,7 +20,7 @@
 
 ## ♻️ [Back to Blocks](back-to-blocks/)
 
-Original inspiration taken from [Vanilla Tweaks: Crafting Tweaks](https://vanillatweaks.net/picker/crafting-tweaks), and enhanced to include more reverse crafting recipes.
+Original inspiration taken from [Vanilla Tweaks: Crafting Tweaks > QoL](https://vanillatweaks.net/picker/crafting-tweaks), and enhanced to include more reverse crafting recipes.
 
 Instead of just allowing reverse crafting from stairs and slabs, we offer reverse crafting for all types of:
 
@@ -153,7 +153,7 @@ Do you hate working with creepers? Especially charged creepers? So do we! Now yo
 
 ## ➕🧱 [More Blocks](more-blocks/)
 
-Original inspiration taken from [Vanilla Tweaks: Crafting Tweaks](https://vanillatweaks.net/picker/crafting-tweaks), and enhanced to include more blocks from other crafting types.
+Original inspiration taken from [Vanilla Tweaks: Crafting Tweaks > QoL](https://vanillatweaks.net/picker/crafting-tweaks), and enhanced to include more blocks from other crafting types.
 
 | Block | Vanilla | More Blocks |
 | --- | :---: | :---: |
@@ -175,13 +175,27 @@ The difference between Vanilla Tweaks and 2BN More Blocks, is that we provide ev
 
 ## ♻️🌈 [Universal Dyeing](universal-dyeing/)
 
+Original inspiration taken from [Vanilla Tweaks: Crafting Tweaks > QoL](https://vanillatweaks.net/picker/crafting-tweaks), and enhanced to include even more universal dyeing options. Anything that uses dye can be found within this package.
+
+Vanilla Tweaks only has a limited amount of universal dyeing, but we've taken it even further. Now you can re-dye any of the following:
+
+| | | |
+| :---: | :---: | :---: |
+| [beds](https://minecraft.wiki/w/Bed) | [candles](https://minecraft.wiki/w/Candle) | [wools](https://minecraft.wiki/w/Wool) |
+| [concrete powder](https://minecraft.wiki/w/Concrete_Powder) | [concrete](https://minecraft.wiki/w/Concrete) | |
+| [terracotta](https://minecraft.wiki/w/Terracotta) | [glazed terracotta](https://minecraft.wiki/w/Glazed_Terracotta) | |
+| [stained glass](https://minecraft.wiki/w/Stained_Glass) | [stained glass panes](https://minecraft.wiki/w/Stained_Glass_Pane) | |
+| [red sand](https://minecraft.wiki/w/Red_Sand) | [red sandstone](https://minecraft.wiki/w/Red_Sandstone) | [smooth red sandstone](https://minecraft.wiki/w/Smooth_Red_Sandstone) |
+
+[Ice](https://minecraft.wiki/w/Ice) can be used to remove color from items/blocks that have a natural state without dye (candle, glass, glass pane, terracotta).
+
 ### Download 2BN Universal Dyeing
 
 | Version | Download (.zip) |
 | --- | --- |
-| 1.21.4 | [Download 💾]() |
-| 1.21.0 | [Download 💾]() |
-| 1.20.4 | [Download 💾]() |
+| 1.21.4 | [Download 💾](universal-dyeing/1.21.4/2bn-universal-dyeing/2bn-universal-dyeing.zip) |
+| 1.21.0 | [Download 💾](universal-dyeing/1.21.0/2bn-universal-dyeing/2bn-universal-dyeing.zip) |
+| 1.20.4 | [Download 💾](universal-dyeing/1.20.4/2bn-universal-dyes-VTmodified/2bn-universal-dyes-VTmodified.zip) |
 
 ---
 
