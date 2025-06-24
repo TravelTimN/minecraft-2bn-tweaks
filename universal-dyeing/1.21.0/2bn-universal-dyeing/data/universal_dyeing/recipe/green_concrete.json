@@ -1,0 +1,68 @@
+{
+    "type": "crafting_shaped",
+    "pattern": [
+        "###",
+        "#O#",
+        "###"
+    ],
+    "key": {
+        "#": [
+            {
+                "item": "red_concrete"
+            },
+            {
+                "item": "orange_concrete"
+            },
+            {
+                "item": "yellow_concrete"
+            },
+            {
+                "item": "lime_concrete"
+            },
+            {
+                "item": "green_concrete"
+            },
+            {
+                "item": "cyan_concrete"
+            },
+            {
+                "item": "light_blue_concrete"
+            },
+            {
+                "item": "blue_concrete"
+            },
+            {
+                "item": "purple_concrete"
+            },
+            {
+                "item": "magenta_concrete"
+            },
+            {
+                "item": "pink_concrete"
+            },
+            {
+                "item": "brown_concrete"
+            },
+            {
+                "item": "black_concrete"
+            },
+            {
+                "item": "gray_concrete"
+            },
+            {
+                "item": "light_gray_concrete"
+            },
+            {
+                "item": "white_concrete"
+            }
+        ],
+        "O": {
+            "tag": "universal_dyeing:dyes/green_dye"
+        }
+    },
+    "result": {
+        "id": "green_concrete",
+        "count": 8
+    },
+    "group": "universal_dyeing_concrete"
+}
