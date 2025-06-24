@@ -1,0 +1,13 @@
+{
+    "type": "crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "jungle_boat"
+        }
+    ],
+    "result": {
+        "id": "jungle_planks",
+        "count": 1
+    },
+    "group": "boats_to_blocks"
+}

@@ -1,0 +1,13 @@
+{
+    "type": "crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "bamboo_door"
+        }
+    ],
+    "result": {
+        "id": "bamboo_planks",
+        "count": 1
+    },
+    "group": "doors_to_blocks"
+}

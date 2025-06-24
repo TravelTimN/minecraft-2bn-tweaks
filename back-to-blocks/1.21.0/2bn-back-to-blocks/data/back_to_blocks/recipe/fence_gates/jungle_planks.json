@@ -1,0 +1,13 @@
+{
+    "type": "crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "jungle_fence_gate"
+        }
+    ],
+    "result": {
+        "id": "jungle_planks",
+        "count": 1
+    },
+    "group": "fence_gates_to_blocks"
+}

@@ -1,0 +1,13 @@
+{
+    "type": "crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "cherry_trapdoor"
+        }
+    ],
+    "result": {
+        "id": "cherry_planks",
+        "count": 1
+    },
+    "group": "trapdoors_to_blocks"
+}

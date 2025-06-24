@@ -1,0 +1,13 @@
+{
+    "type": "crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "diorite_stairs"
+        }
+    ],
+    "result": {
+        "id": "diorite",
+        "count": 1
+    },
+    "group": "stairs_to_blocks"
+}

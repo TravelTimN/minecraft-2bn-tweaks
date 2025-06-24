@@ -1,0 +1,13 @@
+{
+    "type": "crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "mud_brick_stairs"
+        }
+    ],
+    "result": {
+        "id": "mud_bricks",
+        "count": 1
+    },
+    "group": "stairs_to_blocks"
+}

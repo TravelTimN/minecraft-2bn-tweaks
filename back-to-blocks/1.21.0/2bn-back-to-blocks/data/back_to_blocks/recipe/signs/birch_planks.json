@@ -1,0 +1,13 @@
+{
+    "type": "crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "birch_sign"
+        }
+    ],
+    "result": {
+        "id": "birch_planks",
+        "count": 1
+    },
+    "group": "signs_to_blocks"
+}

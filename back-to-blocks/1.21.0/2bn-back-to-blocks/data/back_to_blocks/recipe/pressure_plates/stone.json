@@ -1,0 +1,13 @@
+{
+    "type": "crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "stone_pressure_plate"
+        }
+    ],
+    "result": {
+        "id": "stone",
+        "count": 1
+    },
+    "group": "pressure_plates_to_blocks"
+}

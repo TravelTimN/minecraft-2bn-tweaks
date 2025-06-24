@@ -1,0 +1,13 @@
+{
+    "type": "crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "birch_fence"
+        }
+    ],
+    "result": {
+        "id": "birch_planks",
+        "count": 1
+    },
+    "group": "fences_to_blocks"
+}

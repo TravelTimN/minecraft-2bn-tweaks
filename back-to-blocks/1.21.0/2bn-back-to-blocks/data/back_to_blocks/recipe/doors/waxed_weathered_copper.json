@@ -1,0 +1,13 @@
+{
+    "type": "crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "waxed_weathered_copper_door"
+        }
+    ],
+    "result": {
+        "id": "waxed_weathered_copper",
+        "count": 1
+    },
+    "group": "doors_to_blocks"
+}

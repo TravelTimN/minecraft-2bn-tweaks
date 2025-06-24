@@ -1,0 +1,13 @@
+{
+    "type": "crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "waxed_exposed_copper_grate"
+        }
+    ],
+    "result": {
+        "id": "waxed_exposed_copper",
+        "count": 1
+    },
+    "group": "grates_to_blocks"
+}

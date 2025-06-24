@@ -1,0 +1,13 @@
+{
+    "type": "crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "crimson_door"
+        }
+    ],
+    "result": {
+        "id": "crimson_planks",
+        "count": 1
+    },
+    "group": "doors_to_blocks"
+}

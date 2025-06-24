@@ -1,0 +1,13 @@
+{
+    "type": "crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "oxidized_copper_grate"
+        }
+    ],
+    "result": {
+        "id": "oxidized_copper",
+        "count": 1
+    },
+    "group": "grates_to_blocks"
+}

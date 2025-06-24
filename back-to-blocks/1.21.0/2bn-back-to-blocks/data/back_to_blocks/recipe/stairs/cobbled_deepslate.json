@@ -1,0 +1,13 @@
+{
+    "type": "crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "cobbled_deepslate_stairs"
+        }
+    ],
+    "result": {
+        "id": "cobbled_deepslate",
+        "count": 1
+    },
+    "group": "stairs_to_blocks"
+}

@@ -1,0 +1,13 @@
+{
+    "type": "crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "heavy_weighted_pressure_plate"
+        }
+    ],
+    "result": {
+        "id": "iron_ingot",
+        "count": 1
+    },
+    "group": "pressure_plates_to_blocks"
+}

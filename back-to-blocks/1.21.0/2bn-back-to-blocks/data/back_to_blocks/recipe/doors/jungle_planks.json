@@ -1,0 +1,13 @@
+{
+    "type": "crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "jungle_door"
+        }
+    ],
+    "result": {
+        "id": "jungle_planks",
+        "count": 1
+    },
+    "group": "doors_to_blocks"
+}

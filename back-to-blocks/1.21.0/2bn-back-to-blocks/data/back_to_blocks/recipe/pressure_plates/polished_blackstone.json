@@ -1,0 +1,13 @@
+{
+    "type": "crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "polished_blackstone_pressure_plate"
+        }
+    ],
+    "result": {
+        "id": "polished_blackstone",
+        "count": 1
+    },
+    "group": "pressure_plates_to_blocks"
+}

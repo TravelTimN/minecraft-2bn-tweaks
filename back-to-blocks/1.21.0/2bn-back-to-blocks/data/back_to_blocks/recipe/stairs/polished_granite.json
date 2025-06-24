@@ -1,0 +1,13 @@
+{
+    "type": "crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "polished_granite_stairs"
+        }
+    ],
+    "result": {
+        "id": "polished_granite",
+        "count": 1
+    },
+    "group": "stairs_to_blocks"
+}

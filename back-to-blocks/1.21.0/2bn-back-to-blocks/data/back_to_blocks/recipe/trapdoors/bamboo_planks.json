@@ -1,0 +1,13 @@
+{
+    "type": "crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "bamboo_trapdoor"
+        }
+    ],
+    "result": {
+        "id": "bamboo_planks",
+        "count": 1
+    },
+    "group": "trapdoors_to_blocks"
+}

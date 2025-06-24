@@ -1,0 +1,13 @@
+{
+    "type": "crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "jungle_button"
+        }
+    ],
+    "result": {
+        "id": "jungle_planks",
+        "count": 1
+    },
+    "group": "buttons_to_blocks"
+}

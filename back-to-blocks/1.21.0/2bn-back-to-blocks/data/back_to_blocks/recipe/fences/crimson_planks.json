@@ -1,0 +1,13 @@
+{
+    "type": "crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "crimson_fence"
+        }
+    ],
+    "result": {
+        "id": "crimson_planks",
+        "count": 1
+    },
+    "group": "fences_to_blocks"
+}

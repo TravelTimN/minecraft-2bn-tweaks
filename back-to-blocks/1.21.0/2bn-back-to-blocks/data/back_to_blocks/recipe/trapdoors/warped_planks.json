@@ -1,0 +1,13 @@
+{
+    "type": "crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "warped_trapdoor"
+        }
+    ],
+    "result": {
+        "id": "warped_planks",
+        "count": 1
+    },
+    "group": "trapdoors_to_blocks"
+}

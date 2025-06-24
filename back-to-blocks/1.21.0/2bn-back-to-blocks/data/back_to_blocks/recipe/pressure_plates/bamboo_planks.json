@@ -1,0 +1,13 @@
+{
+    "type": "crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "bamboo_pressure_plate"
+        }
+    ],
+    "result": {
+        "id": "bamboo_planks",
+        "count": 1
+    },
+    "group": "pressure_plates_to_blocks"
+}

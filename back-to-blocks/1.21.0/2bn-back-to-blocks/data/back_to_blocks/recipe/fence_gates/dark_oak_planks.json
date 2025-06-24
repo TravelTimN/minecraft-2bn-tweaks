@@ -1,0 +1,13 @@
+{
+    "type": "crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "dark_oak_fence_gate"
+        }
+    ],
+    "result": {
+        "id": "dark_oak_planks",
+        "count": 1
+    },
+    "group": "fence_gates_to_blocks"
+}

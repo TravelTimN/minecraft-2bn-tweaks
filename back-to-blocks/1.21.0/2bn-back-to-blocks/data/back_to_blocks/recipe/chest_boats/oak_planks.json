@@ -1,0 +1,13 @@
+{
+    "type": "crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "oak_chest_boat"
+        }
+    ],
+    "result": {
+        "id": "oak_planks",
+        "count": 1
+    },
+    "group": "chest_boats_to_blocks"
+}
