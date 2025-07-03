@@ -1,4 +1,4 @@
-# 2BN Minecraft Custom Crafting
+# Minecraft 2BN Tweaks
 
 ---
 
@@ -6,7 +6,7 @@
 
 | | Crafting Tweaks | |
 | :---: | --- | ---: |
-| ♻️ | [**Back to Blocks**](#️-back-to-blocks) | [💾](#download-2bn-back-to-blocks) |
+| ♻️ | [**Back-to-Blocks**](#️-back-to-blocks) | [💾](#download-2bn-tweaks-back-to-blocks) |
 | 🎨 | [**Craftable Dyes**](#-craftable-dyes) | [💾](#download-2bn-craftable-dyes) |
 | 🪽 | [**Craftable Elytra**](#-craftable-elytra) | [💾](#download-2bn-craftable-elytra) |
 | 💿 | [**Craftable Music Discs**](#-craftable-music-discs) | [💾](#download-2bn-craftable-music-discs) |
@@ -18,26 +18,30 @@
 
 ---
 
-## ♻️ [Back to Blocks](back-to-blocks/)
+## ♻️ [Back-to-Blocks](back-to-blocks/)
 
-Original inspiration taken from [Vanilla Tweaks: Crafting Tweaks > QoL](https://vanillatweaks.net/picker/crafting-tweaks), and enhanced to include more reverse crafting recipes.
+A Minecraft datapack that adds hundreds of crafting recipes to reverse decorative/utility blocks back into a *lossy* base form (not all materials are fully recoverable). Go beyond slabs and stairs - reclaim doors, ladders, grates, workstations, bulbs, trapdoors, pressure plates, chests, and much more.
 
-Instead of just allowing reverse crafting from stairs and slabs, we offer reverse crafting for all types of:
+**[View the full recipe list in Google Sheets](https://docs.google.com/spreadsheets/d/1t9lmXWqlyno15NTqfUDTYcuZuNVCAmxs4Pt4w9a5CPI/edit?usp=sharing)**
 
-| | | | |
-| :---: | :---: | :---: | :---: |
-| [boats](https://minecraft.wiki/w/Boat) | [buttons](https://minecraft.wiki/w/Button) | [chest boats](https://minecraft.wiki/w/Boat_with_Chest) | [doors](https://minecraft.wiki/w/Door) |
-| [fence gates](https://minecraft.wiki/w/Fence_Gate) | [fences](https://minecraft.wiki/w/Fence) | [hanging signs](https://minecraft.wiki/w/Hanging_Sign) | [pressure plates](https://minecraft.wiki/w/Pressure_Plate) |
-| [quartz](https://minecraft.wiki/w/Block_of_Quartz) | [signs](https://minecraft.wiki/w/Sign) | [slabs](https://minecraft.wiki/w/Slab) | [stairs](https://minecraft.wiki/w/Stairs) |
-| [trapdoors](https://minecraft.wiki/w/Trapdoor) | | | |
+This datapack and its generator scripts are licensed under
+Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0).
 
-### Download 2BN Back to Blocks
+You are free to:
+- Share, adapt, remix, and use this work non-commercially
+- So long as you provide attribution (*see below*)
+- And license derivatives under the same terms
 
-| Version | Download (.zip) |
+> 📜 **Attribution**  
+> **[2BN-Tweaks: Back-to-Blocks](https://github.com/TravelTimN/minecraft-2bn-tweaks)**  
+> Created by [TravelTimN](https://github.com/TravelTimN)  
+> Licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0)
+
+### Download 2BN-Tweaks Back-to-Blocks
+
+| Supported Versions | Download (.zip) |
 | --- | --- |
-| 1.21.4 | [Download 💾](back-to-blocks/1.21.4/2bn-back-to-blocks/2bn-back-to-blocks_1.21.4.zip) |
-| 1.21.0 | [Download 💾](back-to-blocks/1.21.0/2bn-back-to-blocks/2bn-back-to-blocks.zip) |
-| 1.20.4 | [Download 💾](back-to-blocks/1.20.4/2bn-reverse-crafting-VTmodified/2bn-reverse-crafting-VTmodified.zip) |
+| 1.20.0 – 1.21.7+ | [💾 Download 2BN-Tweaks: Back-to-Blocks](back-to-blocks/2BN-Tweaks_Back-to-Blocks.zip) |
 
 ---
 
