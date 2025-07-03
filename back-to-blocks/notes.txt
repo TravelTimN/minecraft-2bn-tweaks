@@ -1,0 +1,125 @@
+2BN-Tweaks | Back-to-Blocks
+
+
+=== INFO ===
+
+Inspiration from Vanilla Tweaks, but heavily modified.
+
+
+=== UPDATES ===
+
+https://minecraft.wiki/w/Pack_format#List_of_data_pack_formats
+
+1.20.0 [07 JUN 2023]:
+  Pack: 15
+  "Trails & Tales": Introduced cherry & bamboo (+mosaic) blocks/items.
+  Directory: data/<namespace>/recipes/..
+  Recipe Result Attribute: `item`
+  Template: Recipe #1
+  Recipes: legacy (self)
+
+1.20.2 [21 SEP 2023]:
+  Pack: 18
+  Mojang introduced `overlay_#` in `pack.mcmeta`.
+  No need for `overlay_18`, recipe format is unchanged.
+
+1.21.0 [13 JUN 2024]:
+  Pack: 48
+  "Tricky Trials": Introduced more copper & tuff blocks/items.
+  Renamed Recipe Directory: `recipes/` -> `recipe/`
+  Changed Recipe Result Attribute: `item` -> `id`
+  Directory: overlay_48/data/<namespace>/recipe/..
+  Template: Recipe #2
+  Recipes: legacy (redo), 48 (self)
+
+1.21.2 [22 OCT 2024]:
+  Pack: 57
+  "Bundles of Bravery": Introduced the new crafting recipe format.
+  Recipe ingredients use flat-method, instead of dicts with `tag`/`item`.
+  Directory: overlay_57/data/<namespace>/recipe/..
+  Template: Recipe #3
+  Recipes: legacy (redo), 48 (redo), 57 (self)
+
+1.21.4 [03 DEC 2024]:
+  Pack: 61
+  "The Garden Awakens": Introduced pale oak & resin blocks/items.
+  Directory: overlay_61/data/<namespace>/recipe/..
+  Template: Recipe #3
+  Recipes: 61 (self)
+
+1.21.8 (⚠️ unknown) [TBC]:
+  Pack: 83 (⚠️ unknown)
+  "Fall-Drop 2025": Introduces copper chests (from Copper Golems).
+  Directory: overlay_83/data/<namespace>/recipe/..
+  Template: Recipe #3
+  Recipes: 83 (⚠️ unknown/self)
+
+
+=== GENERATED ===
+
+  - Legacy      : recipes generated = 277
+  - Overlay 48  : recipes generated = 335
+  - Overlay 57  : recipes generated = 335
+  - Overlay 61  : recipes generated = 351
+  - Overlay 83  : recipes generated = 359
+
+
+=== BUGS ===
+
+No current  bugs identified
+
+
+
+=== RECIPE FORMATS ===
+
+Recipe #1: 1.20.0 - 1.20.6
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": f"{category_plural}_to_blocks",
+  "ingredients": [
+    {
+      "item": f"minecraft:{ingredient_material}"
+    },
+    {
+      "item": f"minecraft:{ingredient_material}"
+    }
+  ],
+  "result": {
+    "count": {count},
+    "item": "minecraft:{recipe_result}"
+  }
+}
+
+
+Recipe #2: 1.21.0 - 1.21.1
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": f"{category_plural}_to_blocks",
+  "ingredients": [
+    {
+      "item": f"minecraft:{ingredient_material}"
+    },
+    {
+      "item": f"minecraft:{ingredient_material}"
+    }
+  ],
+  "result": {
+    "count": {count},
+    "id": f"minecraft:{recipe_result}"
+  }
+}
+
+
+Recipe #3: 1.21.2+
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": f"{category_plural}_to_blocks",
+  "ingredients": [
+    f"minecraft:{ingredient_material}",
+    f"minecraft:{ingredient_material}"
+  ],
+  "result": {
+    "count": {count},
+    "id": f"minecraft:{recipe_result}"
+  }
+}
