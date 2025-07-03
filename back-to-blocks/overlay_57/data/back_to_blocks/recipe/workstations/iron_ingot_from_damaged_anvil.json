@@ -1,0 +1,11 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "group": "workstations_to_blocks",
+    "ingredients": [
+        "minecraft:damaged_anvil"
+    ],
+    "result": {
+        "count": 5,
+        "id": "minecraft:iron_ingot"
+    }
+}

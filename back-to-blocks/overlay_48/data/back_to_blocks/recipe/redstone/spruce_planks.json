@@ -1,0 +1,13 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "group": "redstone_to_blocks",
+    "ingredients": [
+        {
+            "item": "minecraft:jukebox"
+        }
+    ],
+    "result": {
+        "count": 4,
+        "id": "minecraft:spruce_planks"
+    }
+}

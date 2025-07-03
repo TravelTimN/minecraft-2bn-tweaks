@@ -1,0 +1,13 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "group": "grates_to_blocks",
+    "ingredients": [
+        {
+            "item": "minecraft:exposed_copper_grate"
+        }
+    ],
+    "result": {
+        "count": 1,
+        "id": "minecraft:exposed_copper"
+    }
+}

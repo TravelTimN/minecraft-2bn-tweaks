@@ -1,0 +1,13 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "group": "pressure_plates_to_blocks",
+    "ingredients": [
+        {
+            "item": "minecraft:acacia_pressure_plate"
+        }
+    ],
+    "result": {
+        "count": 1,
+        "id": "minecraft:acacia_planks"
+    }
+}

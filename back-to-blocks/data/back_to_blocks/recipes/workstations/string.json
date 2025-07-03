@@ -1,0 +1,13 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "group": "workstations_to_blocks",
+    "ingredients": [
+        {
+            "item": "minecraft:loom"
+        }
+    ],
+    "result": {
+        "count": 2,
+        "item": "minecraft:string"
+    }
+}

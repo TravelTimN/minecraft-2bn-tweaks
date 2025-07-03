@@ -1,0 +1,13 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "group": "workstations_to_blocks",
+    "ingredients": [
+        {
+            "item": "minecraft:chiseled_bookshelf"
+        }
+    ],
+    "result": {
+        "count": 3,
+        "item": "minecraft:oak_planks"
+    }
+}

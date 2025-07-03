@@ -1,0 +1,13 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "group": "workstations_to_blocks",
+    "ingredients": [
+        {
+            "item": "minecraft:barrel"
+        }
+    ],
+    "result": {
+        "count": 3,
+        "item": "minecraft:spruce_planks"
+    }
+}

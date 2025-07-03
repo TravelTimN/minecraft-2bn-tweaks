@@ -1,0 +1,13 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "group": "redstone_to_blocks",
+    "ingredients": [
+        {
+            "item": "minecraft:dispenser"
+        }
+    ],
+    "result": {
+        "count": 1,
+        "item": "minecraft:bow"
+    }
+}

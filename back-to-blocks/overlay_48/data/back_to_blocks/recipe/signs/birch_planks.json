@@ -1,0 +1,13 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "group": "signs_to_blocks",
+    "ingredients": [
+        {
+            "item": "minecraft:birch_sign"
+        }
+    ],
+    "result": {
+        "count": 1,
+        "id": "minecraft:birch_planks"
+    }
+}

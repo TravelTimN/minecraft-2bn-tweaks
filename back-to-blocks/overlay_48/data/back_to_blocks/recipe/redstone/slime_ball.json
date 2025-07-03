@@ -1,0 +1,13 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "group": "redstone_to_blocks",
+    "ingredients": [
+        {
+            "item": "minecraft:sticky_piston"
+        }
+    ],
+    "result": {
+        "count": 1,
+        "id": "minecraft:slime_ball"
+    }
+}

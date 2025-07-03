@@ -1,0 +1,13 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "group": "workstations_to_blocks",
+    "ingredients": [
+        {
+            "item": "minecraft:chipped_anvil"
+        }
+    ],
+    "result": {
+        "count": 1,
+        "item": "minecraft:iron_block"
+    }
+}

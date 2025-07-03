@@ -1,0 +1,13 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "group": "redstone_to_blocks",
+    "ingredients": [
+        "minecraft:powered_rail",
+        "minecraft:powered_rail",
+        "minecraft:powered_rail"
+    ],
+    "result": {
+        "count": 1,
+        "id": "minecraft:gold_ingot"
+    }
+}

@@ -1,0 +1,13 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "group": "workstations_to_blocks",
+    "ingredients": [
+        {
+            "item": "minecraft:brewing_stand"
+        }
+    ],
+    "result": {
+        "count": 1,
+        "item": "minecraft:blaze_rod"
+    }
+}

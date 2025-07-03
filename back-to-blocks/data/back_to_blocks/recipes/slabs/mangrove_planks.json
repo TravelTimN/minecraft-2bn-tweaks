@@ -1,0 +1,16 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "group": "slabs_to_blocks",
+    "ingredients": [
+        {
+            "item": "minecraft:mangrove_slab"
+        },
+        {
+            "item": "minecraft:mangrove_slab"
+        }
+    ],
+    "result": {
+        "count": 1,
+        "item": "minecraft:mangrove_planks"
+    }
+}

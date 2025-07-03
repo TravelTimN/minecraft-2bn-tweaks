@@ -1,0 +1,13 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "group": "hanging_signs_to_blocks",
+    "ingredients": [
+        {
+            "item": "minecraft:dark_oak_hanging_sign"
+        }
+    ],
+    "result": {
+        "count": 4,
+        "item": "minecraft:dark_oak_planks"
+    }
+}

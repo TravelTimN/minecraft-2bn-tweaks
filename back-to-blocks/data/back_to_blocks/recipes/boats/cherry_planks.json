@@ -1,0 +1,13 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "group": "boats_to_blocks",
+    "ingredients": [
+        {
+            "item": "minecraft:cherry_boat"
+        }
+    ],
+    "result": {
+        "count": 1,
+        "item": "minecraft:cherry_planks"
+    }
+}

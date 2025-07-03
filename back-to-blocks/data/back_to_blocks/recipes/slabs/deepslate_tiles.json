@@ -1,0 +1,16 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "group": "slabs_to_blocks",
+    "ingredients": [
+        {
+            "item": "minecraft:deepslate_tile_slab"
+        },
+        {
+            "item": "minecraft:deepslate_tile_slab"
+        }
+    ],
+    "result": {
+        "count": 1,
+        "item": "minecraft:deepslate_tiles"
+    }
+}

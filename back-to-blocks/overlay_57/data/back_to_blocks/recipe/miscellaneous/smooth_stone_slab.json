@@ -1,0 +1,11 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "group": "miscellaneous_to_blocks",
+    "ingredients": [
+        "minecraft:armor_stand"
+    ],
+    "result": {
+        "count": 1,
+        "id": "minecraft:smooth_stone_slab"
+    }
+}

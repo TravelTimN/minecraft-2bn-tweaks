@@ -1,0 +1,13 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "group": "quartz_to_blocks",
+    "ingredients": [
+        {
+            "item": "minecraft:chiseled_quartz_block"
+        }
+    ],
+    "result": {
+        "count": 1,
+        "item": "minecraft:quartz_block"
+    }
+}

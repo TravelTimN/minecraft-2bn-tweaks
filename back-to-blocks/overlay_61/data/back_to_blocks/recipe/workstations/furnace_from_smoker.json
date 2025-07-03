@@ -1,0 +1,11 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "group": "workstations_to_blocks",
+    "ingredients": [
+        "minecraft:smoker"
+    ],
+    "result": {
+        "count": 1,
+        "id": "minecraft:furnace"
+    }
+}

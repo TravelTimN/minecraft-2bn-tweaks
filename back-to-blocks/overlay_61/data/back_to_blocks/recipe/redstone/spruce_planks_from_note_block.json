@@ -1,0 +1,11 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "group": "redstone_to_blocks",
+    "ingredients": [
+        "minecraft:note_block"
+    ],
+    "result": {
+        "count": 4,
+        "id": "minecraft:spruce_planks"
+    }
+}

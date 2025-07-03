@@ -1,0 +1,13 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "group": "bulbs_to_blocks",
+    "ingredients": [
+        {
+            "item": "minecraft:copper_bulb"
+        }
+    ],
+    "result": {
+        "count": 1,
+        "id": "minecraft:copper_block"
+    }
+}

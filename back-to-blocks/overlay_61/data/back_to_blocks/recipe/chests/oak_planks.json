@@ -1,0 +1,11 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "group": "chests_to_blocks",
+    "ingredients": [
+        "minecraft:trapped_chest"
+    ],
+    "result": {
+        "count": 4,
+        "id": "minecraft:oak_planks"
+    }
+}

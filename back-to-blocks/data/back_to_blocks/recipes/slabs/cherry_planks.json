@@ -1,0 +1,16 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "group": "slabs_to_blocks",
+    "ingredients": [
+        {
+            "item": "minecraft:cherry_slab"
+        },
+        {
+            "item": "minecraft:cherry_slab"
+        }
+    ],
+    "result": {
+        "count": 1,
+        "item": "minecraft:cherry_planks"
+    }
+}

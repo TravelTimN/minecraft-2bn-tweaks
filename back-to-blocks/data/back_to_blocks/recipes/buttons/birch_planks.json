@@ -1,0 +1,13 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "group": "buttons_to_blocks",
+    "ingredients": [
+        {
+            "item": "minecraft:birch_button"
+        }
+    ],
+    "result": {
+        "count": 1,
+        "item": "minecraft:birch_planks"
+    }
+}

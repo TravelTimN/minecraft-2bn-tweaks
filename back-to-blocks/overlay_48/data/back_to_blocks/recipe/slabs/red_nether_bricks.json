@@ -1,0 +1,16 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "group": "slabs_to_blocks",
+    "ingredients": [
+        {
+            "item": "minecraft:red_nether_brick_slab"
+        },
+        {
+            "item": "minecraft:red_nether_brick_slab"
+        }
+    ],
+    "result": {
+        "count": 1,
+        "id": "minecraft:red_nether_bricks"
+    }
+}

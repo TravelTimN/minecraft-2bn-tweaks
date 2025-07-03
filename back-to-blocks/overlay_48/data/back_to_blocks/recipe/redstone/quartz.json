@@ -1,0 +1,13 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "group": "redstone_to_blocks",
+    "ingredients": [
+        {
+            "item": "minecraft:comparator"
+        }
+    ],
+    "result": {
+        "count": 1,
+        "id": "minecraft:quartz"
+    }
+}

@@ -1,0 +1,13 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "group": "doors_to_blocks",
+    "ingredients": [
+        {
+            "item": "minecraft:bamboo_door"
+        }
+    ],
+    "result": {
+        "count": 1,
+        "item": "minecraft:bamboo_planks"
+    }
+}

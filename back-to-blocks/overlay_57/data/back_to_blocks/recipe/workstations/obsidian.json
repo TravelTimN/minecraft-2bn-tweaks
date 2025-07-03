@@ -1,0 +1,11 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "group": "workstations_to_blocks",
+    "ingredients": [
+        "minecraft:enchanting_table"
+    ],
+    "result": {
+        "count": 2,
+        "id": "minecraft:obsidian"
+    }
+}

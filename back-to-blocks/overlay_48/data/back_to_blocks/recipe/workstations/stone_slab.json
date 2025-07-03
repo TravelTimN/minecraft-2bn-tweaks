@@ -1,0 +1,13 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "group": "workstations_to_blocks",
+    "ingredients": [
+        {
+            "item": "minecraft:grindstone"
+        }
+    ],
+    "result": {
+        "count": 1,
+        "id": "minecraft:stone_slab"
+    }
+}

@@ -1,0 +1,37 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "group": "redstone_to_blocks",
+    "ingredients": [
+        {
+            "item": "minecraft:rail"
+        },
+        {
+            "item": "minecraft:rail"
+        },
+        {
+            "item": "minecraft:rail"
+        },
+        {
+            "item": "minecraft:rail"
+        },
+        {
+            "item": "minecraft:rail"
+        },
+        {
+            "item": "minecraft:rail"
+        },
+        {
+            "item": "minecraft:rail"
+        },
+        {
+            "item": "minecraft:rail"
+        },
+        {
+            "item": "minecraft:rail"
+        }
+    ],
+    "result": {
+        "count": 1,
+        "item": "minecraft:iron_ingot"
+    }
+}

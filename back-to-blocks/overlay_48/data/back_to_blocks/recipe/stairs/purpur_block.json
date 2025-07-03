@@ -1,0 +1,13 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "group": "stairs_to_blocks",
+    "ingredients": [
+        {
+            "item": "minecraft:purpur_stairs"
+        }
+    ],
+    "result": {
+        "count": 1,
+        "id": "minecraft:purpur_block"
+    }
+}

@@ -1,0 +1,13 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "group": "buttons_to_blocks",
+    "ingredients": [
+        {
+            "item": "minecraft:spruce_button"
+        }
+    ],
+    "result": {
+        "count": 1,
+        "item": "minecraft:spruce_planks"
+    }
+}
