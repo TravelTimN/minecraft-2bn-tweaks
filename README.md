@@ -15,6 +15,7 @@
 | 💀 | [**Craftable Skulls**](#-craftable-skulls) | [💾](#download-2bn-craftable-skulls) |
 | ➕🧱 | [**More Blocks**](#-more-blocks) | [💾](#download-2bn-more-blocks) |
 | ♻️🌈 | [**Universal Dyeing**](#️-universal-dyeing) | [💾](#download-2bn-universal-dyeing) |
+| ⚖️ | [**License**](#️-license) | |
 
 ---
 
@@ -22,20 +23,7 @@
 
 A Minecraft datapack that adds hundreds of crafting recipes to reverse decorative/utility blocks back into a *lossy* base form (not all materials are fully recoverable). Go beyond slabs and stairs - reclaim doors, ladders, grates, workstations, bulbs, trapdoors, pressure plates, chests, and much more.
 
-**[View the full recipe list in Google Sheets](https://docs.google.com/spreadsheets/d/1t9lmXWqlyno15NTqfUDTYcuZuNVCAmxs4Pt4w9a5CPI/edit?usp=sharing)**
-
-This datapack and its generator scripts are licensed under
-Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0).
-
-You are free to:
-- Share, adapt, remix, and use this work non-commercially
-- So long as you provide attribution (*see below*)
-- And license derivatives under the same terms
-
-> 📜 **Attribution**  
-> **[2BN-Tweaks: Back-to-Blocks](https://github.com/TravelTimN/minecraft-2bn-tweaks)**  
-> Created by [TravelTimN](https://github.com/TravelTimN)  
-> Licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0)
+**[View the full recipe list in Google Sheets](https://docs.google.com/spreadsheets/d/1t9lmXWqlyno15NTqfUDTYcuZuNVCAmxs4Pt4w9a5CPI)**
 
 ### Download 2BN-Tweaks Back-to-Blocks
 
@@ -157,23 +145,15 @@ Do you hate working with creepers? Especially charged creepers? So do we! Now yo
 
 ## ➕🧱 [More Blocks](more-blocks/)
 
-Original inspiration taken from [Vanilla Tweaks: Crafting Tweaks > QoL](https://vanillatweaks.net/picker/crafting-tweaks), and enhanced to include more blocks from other crafting types.
+A Minecraft datapack that enhances vanilla crafting by increasing the **yield** of many decorative and utility block recipes. No new blocks, just **more** of the ones you already craft. Get smarter returns for bark (wood/hyphae), bricks, pressure plates, stairs, and trapdoors. Build big, waste less. Quantities align nicely with reverse crafting from our [Back-to-Blocks](#️-back-to-blocks) datapack.
 
-| Block | Vanilla | More Blocks |
-| --- | :---: | :---: |
-| [Trapdoors](https://minecraft.wiki/w/Trapdoor) | 3 | 12 |
-| [Wood](https://minecraft.wiki/w/Wood) | 3 | 4 |
-| [Hyphae](https://minecraft.wiki/w/Wood#Crimson) | 3 | 4 |
-| [Stairs](https://minecraft.wiki/w/Stairs) | 4 | 8 |
-| [Bricks](https://minecraft.wiki/w/Bricks) | 1 | 8 |
-
-The difference between Vanilla Tweaks and 2BN More Blocks, is that we provide even more possibilities and variations that weren't originally considered in the VT pack.
+**[View the full recipe list in Google Sheets](https://docs.google.com/spreadsheets/d/1t9lmXWqlyno15NTqfUDTYcuZuNVCAmxs4Pt4w9a5CPI/edit?gid=1434501916#gid=1434501916)**
 
 ### Download 2BN More Blocks
 
-| Version | Download (.zip) |
+| Supported Versions | Download (.zip) |
 | --- | --- |
-| 1.21.4 | [Download 💾](more-blocks/1.21.4/2bn-more-blocks/2bn-more-blocks_1.21.4.zip) |
+| 1.20.0 – 1.21.7+ | [💾 Download 2BN-Tweaks: More-Blocks](more-blocks/2BN-Tweaks_More-Blocks.zip) |
 
 ---
 
@@ -203,3 +183,18 @@ Vanilla Tweaks only has a limited amount of universal dyeing, but we've taken it
 
 ---
 
+## ⚖️ License
+
+All `2BN-Tweaks` datapacks and their generator scripts are licensed under Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0).
+
+You are free to:
+- Share, adapt, remix, and use this work non-commercially
+- So long as you provide attribution (*see below*)
+- And license derivatives under the same terms
+
+> 📜 **Attribution**  
+> **[2BN-Tweaks](https://github.com/TravelTimN/minecraft-2bn-tweaks)**  
+> Created by [TravelTimN](https://github.com/TravelTimN)  
+> Licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0)
+
+---
