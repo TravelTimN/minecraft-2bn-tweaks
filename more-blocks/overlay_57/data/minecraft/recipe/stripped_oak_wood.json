@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "bark",
+  "pattern": [
+    "##",
+    "##"
+  ],
+  "key": {
+    "#": [
+      "minecraft:stripped_oak_log"
+    ]
+  },
+  "result": {
+    "id": "minecraft:stripped_oak_wood",
+    "count": 4
+  }
+}

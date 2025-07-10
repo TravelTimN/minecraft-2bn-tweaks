@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "stairs",
+  "pattern": [
+    "#  ",
+    "## ",
+    "###"
+  ],
+  "key": {
+    "#": [
+      "minecraft:cobblestone"
+    ]
+  },
+  "result": {
+    "id": "minecraft:cobblestone_stairs",
+    "count": 6
+  }
+}

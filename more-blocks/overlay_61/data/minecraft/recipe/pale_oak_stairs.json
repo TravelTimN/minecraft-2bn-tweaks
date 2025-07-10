@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "stairs",
+  "pattern": [
+    "#  ",
+    "## ",
+    "###"
+  ],
+  "key": {
+    "#": [
+      "minecraft:pale_oak_planks"
+    ]
+  },
+  "result": {
+    "id": "minecraft:pale_oak_stairs",
+    "count": 8
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "pressure_plate",
+  "pattern": [
+    "##"
+  ],
+  "key": {
+    "#": [
+      "minecraft:pale_oak_planks"
+    ]
+  },
+  "result": {
+    "id": "minecraft:pale_oak_pressure_plate",
+    "count": 2
+  }
+}
