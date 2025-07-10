@@ -45,14 +45,14 @@ https://minecraft.wiki/w/Pack_format#List_of_data_pack_formats
   "The Garden Awakens": Introduced pale oak & resin blocks/items.
   Directory: overlay_61/data/<namespace>/recipe/..
   Template: Recipe #3
-  Recipes: 61 (self)
+  Recipes: legacy (redo), 48 (redo), 57 (redo), 61 (self)
 
-1.21.8 (⚠️ unknown) [TBC]:
-  Pack: 83 (⚠️ unknown)
+1.21.8 (⚠️ unconfirmed) [TBC]:
+  Pack: 83 (⚠️ unconfirmed)
   "Fall-Drop 2025": Introduces copper chests (from Copper Golems).
   Directory: overlay_83/data/<namespace>/recipe/..
   Template: Recipe #3
-  Recipes: 83 (⚠️ unknown/self)
+  Recipes: legacy (redo), 48 (redo), 57 (redo), 61 (redo), 83 (⚠️ unconfirmed/self)
 
 
 === GENERATED ===
@@ -70,9 +70,9 @@ No current  bugs identified
 
 
 
-=== RECIPE FORMATS ===
+=== RECIPE FORMATS : SHAPELESS ===
 
-Recipe #1: 1.20.0 - 1.20.6
+Recipe #1: 1.20.0 - 1.20.6 (result.item)
 {
   "type": "minecraft:crafting_shapeless",
   "group": f"{category_plural}_to_blocks",
@@ -91,7 +91,7 @@ Recipe #1: 1.20.0 - 1.20.6
 }
 
 
-Recipe #2: 1.21.0 - 1.21.1
+Recipe #2: 1.21.0 - 1.21.1 (result.item -> result.id)
 {
   "type": "minecraft:crafting_shapeless",
   "group": f"{category_plural}_to_blocks",
@@ -110,7 +110,7 @@ Recipe #2: 1.21.0 - 1.21.1
 }
 
 
-Recipe #3: 1.21.2+
+Recipe #3: 1.21.2+ (flat ingredients, result.id)
 {
   "type": "minecraft:crafting_shapeless",
   "group": f"{category_plural}_to_blocks",
