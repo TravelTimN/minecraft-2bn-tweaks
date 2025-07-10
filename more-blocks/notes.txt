@@ -1,0 +1,138 @@
+2BN-Tweaks | More-Blocks
+
+
+=== INFO ===
+
+Inspiration from Vanilla Tweaks, but heavily modified.
+
+
+=== UPDATES ===
+
+https://minecraft.wiki/w/Pack_format#List_of_data_pack_formats
+
+1.20.0 [07 JUN 2023]:
+  Pack: 15
+  "Trails & Tales": Introduced cherry & bamboo (+mosaic) blocks/items.
+  Directory: data/<namespace>/recipes/..
+  Recipe Result Attribute: `item`
+  Template: Recipe #1
+  Recipes: legacy (self)
+
+1.20.2 [21 SEP 2023]:
+  Pack: 18
+  Mojang introduced `overlay_#` in `pack.mcmeta`.
+  No need for `overlay_18`, recipe format is unchanged.
+
+1.21.0 [13 JUN 2024]:
+  Pack: 48
+  "Tricky Trials": Introduced more copper & tuff blocks/items.
+  Renamed Recipe Directory: `recipes/` -> `recipe/`
+  Changed Recipe Result Attribute: `item` -> `id`
+  Directory: overlay_48/data/<namespace>/recipe/..
+  Template: Recipe #2
+  Recipes: legacy (redo), 48 (self)
+
+1.21.2 [22 OCT 2024]:
+  Pack: 57
+  "Bundles of Bravery": Introduced the new crafting recipe format.
+  Recipe ingredients use flat-method, instead of dicts with `tag`/`item`.
+  Directory: overlay_57/data/<namespace>/recipe/..
+  Template: Recipe #3
+  Recipes: legacy (redo), 48 (redo), 57 (self)
+
+1.21.4 [03 DEC 2024]:
+  Pack: 61
+  "The Garden Awakens": Introduced pale oak & resin blocks/items.
+  Directory: overlay_61/data/<namespace>/recipe/..
+  Template: Recipe #3
+  Recipes: legacy (redo), 48 (redo), 57 (redo), 61 (self)
+
+1.21.8 (⚠️ unconfirmed) [TBC]:
+  Pack: 83 (⚠️ unconfirmed)
+  "Fall-Drop 2025": Introduces copper chests (from Copper Golems).
+  Directory: overlay_83/data/<namespace>/recipe/..
+  Template: Recipe #3
+  Recipes: legacy (redo), 48 (redo), 57 (redo), 61 (redo), 83 (⚠️ unconfirmed/self)
+
+
+=== GENERATED ===
+
+  - Legacy      : recipes generated = 96
+  - Overlay 48  : recipes generated = 108
+  - Overlay 57  : recipes generated = 108
+  - Overlay 61  : recipes generated = 115
+
+
+=== BUGS ===
+
+✅ [Fixed]
+Random recipes just wouldn't provide the desired result count.
+After a lot of manual testing, it turns out that since these are vanilla recipes,
+just getting the result count updated, the recipes themselves need to be
+in the "minecraft/" directory, not a custom <namespace> folder.
+Also, no sub-directories for "categories" (eg: bark/, bricks/, stairs/, etc.).
+
+
+=== RECIPE FORMATS : SHAPED ===
+
+Recipe #1: 1.20.0 - 1.20.6 (result.item)
+{
+  "type": "minecraft:crafting_shaped",
+  "group": f"more_{category_plural}",
+  "key": {
+    "#": {
+      "item": f"minecraft:{ingredient_1}"
+    },
+    "W": {
+      "item": f"minecraft:{ingredient_2}"
+    }
+  },
+  "pattern": [
+    "W#W",
+    "W#W"
+  ],
+  "result": {
+    "count": {count},
+    "item": f"minecraft:{result}"
+  }
+}
+
+Recipe #2: 1.21.0 - 1.21.1 (result.item -> result.id)
+{
+  "type": "minecraft:crafting_shaped",
+  "group": f"more_{category_plural}",
+  "key": {
+    "#": {
+      "item": f"minecraft:{ingredient_1}"
+    },
+    "W": {
+      "item": f"minecraft:{ingredient_2}"
+    }
+  },
+  "pattern": [
+    "W#W",
+    "W#W"
+  ],
+  "result": {
+    "count": {count},
+    "id": f"minecraft:{result}"
+  }
+}
+
+Recipe #3: 1.21.2+ (flat ingredients, result.id)
+{
+  "type": "minecraft:crafting_shaped",
+  "group": f"more_{category_plural}",
+  "key": {
+    "#": f"minecraft:{ingredient_1}",
+    "W": f"minecraft:{ingredient_2}"
+  },
+  "pattern": [
+    "W#W",
+    "W#W"
+  ],
+  "result": {
+    "count": {count},
+    "id": f"minecraft:{result}"
+  }
+}
