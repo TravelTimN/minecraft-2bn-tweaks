@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "universal_dyeing_sand",
+  "pattern": [
+    "###",
+    "#O#",
+    "###"
+  ],
+  "key": {
+    "#": "minecraft:sand",
+    "O": "#universal_dyeing:dyes/red_dye"
+  },
+  "result": {
+    "id": "minecraft:red_sand",
+    "count": 8
+  }
+}

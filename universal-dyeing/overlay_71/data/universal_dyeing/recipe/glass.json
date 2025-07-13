@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "universal_dyeing_stained_glass",
+  "pattern": [
+    "###",
+    "#O#",
+    "###"
+  ],
+  "key": {
+    "#": "#universal_dyeing:stained_glass",
+    "O": "minecraft:ice"
+  },
+  "result": {
+    "id": "minecraft:glass",
+    "count": 8
+  }
+}

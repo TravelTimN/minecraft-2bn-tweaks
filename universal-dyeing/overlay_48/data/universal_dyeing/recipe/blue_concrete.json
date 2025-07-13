@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "universal_dyeing_concrete",
+  "pattern": [
+    "###",
+    "#O#",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "tag": "universal_dyeing:concrete"
+    },
+    "O": {
+      "tag": "universal_dyeing:dyes/blue_dye"
+    }
+  },
+  "result": {
+    "id": "minecraft:blue_concrete",
+    "count": 8
+  }
+}

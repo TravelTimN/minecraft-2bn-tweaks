@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "universal_dyeing_stained_glass_pane",
+  "pattern": [
+    "###",
+    "#O#",
+    "###"
+  ],
+  "key": {
+    "#": "#universal_dyeing:stained_glass_pane",
+    "O": "#universal_dyeing:dyes/green_dye"
+  },
+  "result": {
+    "id": "minecraft:green_stained_glass_pane",
+    "count": 8
+  }
+}

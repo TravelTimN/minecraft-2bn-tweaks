@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "universal_dyeing_candle",
+  "pattern": [
+    "###",
+    "#O#",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "tag": "universal_dyeing:candle"
+    },
+    "O": {
+      "tag": "universal_dyeing:dyes/black_dye"
+    }
+  },
+  "result": {
+    "item": "minecraft:black_candle",
+    "count": 8
+  }
+}

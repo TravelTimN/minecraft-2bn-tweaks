@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "universal_dyeing_concrete",
+  "pattern": [
+    "###",
+    "#O#",
+    "###"
+  ],
+  "key": {
+    "#": "#universal_dyeing:concrete",
+    "O": "#universal_dyeing:dyes/cyan_dye"
+  },
+  "result": {
+    "id": "minecraft:cyan_concrete",
+    "count": 8
+  }
+}

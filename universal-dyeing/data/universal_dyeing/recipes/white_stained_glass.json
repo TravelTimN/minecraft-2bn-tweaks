@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "universal_dyeing_stained_glass",
+  "pattern": [
+    "###",
+    "#O#",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "tag": "universal_dyeing:stained_glass"
+    },
+    "O": {
+      "tag": "universal_dyeing:dyes/white_dye"
+    }
+  },
+  "result": {
+    "item": "minecraft:white_stained_glass",
+    "count": 8
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "universal_dyeing_terracotta",
+  "pattern": [
+    "###",
+    "#O#",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "tag": "universal_dyeing:terracotta"
+    },
+    "O": {
+      "tag": "universal_dyeing:dyes/brown_dye"
+    }
+  },
+  "result": {
+    "item": "minecraft:brown_terracotta",
+    "count": 8
+  }
+}
