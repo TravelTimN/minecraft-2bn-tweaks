@@ -1,0 +1,145 @@
+2BN-Tweaks | Universal-Dyeing
+
+
+=== INFO ===
+
+Inspiration from Vanilla Tweaks, but heavily modified.
+
+
+=== UPDATES ===
+
+https://minecraft.wiki/w/Pack_format#List_of_data_pack_formats
+
+1.20.0 [07 JUN 2023]:
+  Pack: 15
+  "Trails & Tales": Introduced pink petals (pink), pitcher plant (cyan), torchflower (orange)
+  Directory: data/<namespace>/recipes/..
+  Recipe Result Attribute: `item`
+  Template: Recipe #1
+  Recipes: legacy (self)
+
+1.20.2 [21 SEP 2023]:
+  Pack: 18
+  Mojang introduced `overlay_#` in `pack.mcmeta`.
+  No need for `overlay_18`, recipe format is unchanged.
+
+1.21.0 [13 JUN 2024]:
+  Pack: 48
+  "Tricky Trials": Introduced more copper & tuff blocks/items.
+  Renamed Recipe Directory: `recipes/` -> `recipe/`
+  Changed Recipe Result Attribute: `item` -> `id`
+  Directory: overlay_48/data/<namespace>/recipe/..
+  Template: Recipe #2
+  Recipes: legacy (redo), 48 (self)
+
+1.21.2 [22 OCT 2024]:
+  Pack: 57
+  "Bundles of Bravery": Introduced the new crafting recipe format.
+  Recipe ingredients use flat-method, instead of dicts with `tag`/`item`.
+  Directory: overlay_57/data/<namespace>/recipe/..
+  Template: Recipe #3
+  Recipes: legacy (redo), 48 (redo), 57 (self)
+
+1.21.4 [03 DEC 2024]:
+  Pack: 61
+  "The Garden Awakens": Introduced the eyeblossom (open: orange/closed: gray).
+  Directory: overlay_61/data/<namespace>/recipe/..
+  Template: Recipe #3
+  Recipes: legacy (redo), 48 (redo), 57 (redo), 61 (self)
+
+1.21.5 [25 MAR 2025]:
+  Pack: 71
+  "Spring to Life": Introduced the cactus flower (pink).
+  Directory: overlay_71/data/<namespace>/recipe/..
+  Template: Recipe #3
+  Recipes: legacy (redo), 48 (redo), 57 (redo), 61 (redo), 71 (self)
+
+1.21.8 (⚠️ unconfirmed) [TBC]:
+  Pack: 83 (⚠️ unconfirmed)
+  "Fall-Drop 2025": Introduces copper chests (from Copper Golems).
+  Directory: overlay_83/data/<namespace>/recipe/..
+  Template: Recipe #3
+  Recipes: legacy (redo), 48 (redo), 57 (redo), 61 (redo), 71 (redo), 83 (⚠️ unconfirmed/self)
+
+
+=== GENERATED ===
+
+  - Legacy      : recipes = 154 | tag items = 9 | dye tags = 16
+  - Overlay 48  : recipes = 154 | tag items = 9 | dye tags = 16
+  - Overlay 57  : recipes = 154 | tag items = 9 | dye tags = 16
+  - Overlay 61  : recipes = 154 | tag items = 9 | dye tags = 16
+  - Overlay 71  : recipes = 154 | tag items = 9 | dye tags = 16
+
+
+=== BUGS ===
+
+✅ None - all fixed!
+
+
+
+=== RECIPE FORMATS : SHAPED ===
+
+Recipe #1: 1.20.0 - 1.20.6 (result.item)
+{
+    "type": "minecraft:crafting_shaped",
+    "group": "universal_dyeing_{category}",
+    "pattern": [
+        "###",
+        "#O#",
+        "###"
+    ],
+    "key": {
+        "#": {
+          "tag": "universal_dyeing:{category}"
+        },
+        "O": {
+          "tag": "universal_dyeing:dyes/{color}_dye"
+        }
+    },
+    "result": {
+        "item": "minecraft:{color}_{category}",
+        "count": {count}
+    }
+}
+
+Recipe #2: 1.21.0 - 1.21.1 (result.item -> result.id)
+{
+    "type": "minecraft:crafting_shaped",
+    "group": "universal_dyeing_{category}",
+    "pattern": [
+        "###",
+        "#O#",
+        "###"
+    ],
+    "key": {
+        "#": {
+          "tag": "universal_dyeing:w{category}"
+        },
+        "O": {
+          "tag": "universal_dyeing:dyes/{color}_dye"
+        }
+    },
+    "result": {
+        "id": "minecraft:{color}_{category}",
+        "count": {count}
+    }
+}
+
+Recipe #3: 1.21.2+ (flat ingredients, result.id)
+{
+    "type": "minecraft:crafting_shaped",
+    "group": "universal_dyeing_{category}",
+    "pattern": [
+        "###",
+        "#O#",
+        "###"
+    ],
+    "key": {
+        "#": "#universal_dyeing:{category}",
+        "O": "#universal_dyeing:dyes/{color}_dye"
+    },
+    "result": {
+        "id": "minecraft:{color}_{category}",
+        "count": {count}
+    }
+}
