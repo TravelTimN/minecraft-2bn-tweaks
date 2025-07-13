@@ -14,14 +14,25 @@
 | ✨ | [**Craftable Rarities**](#-craftable-rarities) | [💾](#download-2bn-craftable-rarities) |
 | 💀 | [**Craftable Skulls**](#-craftable-skulls) | [💾](#download-2bn-craftable-skulls) |
 | ➕🧱 | [**More Blocks**](#-more-blocks) | [💾](#download-2bn-more-blocks) |
-| ♻️🌈 | [**Universal Dyeing**](#️-universal-dyeing) | [💾](#download-2bn-universal-dyeing) |
+| ♻️🎨 | [**Universal Dyeing**](#️-universal-dyeing) | [💾](#download-2bn-universal-dyeing) |
 | ⚖️ | [**License**](#️-license) | |
 
 ---
 
 ## ♻️ [Back-to-Blocks](back-to-blocks/)
 
-A Minecraft datapack that adds hundreds of crafting recipes to reverse decorative/utility blocks back into a *lossy* base form (not all materials are fully recoverable). Go beyond slabs and stairs - reclaim doors, ladders, grates, workstations, bulbs, trapdoors, pressure plates, chests, and much more.
+A Minecraft datapack that adds hundreds of crafting recipes to reverse decorative/utility blocks back into a *lossy*<sup>*</sup> base form. Go beyond slabs and stairs; reclaim any of the supported block types below.
+
+| | | | |
+| --- | --- | --- | --- |
+| boats | chest boats | rafts | chest rafts |
+| buttons | pressure plates | doors | trapdoors |
+| signs | hanging signs | slabs | stairs |
+| fences | fence gates | walls | |
+| quartz | redstone components | workstations | utility blocks |
+| bulbs | grates | resin | |
+
+<sup>*</sup> Lossy base form means the original materials aren't fully recoverable; reverse-crafting comes with a deliberate loss, and is not intended to be 1:1.
 
 **[View the full recipe list in Google Sheets](https://docs.google.com/spreadsheets/d/1t9lmXWqlyno15NTqfUDTYcuZuNVCAmxs4Pt4w9a5CPI)**
 
@@ -29,7 +40,7 @@ A Minecraft datapack that adds hundreds of crafting recipes to reverse decorativ
 
 | Supported Versions | Download (.zip) |
 | --- | --- |
-| 1.20.0 – 1.21.7+ | [💾 Download 2BN-Tweaks: Back-to-Blocks](back-to-blocks/2BN-Tweaks_Back-to-Blocks.zip) |
+| 1.20.0 – 1.21.7+ | [💾 Download 2BN-Tweaks: Back-to-Blocks](back-to-blocks/2BN-Tweaks_Back-to-Blocks.zip?raw=1) |
 
 ---
 
@@ -145,41 +156,55 @@ Do you hate working with creepers? Especially charged creepers? So do we! Now yo
 
 ## ➕🧱 [More Blocks](more-blocks/)
 
-A Minecraft datapack that enhances vanilla crafting by increasing the **yield** of many decorative and utility block recipes. No new blocks, just **more** of the ones you already craft. Get smarter returns for bark (wood/hyphae), bricks, pressure plates, stairs, and trapdoors. Build big, waste less. Quantities align nicely with reverse crafting from our [Back-to-Blocks](#️-back-to-blocks) datapack.
+A Minecraft datapack that enhances vanilla crafting by increasing the **yield** of many decorative and utility block recipes. No new blocks, just **more** of the ones you already craft. Get smarter returns for all supported block types below. Build big, waste less. Quantities align nicely with reverse crafting from our [Back-to-Blocks](#️-back-to-blocks) datapack.
+
+| | Vanilla | 2BN-Tweaks |
+| --- | --- | --- |
+| bark (wood/hyphae) | 3 | 4 |
+| bricks | 1 | 4 |
+| pressure plates | 1 | 2 |
+| stairs | 4 | 6 / 8 <sup>*</sup> |
+| trapdoors | 1 | 2 / 6 <sup>**</sup> |
+
+<sup>*</sup> Wooden stairs craft into 8; all others craft into 6 (to align with Back-to-Blocks).
+
+<sup>**</sup> Wooden trapdoors craft into 6; ore trapdoors craft into 2 (to align with Back-to-Blocks).
 
 **[View the full recipe list in Google Sheets](https://docs.google.com/spreadsheets/d/1t9lmXWqlyno15NTqfUDTYcuZuNVCAmxs4Pt4w9a5CPI/edit?gid=1434501916#gid=1434501916)**
 
-### Download 2BN More Blocks
+### Download 2BN More-Blocks
 
 | Supported Versions | Download (.zip) |
 | --- | --- |
-| 1.20.0 – 1.21.7+ | [💾 Download 2BN-Tweaks: More-Blocks](more-blocks/2BN-Tweaks_More-Blocks.zip) |
+| 1.20.0 – 1.21.7+ | [💾 Download 2BN-Tweaks: More-Blocks](more-blocks/2BN-Tweaks_More-Blocks.zip?raw=1) |
 
 ---
 
-## ♻️🌈 [Universal Dyeing](universal-dyeing/)
+## ♻️🎨 [Universal Dyeing](universal-dyeing/)
 
-Original inspiration taken from [Vanilla Tweaks: Crafting Tweaks > QoL](https://vanillatweaks.net/picker/crafting-tweaks), and enhanced to include even more universal dyeing options. Anything that uses dye can be found within this package.
+A Minecraft datapack that breaks the vanilla dye barrier. **Re-dye** or **un-dye** several types of blocks. Whether you're fixing a color mistake, or just feeling fickle, this pack lets you flex your palette.
 
-Vanilla Tweaks only has a limited amount of universal dyeing, but we've taken it even further. Now you can re-dye any of the following:
+Use **any dye** to recolor these blocks, or use **ice** to scrub them back to their non-dyed form<sup>*</sup>.
 
 | | | |
-| :---: | :---: | :---: |
-| [beds](https://minecraft.wiki/w/Bed) | [candles](https://minecraft.wiki/w/Candle) | [wools](https://minecraft.wiki/w/Wool) |
-| [concrete powder](https://minecraft.wiki/w/Concrete_Powder) | [concrete](https://minecraft.wiki/w/Concrete) | |
-| [terracotta](https://minecraft.wiki/w/Terracotta) | [glazed terracotta](https://minecraft.wiki/w/Glazed_Terracotta) | |
-| [stained glass](https://minecraft.wiki/w/Stained_Glass) | [stained glass panes](https://minecraft.wiki/w/Stained_Glass_Pane) | |
-| [red sand](https://minecraft.wiki/w/Red_Sand) | [red sandstone](https://minecraft.wiki/w/Red_Sandstone) | [smooth red sandstone](https://minecraft.wiki/w/Smooth_Red_Sandstone) |
+| --- | --- | --- |
+| candles<sup>*</sup> | | |
+| carpets | wool | |
+| concrete | concrete powder | |
+| terracotta* | glazed terracotta | |
+| stained glass<sup>*</sup> | stained glass panes<sup>*</sup> | |
+| sand | sandstone | smooth sandstone |
+| red sand<sup>*</sup> | red sandstone<sup>*</sup> | smooth red sandstone<sup>*</sup> |
 
-[Ice](https://minecraft.wiki/w/Ice) can be used to remove color from items/blocks that have a natural state without dye (candle, glass, glass pane, terracotta).
+<sup>*</sup> These blocks can be **un-dyed** using ice to revert them to their natural, uncolored state.
 
-### Download 2BN Universal Dyeing
+**[View the full recipe list in Google Sheets](https://docs.google.com/spreadsheets/d/1t9lmXWqlyno15NTqfUDTYcuZuNVCAmxs4Pt4w9a5CPI/edit?gid=931243409#gid=931243409)**
 
-| Version | Download (.zip) |
+### Download 2BN Universal-Dyeing
+
+| Supported Versions | Download (.zip) |
 | --- | --- |
-| 1.21.4 | [Download 💾](universal-dyeing/1.21.4/2bn-universal-dyeing/2bn-universal-dyeing.zip) |
-| 1.21.0 | [Download 💾](universal-dyeing/1.21.0/2bn-universal-dyeing/2bn-universal-dyeing.zip) |
-| 1.20.4 | [Download 💾](universal-dyeing/1.20.4/2bn-universal-dyes-VTmodified/2bn-universal-dyes-VTmodified.zip) |
+| 1.20.0 – 1.21.7+ | [💾 Download 2BN-Tweaks: Universal-Dyeing](universal-dyeing/2BN-Tweaks_Universal-Dyeing.zip?raw=1) |
 
 ---
 
