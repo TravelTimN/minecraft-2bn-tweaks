@@ -159,16 +159,16 @@ Do you hate working with creepers? Especially charged creepers? So do we! Now yo
 A Minecraft datapack that enhances vanilla crafting by increasing the **yield** of many decorative and utility block recipes. No new blocks, just **more** of the ones you already craft. Get smarter returns for all supported block types below. Build big, waste less. Quantities align nicely with reverse crafting from our [Back-to-Blocks](#️-back-to-blocks) datapack.
 
 | | Vanilla | 2BN-Tweaks |
-| --- | --- | --- |
+| --- | :---: | :---: |
 | bark (wood/hyphae) | 3 | 4 |
 | bricks | 1 | 4 |
 | pressure plates | 1 | 2 |
 | stairs | 4 | 6 / 8 <sup>*</sup> |
-| trapdoors | 1 | 2 / 6 <sup>**</sup> |
+| trapdoors | 1 | 2 / 4 / 6 <sup>**</sup> |
 
-<sup>*</sup> Wooden stairs craft into 8; all others craft into 6 (to align with Back-to-Blocks).
+<sup>*</sup> Wood = 8 / Others = 6.
 
-<sup>**</sup> Wooden trapdoors craft into 6; ore trapdoors craft into 2 (to align with Back-to-Blocks).
+<sup>**</sup> Iron = 2 / Copper = 4 / Wood = 6.
 
 **[View the full recipe list in Google Sheets](https://docs.google.com/spreadsheets/d/1t9lmXWqlyno15NTqfUDTYcuZuNVCAmxs4Pt4w9a5CPI/edit?gid=1434501916#gid=1434501916)**
 
