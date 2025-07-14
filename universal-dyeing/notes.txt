@@ -82,7 +82,7 @@ https://minecraft.wiki/w/Pack_format#List_of_data_pack_formats
 Recipe #1: 1.20.0 - 1.20.6 (result.item)
 {
     "type": "minecraft:crafting_shaped",
-    "group": "universal_dyeing_{category}",
+    "group": f"universal_dyeing_{category}",
     "pattern": [
         "###",
         "#O#",
@@ -90,14 +90,14 @@ Recipe #1: 1.20.0 - 1.20.6 (result.item)
     ],
     "key": {
         "#": {
-          "tag": "universal_dyeing:{category}"
+          "tag": f"universal_dyeing:{category}"
         },
         "O": {
-          "tag": "universal_dyeing:dyes/{color}_dye"
+          "tag": f"universal_dyeing:dyes/{color}_dye"
         }
     },
     "result": {
-        "item": "minecraft:{color}_{category}",
+        "item": f"minecraft:{color}_{category}",
         "count": {count}
     }
 }
@@ -105,7 +105,7 @@ Recipe #1: 1.20.0 - 1.20.6 (result.item)
 Recipe #2: 1.21.0 - 1.21.1 (result.item -> result.id)
 {
     "type": "minecraft:crafting_shaped",
-    "group": "universal_dyeing_{category}",
+    "group": f"universal_dyeing_{category}",
     "pattern": [
         "###",
         "#O#",
@@ -113,14 +113,14 @@ Recipe #2: 1.21.0 - 1.21.1 (result.item -> result.id)
     ],
     "key": {
         "#": {
-          "tag": "universal_dyeing:w{category}"
+          "tag": f"universal_dyeing:w{category}"
         },
         "O": {
-          "tag": "universal_dyeing:dyes/{color}_dye"
+          "tag": f"universal_dyeing:dyes/{color}_dye"
         }
     },
     "result": {
-        "id": "minecraft:{color}_{category}",
+        "id": f"minecraft:{color}_{category}",
         "count": {count}
     }
 }
@@ -128,18 +128,18 @@ Recipe #2: 1.21.0 - 1.21.1 (result.item -> result.id)
 Recipe #3: 1.21.2+ (flat ingredients, result.id)
 {
     "type": "minecraft:crafting_shaped",
-    "group": "universal_dyeing_{category}",
+    "group": f"universal_dyeing_{category}",
     "pattern": [
         "###",
         "#O#",
         "###"
     ],
     "key": {
-        "#": "#universal_dyeing:{category}",
-        "O": "#universal_dyeing:dyes/{color}_dye"
+        "#": f"#universal_dyeing:{category}",
+        "O": f"#universal_dyeing:dyes/{color}_dye"
     },
     "result": {
-        "id": "minecraft:{color}_{category}",
+        "id": f"minecraft:{color}_{category}",
         "count": {count}
     }
 }
