@@ -86,7 +86,7 @@ Recipe #1: 1.20.0 - 1.20.6 (result.item)
   ],
   "result": {
     "count": {count},
-    "item": "minecraft:{recipe_result}"
+    "item": f"minecraft:{recipe_result}"
   }
 }
 
