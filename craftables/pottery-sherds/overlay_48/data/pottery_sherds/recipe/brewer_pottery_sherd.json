@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "pottery_sherds",
+  "pattern": [
+    "BSB",
+    "BTB",
+    "BBB"
+  ],
+  "key": {
+    "B": {
+      "item": "minecraft:brick"
+    },
+    "T": {
+      "item": "minecraft:terracotta"
+    },
+    "S": {
+      "item": "minecraft:brewer_pottery_sherd"
+    }
+  },
+  "result": {
+    "id": "minecraft:brewer_pottery_sherd",
+    "count": 4
+  }
+}
