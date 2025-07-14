@@ -7,14 +7,14 @@
 | | Crafting Tweaks | |
 | :---: | --- | ---: |
 | ♻️ | [**Back-to-Blocks**](#️-back-to-blocks) | [💾](#download-2bn-tweaks-back-to-blocks) |
+| 🏺 | [**Pottery Sherds**](#-pottery-sherds) | [💾](#download-2bn-tweaks-craftable-pottery-sherds) |
 | 🎨 | [**Craftable Dyes**](#-craftable-dyes) | [💾](#download-2bn-craftable-dyes) |
 | 🪽 | [**Craftable Elytra**](#-craftable-elytra) | [💾](#download-2bn-craftable-elytra) |
 | 💿 | [**Craftable Music Discs**](#-craftable-music-discs) | [💾](#download-2bn-craftable-music-discs) |
-| 🏺 | [**Craftable Pottery Sherds**](#-craftable-pottery-sherds) | [💾](#download-2bn-craftable-pottery-sherds) |
 | ✨ | [**Craftable Rarities**](#-craftable-rarities) | [💾](#download-2bn-craftable-rarities) |
 | 💀 | [**Craftable Skulls**](#-craftable-skulls) | [💾](#download-2bn-craftable-skulls) |
-| ➕🧱 | [**More Blocks**](#-more-blocks) | [💾](#download-2bn-more-blocks) |
-| ♻️🎨 | [**Universal Dyeing**](#️-universal-dyeing) | [💾](#download-2bn-universal-dyeing) |
+| ➕🧱 | [**More Blocks**](#-more-blocks) | [💾](#download-2bn-tweaks-more-blocks) |
+| ♻️🎨 | [**Universal Dyeing**](#️-universal-dyeing) | [💾](#download-2bn-tweaks-universal-dyeing) |
 | ⚖️ | [**License**](#️-license) | |
 
 ---
@@ -41,6 +41,30 @@ A Minecraft datapack that adds hundreds of crafting recipes to reverse decorativ
 | Supported Versions | Download (.zip) |
 | --- | --- |
 | 1.20.0 – 1.21.7+ | [💾 Download 2BN-Tweaks: Back-to-Blocks](back-to-blocks/2BN-Tweaks_Back-to-Blocks.zip?raw=1) |
+
+---
+
+## 🔨📦 [Craftables](craftables/)
+
+A modular collection of Minecraft datapacks that unlock crafting recipes for **rare**, **unobtainable**, or just annoyingly grindy items. These recipes are balanced, lore-friendly (where possible), and designed with younger or less hardcore players in mind.
+
+Each craftable tweak is its own standalone pack. Pick and choose the ones you want.
+
+---
+
+### 🏺 [Pottery Sherds](pottery-sherds/)
+
+Triplicate those precious archaeological finds! This datapack lets you **clone pottery sherds** using bricks and terracotta. Simply combine any pottery sherd with supporting materials to get three more, so you end up with **4 total**.
+
+Perfect for decorative builders or lore nerds who want matching sets without raiding every suspicious sand pile in a 1,000-block radius.
+
+![pottery-sherds](craftables/pottery-sherds/pottery-sherds.png)
+
+### Download 2BN-Tweaks Craftable Pottery Sherds
+
+| Supported Versions | Download (.zip) |
+| --- | --- |
+| 1.20.0 – 1.21.7+ | [💾 Download 2BN-Tweaks: Craftable Pottery-Sherds](craftables\pottery-sherds\2BN-Tweaks_Craftable_Pottery-Sherds.zip?raw=1) |
 
 ---
 
@@ -88,28 +112,6 @@ Music fans, listen up! Gone are the days where you must hunt for your favorite [
 | --- | --- |
 | 1.21.0 | [Download 💾](craftable-music-discs/1.21.0/2bn-craftable-music-discs/2bn-craftable-music-discs.zip) |
 | 1.20.4 | [Download 💾](craftable-music-discs/1.20.4/2bn-craftable-discs/2bn-craftable-discs.zip) |
-
----
-
-## 🏺 [Craftable Pottery Sherds](craftable-pottery-sherds/)
-
-Running low on your favorite pottery sherds? Now you can craft more - well, technically, triplicate them! Just combine:
-
-- 1 sherd of your choice
-- 1 terracotta
-- 7 bricks
-
-... and you'll receive 4 identical sherds in return - that's a net gain of +3!
-
-![pottery sherds](craftable-pottery-sherds/screenshots/pottery-sherds.png)
-
-### Download 2BN Craftable Pottery Sherds
-
-| Version | Download (.zip) |
-| --- | --- |
-| 1.21.4 | [Download 💾](craftable-pottery-sherds/1.21.4/2bn-craftable-pottery-sherds/2bn-craftable-pottery-sherds_1.21.4.zip) |
-| 1.21.0 | [Download 💾](craftable-pottery-sherds/1.21.0/2bn-craftable-pottery-sherds/2bn-craftable-pottery-sherds.zip) |
-| 1.20.4 | [Download 💾](craftable-pottery-sherds/1.20.4/2bn-craftable-sherds/2bn-craftable-sherds.zip) |
 
 ---
 
@@ -172,7 +174,7 @@ A Minecraft datapack that enhances vanilla crafting by increasing the **yield** 
 
 **[View the full recipe list in Google Sheets](https://docs.google.com/spreadsheets/d/1t9lmXWqlyno15NTqfUDTYcuZuNVCAmxs4Pt4w9a5CPI/edit?gid=1434501916#gid=1434501916)**
 
-### Download 2BN More-Blocks
+### Download 2BN-Tweaks More-Blocks
 
 | Supported Versions | Download (.zip) |
 | --- | --- |
@@ -200,7 +202,7 @@ Use **any dye** to recolor these blocks, or use **ice** to scrub them back to th
 
 **[View the full recipe list in Google Sheets](https://docs.google.com/spreadsheets/d/1t9lmXWqlyno15NTqfUDTYcuZuNVCAmxs4Pt4w9a5CPI/edit?gid=931243409#gid=931243409)**
 
-### Download 2BN Universal-Dyeing
+### Download 2BN-Tweaks Universal-Dyeing
 
 | Supported Versions | Download (.zip) |
 | --- | --- |
