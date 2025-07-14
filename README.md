@@ -52,7 +52,7 @@ Each craftable tweak is its own standalone pack. Pick and choose the ones you wa
 
 ---
 
-### 🏺 [Pottery Sherds](pottery-sherds/)
+### 🏺 [Pottery Sherds](craftables/pottery-sherds/)
 
 Triplicate those precious archaeological finds! This datapack lets you **clone pottery sherds** using bricks and terracotta. Simply combine any pottery sherd with supporting materials to get three more, so you end up with **4 total**.
 
