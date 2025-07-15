@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "dyes",
+  "ingredients": [
+    [
+      {
+        "item": "minecraft:amethyst_shard"
+      },
+      {
+        "item": "minecraft:chorus_fruit"
+      }
+    ]
+  ],
+  "result": {
+    "id": "minecraft:purple_dye",
+    "count": 1
+  }
+}
