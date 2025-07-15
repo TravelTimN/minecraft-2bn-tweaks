@@ -7,8 +7,8 @@
 | | Crafting Tweaks | |
 | :---: | --- | ---: |
 | ♻️ | [**Back-to-Blocks**](#️-back-to-blocks) | [💾](#download-2bn-tweaks-back-to-blocks) |
+| 🎨 | [**Dyes**](#-dyes) | [💾](#download-2bn-tweaks-craftable-dyes) |
 | 🏺 | [**Pottery Sherds**](#-pottery-sherds) | [💾](#download-2bn-tweaks-craftable-pottery-sherds) |
-| 🎨 | [**Craftable Dyes**](#-craftable-dyes) | [💾](#download-2bn-craftable-dyes) |
 | 🪽 | [**Craftable Elytra**](#-craftable-elytra) | [💾](#download-2bn-craftable-elytra) |
 | 💿 | [**Craftable Music Discs**](#-craftable-music-discs) | [💾](#download-2bn-craftable-music-discs) |
 | ✨ | [**Craftable Rarities**](#-craftable-rarities) | [💾](#download-2bn-craftable-rarities) |
@@ -40,7 +40,7 @@ A Minecraft datapack that adds hundreds of crafting recipes to reverse decorativ
 
 | Supported Versions | Download (.zip) |
 | --- | --- |
-| 1.20.0 – 1.21.7+ | [💾 Download 2BN-Tweaks: Back-to-Blocks](back-to-blocks/2BN-Tweaks_Back-to-Blocks.zip?raw=1) |
+| 1.20.0 – 1.21.7+ | 💾 [Download 2BN-Tweaks: Back-to-Blocks](back-to-blocks/2BN-Tweaks_Back-to-Blocks.zip?raw=1) |
 
 ---
 
@@ -49,6 +49,27 @@ A Minecraft datapack that adds hundreds of crafting recipes to reverse decorativ
 A modular collection of Minecraft datapacks that unlock crafting recipes for **rare**, **unobtainable**, or just annoyingly grindy items. These recipes are balanced, lore-friendly (where possible), and designed with younger or less hardcore players in mind.
 
 Each craftable tweak is its own standalone pack. Pick and choose the ones you want.
+
+---
+
+### 🎨 [Dyes](craftables/dyes/)
+
+This datapack expands your dye-making repertoire with **alternative, lore-friendly recipes** for a handful of hard-to-find or biome-dependent colors. Whether you're stuck in a snowy wasteland or just tired of chasing squids, you’ll appreciate the pigmental perks below:
+
+| Dye | Craft Options | Supports |
+| --- | --- | --- |
+| 🧡 Orange | Resin Clump | 1.21.4+ |
+| 💚 Green | Kelp | 1.20.0+ |
+| 💜 Purple | Chorus Fruit, Amethyst Shard | 1.20.0+ |
+| 🖤 Black | Coal, Charcoal | 1.20.0+ |
+
+All recipes aim to be balanced, thematic, and helpful for younger players, or just anyone who’s dyeing for a better solution.
+
+### Download 2BN-Tweaks Craftable Dyes
+
+| Supported Versions | Download (.zip) |
+| --- | --- |
+| 1.20.0 - 1.21.7+ | 💾 [Download 2BN-Tweaks: Craftable Dyes](craftables/dyes/2BN-Tweaks_Craftable_Dyes.zip?raw=1) |
 
 ---
 
@@ -64,24 +85,7 @@ Perfect for decorative builders or lore nerds who want matching sets without rai
 
 | Supported Versions | Download (.zip) |
 | --- | --- |
-| 1.20.0 – 1.21.7+ | [💾 Download 2BN-Tweaks: Craftable Pottery-Sherds](craftables/pottery-sherds/2BN-Tweaks_Craftable_Pottery-Sherds.zip?raw=1) |
-
----
-
-## 🎨 [Craftable Dyes](craftable-dyes/)
-
-Sometimes [dyes](https://minecraft.wiki/w/Dye) can be tough to obtain, or take forever to smelt. We've added a solution to allow easier access to the following dyes:
-
-| Dye | Recipe | How |
-| --- | --- | --- |
-| black | coal / charcoal | crafting table |
-| green | kelp | crafting table |
-
-### Download 2BN Craftable Dyes
-
-| Version | Download (.zip) |
-| --- | --- |
-| 1.21.4 | [Download 💾](craftable-dyes/1.21.4/2bn-craftable-dyes/2bn-craftable-dyes_1.21.4.zip) |
+| 1.20.0 – 1.21.7+ | 💾 [Download 2BN-Tweaks: Craftable Pottery-Sherds](craftables/pottery-sherds/2BN-Tweaks_Craftable_Pottery-Sherds.zip?raw=1) |
 
 ---
 
@@ -178,7 +182,7 @@ A Minecraft datapack that enhances vanilla crafting by increasing the **yield** 
 
 | Supported Versions | Download (.zip) |
 | --- | --- |
-| 1.20.0 – 1.21.7+ | [💾 Download 2BN-Tweaks: More-Blocks](more-blocks/2BN-Tweaks_More-Blocks.zip?raw=1) |
+| 1.20.0 – 1.21.7+ | 💾 [Download 2BN-Tweaks: More-Blocks](more-blocks/2BN-Tweaks_More-Blocks.zip?raw=1) |
 
 ---
 
@@ -206,7 +210,7 @@ Use **any dye** to recolor these blocks, or use **ice** to scrub them back to th
 
 | Supported Versions | Download (.zip) |
 | --- | --- |
-| 1.20.0 – 1.21.7+ | [💾 Download 2BN-Tweaks: Universal-Dyeing](universal-dyeing/2BN-Tweaks_Universal-Dyeing.zip?raw=1) |
+| 1.20.0 – 1.21.7+ | 💾 [Download 2BN-Tweaks: Universal-Dyeing](universal-dyeing/2BN-Tweaks_Universal-Dyeing.zip?raw=1) |
 
 ---
 
