@@ -9,10 +9,10 @@
 | ♻️ | [**Back-to-Blocks**](#️-back-to-blocks) | [💾](#download-2bn-tweaks-back-to-blocks) |
 | 🎨 | [**Dyes**](#-dyes) | [💾](#download-2bn-tweaks-craftable-dyes) |
 | 🏺 | [**Pottery Sherds**](#-pottery-sherds) | [💾](#download-2bn-tweaks-craftable-pottery-sherds) |
+| 💀 | [**Skulls**](#-skulls) | [💾](#download-2bn-tweaks-craftable-skulls) |
 | 🪽 | [**Craftable Elytra**](#-craftable-elytra) | [💾](#download-2bn-craftable-elytra) |
 | 💿 | [**Craftable Music Discs**](#-craftable-music-discs) | [💾](#download-2bn-craftable-music-discs) |
 | ✨ | [**Craftable Rarities**](#-craftable-rarities) | [💾](#download-2bn-craftable-rarities) |
-| 💀 | [**Craftable Skulls**](#-craftable-skulls) | [💾](#download-2bn-craftable-skulls) |
 | ➕🧱 | [**More Blocks**](#-more-blocks) | [💾](#download-2bn-tweaks-more-blocks) |
 | ♻️🎨 | [**Universal Dyeing**](#️-universal-dyeing) | [💾](#download-2bn-tweaks-universal-dyeing) |
 | ⚖️ | [**License**](#️-license) | |
@@ -89,6 +89,22 @@ Perfect for decorative builders or lore nerds who want matching sets without rai
 
 ---
 
+### 💀 [Skulls](craftables/skulls/)
+
+This datapack adds **shaped crafting recipes** to create some iconic mob heads using dye, mob-related items, and a sacrificial *wither skeleton skull*. Great for builders, mapmakers, trophy hunters... or anyone with a flair for the dramatic.
+
+**Note:** Recipes are intentionally expensive and lore-balanced. You're literally *reanimating skulls* here. Not exactly light work, but perhaps easier than using charged creepers, eh?
+
+![craftable skulls](craftables/skulls/craftable-skulls.png)
+
+### Download 2BN-Tweaks Craftable Skulls
+
+| Supported Versions | Download (.zip) |
+| --- | --- |
+| 1.20.0 – 1.21.7+ | 💾 [Download 2BN-Tweaks: Craftable Skulls](craftables/skulls/2BN-Tweaks_Craftable_Skulls.zip?raw=1) |
+
+---
+
 ## 🪽 [Craftable Elytra](craftable-elytra/)
 
 Some players are terrified of visiting the End dimension, and therefore have to pay other players to obtain [Elytra](https://minecraft.wiki/w/Elytra) or Shulker Boxes for them. It might take a bit longer and be rather expensive, but some may consider it far better than going to the End. Plus, for hardcore players, this means potentially having wings before defeating the dragon, Jane!
@@ -136,27 +152,6 @@ Sometimes items are quite difficult to collect, or perhaps you're trying to obta
 | --- | --- |
 | 1.21.0 | [Download 💾](craftable-rarities/1.21.0/2bn-craftable-rarities/2bn-craftable-rarities.zip) |
 | 1.20.4 | [Download 💾](craftable-rarities/1.20.4/2bn-craftable-rarities/2bn-craftable-rarities.zip) |
-
----
-
-## 💀 [Craftable Skulls](craftable-skulls/)
-
-Do you hate working with creepers? Especially charged creepers? So do we! Now you can use wither skulls (which are far easier to obtain) to craft your favorite [mob head](https://minecraft.wiki/w/Head).
-
-- [Creeper Head](https://minecraft.wiki/w/Creeper_Head)
-- [Skeleton Skull](https://minecraft.wiki/w/Skeleton_Skull)
-- [Zombie Head](https://minecraft.wiki/w/Zombie_Head)
-- [Piglin Head](https://minecraft.wiki/w/Piglin_Head)
-- [Dragon Head](https://minecraft.wiki/w/Dragon_Head)
-
-![craftable skulls](craftable-skulls/screenshots/craftable-skulls.png)
-
-### Download 2BN Craftable Skulls
-
-| Version | Download (.zip) |
-| --- | --- |
-| 1.21.0 | [Download 💾](craftable-skulls/1.21.0/2bn-craftable-skulls/2bn-craftable-skulls.zip) |
-| 1.20.4 | [Download 💾](craftable-skulls/1.20.4/2bn-craftable-skulls/2bn-craftable-skulls.zip) |
 
 ---
 
