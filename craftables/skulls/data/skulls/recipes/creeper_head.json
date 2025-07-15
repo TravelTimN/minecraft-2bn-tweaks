@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "heads",
+  "pattern": [
+    "IDI",
+    "DSD",
+    "IDI"
+  ],
+  "key": {
+    "S": {
+      "item": "minecraft:wither_skeleton_skull"
+    },
+    "I": {
+      "item": "minecraft:gunpowder"
+    },
+    "D": {
+      "item": "minecraft:lime_dye"
+    }
+  },
+  "result": {
+    "item": "minecraft:creeper_head",
+    "count": 1
+  }
+}
