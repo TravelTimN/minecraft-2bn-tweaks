@@ -6,15 +6,17 @@
 
 | | Crafting Tweaks | |
 | :---: | --- | ---: |
-| ♻️ | [**Back-to-Blocks**](#️-back-to-blocks) | [💾](#download-2bn-tweaks-back-to-blocks) |
-| 🎨 | [**Dyes**](#-dyes) | [💾](#download-2bn-tweaks-craftable-dyes) |
-| 🪞 | [**Echo Shard**](#-echo-shard) | [💾](#download-2bn-tweaks-craftable-echo-shard) |
-| 🪽 | [**Elytra**](#-elytra) | [💾](#download-2bn-tweaks-craftable-elytra) |
-| 💿 | [**Music Discs**](#-music-discs) | [💾](#download-2bn-tweaks-craftable-music-discs) |
-| 🏺 | [**Pottery Sherds**](#-pottery-sherds) | [💾](#download-2bn-tweaks-craftable-pottery-sherds) |
-| 💀 | [**Skulls**](#-skulls) | [💾](#download-2bn-tweaks-craftable-skulls) |
-| ➕🧱 | [**More Blocks**](#-more-blocks) | [💾](#download-2bn-tweaks-more-blocks) |
-| ♻️🎨 | [**Universal Dyeing**](#️-universal-dyeing) | [💾](#download-2bn-tweaks-universal-dyeing) |
+| ♻️ | [**Back-to-Blocks**](#️-back-to-blocks) | [💾](#download) |
+| 🎨 | [**Dyes**](#-dyes) | [💾](#download-1) |
+| 🪞 | [**Echo Shard**](#-echo-shard) | [💾](#download-2) |
+| 🪽 | [**Elytra**](#-elytra) | [💾](#download-3) |
+| 🍏 | [**Enchanted Golden Apple**](#-enchanted-golden-apple) | [💾](#download-4) |
+| 🌊 | [**Heart of the Sea**](#-heart-of-the-sea) | [💾](#download-5) |
+| 💿 | [**Music Discs**](#-music-discs) | [💾](#download-6) |
+| 🏺 | [**Pottery Sherds**](#-pottery-sherds) | [💾](#download-7) |
+| 💀 | [**Skulls**](#-skulls) | [💾](#download-8) |
+| ➕🧱 | [**More Blocks**](#-more-blocks) | [💾](#download-9) |
+| ♻️🎨 | [**Universal Dyeing**](#️-universal-dyeing) | [💾](#download-10) |
 | ⚖️ | [**License**](#️-license) | |
 
 ---
@@ -36,7 +38,7 @@ A Minecraft datapack that adds hundreds of crafting recipes to reverse decorativ
 
 **[View the full recipe list in Google Sheets](https://docs.google.com/spreadsheets/d/1t9lmXWqlyno15NTqfUDTYcuZuNVCAmxs4Pt4w9a5CPI)**
 
-### Download 2BN-Tweaks Back-to-Blocks
+### Download
 
 | Supported Versions | Download (.zip) |
 | --- | --- |
@@ -44,17 +46,9 @@ A Minecraft datapack that adds hundreds of crafting recipes to reverse decorativ
 
 ---
 
-## 🔨📦 [Craftables](craftables/)
+## 🎨 [Dyes](craftables/dyes/)
 
-A modular collection of Minecraft datapacks that unlock crafting recipes for **rare**, **unobtainable**, or just annoyingly grindy items. These recipes are balanced, lore-friendly (where possible), and designed with younger or less hardcore players in mind.
-
-Each craftable tweak is its own standalone pack. Pick and choose the ones you want.
-
----
-
-### 🎨 [Dyes](craftables/dyes/)
-
-This datapack expands your dye-making repertoire with **alternative, lore-friendly recipes** for a handful of hard-to-find or biome-dependent colors. Whether you're stuck in a snowy wasteland or just tired of chasing squids, you’ll appreciate the pigmental perks below:
+This datapack expands your dye-making repertoire with **alternative, lore-friendly recipes** for a handful of hard-to-find or biome-dependent colors. Whether you're stuck in a snowy wasteland or just tired of chasing squids, you'll appreciate the pigmental perks below:
 
 | Dye | Craft Options | Supports |
 | --- | --- | --- |
@@ -63,9 +57,9 @@ This datapack expands your dye-making repertoire with **alternative, lore-friend
 | 💜 Purple | Chorus Fruit, Amethyst Shard | 1.20.0+ |
 | 🖤 Black | Coal, Charcoal | 1.20.0+ |
 
-All recipes aim to be balanced, thematic, and helpful for younger players, or just anyone who’s dyeing for a better solution.
+All recipes aim to be balanced, thematic, and helpful for younger players, or just anyone who's dyeing for a better solution.
 
-### Download 2BN-Tweaks Craftable Dyes
+### Download
 
 | Supported Versions | Download (.zip) |
 | --- | --- |
@@ -73,7 +67,7 @@ All recipes aim to be balanced, thematic, and helpful for younger players, or ju
 
 ---
 
-### 🪞 [Echo Shard](craftables/echo-shard/)
+## 🪞 [Echo Shard](craftables/echo-shard/)
 
 Craftable echo shards, so you can avoid looting multiple Ancient Cities *and* avoid making eye contact with the Warden. Echoes of wisdom, not screams.
 
@@ -81,7 +75,7 @@ Great for recovery compasses, lore builds, or just skipping the part where you g
 
 ![craftable echo shard](craftables/echo-shard/echo-shard.png)
 
-### Download 2BN-Tweaks Craftable Echo-Shard
+### Download
 
 | Supported Versions | Download (.zip) |
 | --- | --- |
@@ -89,7 +83,7 @@ Great for recovery compasses, lore builds, or just skipping the part where you g
 
 ---
 
-### 🪽 [Elytra](craftables/elytra/)
+## 🪽 [Elytra](craftables/elytra/)
 
 Soar in style - without looting End Cities like a desperate loot goblin. This datapack lets you **craft your own Elytra** using a blend of feather, phantom, and full-blown netherite.
 
@@ -97,7 +91,7 @@ Because let's face it: if you've already fought your way through the Nether and 
 
 ![craftable elytra](craftables/elytra/elytra.png)
 
-### Download 2BN-Tweaks Craftable Elytra
+### Download
 
 | Supported Versions | Download (.zip) |
 | --- | --- |
@@ -105,7 +99,39 @@ Because let's face it: if you've already fought your way through the Nether and 
 
 ---
 
-### 💿 [Music Discs](craftables/music-discs/)
+## 🍏 [Enchanted Golden Apple](craftables/enchanted-golden-apple/)
+
+Bring back the bling! This datapack restores the ability to **craft the Enchanted Golden Apple**, using a recipe so lavish that it might bankrupt your inventory.
+
+Yes, it's expensive. Yes, it's overkill. Yes, it's *exactly what Notch didn't want you to have*. Eat responsibly.
+
+![craftable enchanted golden apple](craftables/enchanted-golden-apple/enchanted_golden_apple.png)
+
+### Download
+
+| Supported Versions | Download (.zip) |
+| --- | --- |
+| 1.20.0 – 1.21.7+ | 💾 [Download 2BN-Tweaks: Craftable Enchanted-Golden-Apple](craftables/enchanted-golden-apple/2BN-Tweaks_Craftable_Enchanted-Golden-Apple.zip?raw=1) |
+
+---
+
+## 🌊 [Heart of the Sea](craftables/heart-of-the-sea/)
+
+This datapack lets you craft a **Heart of the Sea**, saving you from aimlessly looting treasure maps and dodging drowned for a single underwater bauble.
+
+Perfect for conduit crafters, Atlantis builders, or players who just want their ocean base to look like Poseidon's summer home.
+
+![craftable heart of the sea](craftables/heart-of-the-sea/heart-of-the-sea.png)
+
+### Download
+
+| Supported Versions | Download (.zip) |
+| --- | --- |
+| 1.20.0 – 1.21.7+ | 💾 [Download 2BN-Tweaks: Craftable Heart-of-the-Sea](craftables/heart-of-the-sea/2BN-Tweaks_Craftable_Heart-of-the-Sea.zip?raw=1) |
+
+---
+
+## 💿 [Music Discs](craftables/music-discs/)
 
 This datapack adds shaped crafting recipes for every **music disc** and **disc fragment** - because sometimes you just want the tunes without the *kaboom*.
 
@@ -115,7 +141,7 @@ Perfect for jukebox collectors, mapmakers, or anyone who thinks *Pigstep* should
 
 ![craftable music discs](craftables/music-discs/screenshots/2bn-craftable-music-discs.png)
 
-### Download 2BN-Tweaks Craftable Music-Discs
+### Download
 
 | Supported Versions | Download (.zip) |
 | --- | --- |
@@ -123,7 +149,7 @@ Perfect for jukebox collectors, mapmakers, or anyone who thinks *Pigstep* should
 
 ---
 
-### 🏺 [Pottery Sherds](craftables/pottery-sherds/)
+## 🏺 [Pottery Sherds](craftables/pottery-sherds/)
 
 Triplicate those precious archaeological finds! This datapack lets you **clone pottery sherds** using bricks and terracotta. Simply combine any pottery sherd with supporting materials to get three more, so you end up with **4 total**.
 
@@ -131,7 +157,7 @@ Perfect for decorative builders or lore nerds who want matching sets without rai
 
 ![pottery-sherds](craftables/pottery-sherds/pottery-sherds.png)
 
-### Download 2BN-Tweaks Craftable Pottery Sherds
+### Download
 
 | Supported Versions | Download (.zip) |
 | --- | --- |
@@ -139,7 +165,7 @@ Perfect for decorative builders or lore nerds who want matching sets without rai
 
 ---
 
-### 💀 [Skulls](craftables/skulls/)
+## 💀 [Skulls](craftables/skulls/)
 
 This datapack adds **shaped crafting recipes** to create some iconic mob heads using dye, mob-related items, and a sacrificial *wither skeleton skull*. Great for builders, mapmakers, trophy hunters... or anyone with a flair for the dramatic.
 
@@ -147,7 +173,7 @@ This datapack adds **shaped crafting recipes** to create some iconic mob heads u
 
 ![craftable skulls](craftables/skulls/screenshots/2bn-craftable-skulls.png)
 
-### Download 2BN-Tweaks Craftable Skulls
+### Download
 
 | Supported Versions | Download (.zip) |
 | --- | --- |
@@ -173,7 +199,7 @@ A Minecraft datapack that enhances vanilla crafting by increasing the **yield** 
 
 **[View the full recipe list in Google Sheets](https://docs.google.com/spreadsheets/d/1t9lmXWqlyno15NTqfUDTYcuZuNVCAmxs4Pt4w9a5CPI/edit?gid=1434501916#gid=1434501916)**
 
-### Download 2BN-Tweaks More-Blocks
+### Download
 
 | Supported Versions | Download (.zip) |
 | --- | --- |
