@@ -1,0 +1,145 @@
+2BN-Tweaks | Craftables | Music-Discs
+
+
+=== INFO ===
+
+Music to your ears, without having to lure charged creepers towards other mobs.
+
+
+=== UPDATES ===
+
+https://minecraft.wiki/w/Pack_format#List_of_data_pack_formats
+
+1.20.0 [07 JUN 2023]:
+  Pack: 15
+  "Trails & Tales": 16 original music discs and 1 fragment available.
+  Directory: data/<namespace>/recipes/..
+  Recipe Result Attribute: `item`
+  Template: Recipe #1
+  Recipes: legacy (self)
+
+1.20.2 [21 SEP 2023]:
+  Pack: 18
+  Mojang introduced `overlay_#` in `pack.mcmeta`.
+  No need for `overlay_18`, recipe format is unchanged.
+
+1.21.0 [13 JUN 2024]:
+  Pack: 48
+  "Tricky Trials": Introduced creator, creator music box, and precipice.
+  Renamed Recipe Directory: `recipes/` -> `recipe/`
+  Changed Recipe Result Attribute: `item` -> `id`
+  Directory: overlay_48/data/<namespace>/recipe/..
+  Template: Recipe #2
+  Recipes: legacy (redo), 48 (self)
+
+1.21.2 [22 OCT 2024]:
+  Pack: 57
+  "Bundles of Bravery": No new music discs released, but a restructured recipe format announced.
+  Recipe ingredients use flat-method, instead of dicts with `tag`/`item`.
+  Directory: overlay_57/data/<namespace>/recipe/..
+  Template: Recipe #3
+  Recipes: legacy (redo), 48 (redo), 57 (self)
+
+1.21.6 [17 JUN 2025]:
+  Pack: 80
+  "Chase the Skies": Introduced tears music disc.
+  Directory: overlay_80/data/<namespace>/recipe/..
+  Template: Recipe #3
+  Recipes: legacy (redo), 48 (redo), 57 (redo), 80 (self)
+
+1.21.7 [30 JUN 2025]:
+  Pack: 81
+  "Chase the Skies" hotfix: Introduced lava chicken music disc.
+  Directory: overlay_81/data/<namespace>/recipe/..
+  Template: Recipe #3
+  Recipes: legacy (redo), 48 (redo), 57 (redo), 80 (redo), 81 (self)
+
+1.21.8 (⚠️ unconfirmed) [TBC]:
+  Pack: 83 (⚠️ unconfirmed)
+  "Fall-Drop 2025": Introduces magnetic circuit music disc. (⚠️ test only)
+  Directory: overlay_83/data/<namespace>/recipe/..
+  Template: Recipe #3
+  Recipes: legacy (redo), 48 (redo), 57 (redo), 80 (redo), 81 (redo), 83 (⚠️ unconfirmed/self)
+
+
+=== GENERATED ===
+
+  - Legacy      : discs created = 17
+  - Overlay 48  : discs created = 20
+  - Overlay 57  : discs created = 20
+  - Overlay 80  : discs created = 21
+  - Overlay 81  : discs created = 22
+
+
+=== BUGS ===
+
+✅ All versions and overlays tested, no bugs!
+
+
+
+=== RECIPE FORMATS : SHAPED ===
+
+Recipe #1: 1.20.0 - 1.20.6 (result.item)
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "music_discs",
+  "pattern": [
+    "AAA",
+    "ABA",
+    "AAA"
+  ],
+  "key": {
+    "A": {
+      "item": f"minecraft:{ingredient1}"
+    },
+    "B": {
+      "item": f"minecraft:{ingredient2}"
+    }
+  },
+  "result": {
+    "item": f"minecraft:music_disc_{name}",
+    "count": 1
+  }
+}
+
+Recipe #2: 1.21.0 - 1.21.1 (result.item -> result.id)
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "music_discs",
+  "pattern": [
+    "AAA",
+    "ABA",
+    "AAA"
+  ],
+  "key": {
+    "A": {
+      "item": f"minecraft:{ingredient1}"
+    },
+    "B": {
+      "item": f"minecraft:{ingredient2}"
+    }
+  },
+  "result": {
+    "id": f"minecraft:music_disc_{name}",
+    "count": 1
+  }
+}
+
+Recipe #3: 1.21.2+ (flat ingredients, result.id)
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "music_discs",
+  "pattern": [
+    "AAA",
+    "ABA",
+    "AAA"
+  ],
+  "key": {
+    "A": f"minecraft:{ingredient1}",
+    "B": f"minecraft:{ingredient2}"
+  },
+  "result": {
+    "id": f"minecraft:music_disc_{name}",
+    "count": 1
+  }
+}
