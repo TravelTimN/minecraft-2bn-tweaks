@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "music_discs",
+  "pattern": [
+    "AAA",
+    "ABA",
+    "AAA"
+  ],
+  "key": {
+    "A": "minecraft:oxidized_copper",
+    "B": "minecraft:gold_block"
+  },
+  "result": {
+    "id": "minecraft:music_disc_creator",
+    "count": 1
+  }
+}

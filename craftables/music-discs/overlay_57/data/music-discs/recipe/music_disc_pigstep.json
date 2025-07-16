@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "music_discs",
+  "pattern": [
+    "AAA",
+    "ABA",
+    "AAA"
+  ],
+  "key": {
+    "A": "minecraft:red_nether_bricks",
+    "B": "minecraft:gold_block"
+  },
+  "result": {
+    "id": "minecraft:music_disc_pigstep",
+    "count": 1
+  }
+}

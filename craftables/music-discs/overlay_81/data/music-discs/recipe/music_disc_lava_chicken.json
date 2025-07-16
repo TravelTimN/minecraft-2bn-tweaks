@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "music_discs",
+  "pattern": [
+    "AAA",
+    "ABA",
+    "AAA"
+  ],
+  "key": {
+    "A": "minecraft:magma_block",
+    "B": "minecraft:cooked_chicken"
+  },
+  "result": {
+    "id": "minecraft:music_disc_lava_chicken",
+    "count": 1
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "music_discs",
+  "pattern": [
+    "AAA",
+    "ABA",
+    "AAA"
+  ],
+  "key": {
+    "A": "minecraft:quartz_block",
+    "B": "minecraft:ghast_tear"
+  },
+  "result": {
+    "id": "minecraft:music_disc_tears",
+    "count": 1
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "music_discs",
+  "pattern": [
+    "AAA",
+    "ABA",
+    "AAA"
+  ],
+  "key": {
+    "A": "minecraft:mud_bricks",
+    "B": "minecraft:light_blue_glazed_terracotta"
+  },
+  "result": {
+    "id": "minecraft:music_disc_relic",
+    "count": 1
+  }
+}
