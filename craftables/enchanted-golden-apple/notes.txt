@@ -1,0 +1,126 @@
+2BN-Tweaks | Craftables | Enchanted-Golden-Apple
+
+
+=== INFO ===
+
+Craftable notch apples; expensive, overkill, and exactly what Notch didn't want you to have.
+
+
+=== UPDATES ===
+
+https://minecraft.wiki/w/Pack_format#List_of_data_pack_formats
+
+1.20.0 [07 JUN 2023]:
+  Pack: 15
+  "Trails & Tales": Enchanted Golden Apple already in game as of 1.3.1.
+  Directory: data/<namespace>/recipes/..
+  Recipe Result Attribute: `item`
+  Template: Recipe #1
+  Recipes: legacy (self)
+
+1.20.2 [21 SEP 2023]:
+  Pack: 18
+  Mojang introduced `overlay_#` in `pack.mcmeta`.
+  No need for `overlay_18`, recipe format is unchanged.
+
+1.21.0 [13 JUN 2024]:
+  Pack: 48
+  "Tricky Trials"
+  Renamed Recipe Directory: `recipes/` -> `recipe/`
+  Changed Recipe Result Attribute: `item` -> `id`
+  Directory: overlay_48/data/<namespace>/recipe/..
+  Template: Recipe #2
+  Recipes: legacy (redo), 48 (self)
+
+1.21.2 [22 OCT 2024]:
+  Pack: 57
+  "Bundles of Bravery"
+  Recipe ingredients use flat-method, instead of dicts with `tag`/`item`.
+  Directory: overlay_57/data/<namespace>/recipe/..
+  Template: Recipe #3
+  Recipes: legacy (redo), 48 (redo), 57 (self)
+
+
+=== GENERATED ===
+
+  - Legacy      : enchanted-golden-apple created
+  - Overlay 48  : enchanted-golden-apple created
+  - Overlay 57  : enchanted-golden-apple created
+
+
+=== BUGS ===
+
+✅ All versions/overlays tested, no bugs.
+
+
+
+=== RECIPE FORMATS : SHAPED ===
+
+Recipe #1: 1.20.0 - 1.20.6 (result.item)
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "ATA",
+    "TNT",
+    "ATA"
+  ],
+  "key": {
+    "A": {
+      "item": "minecraft:golden_apple"
+    },
+    "T": {
+      "item": "minecraft:totem_of_undying"
+    },
+    "N": {
+      "item": "minecraft:netherite_ingot"
+    }
+  },
+  "result": {
+    "item": "minecraft:enchanted_golden_apple",
+    "count": 1
+  }
+}
+
+Recipe #2: 1.21.0 - 1.21.1 (result.item -> result.id)
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "ATA",
+    "TNT",
+    "ATA"
+  ],
+  "key": {
+    "A": {
+      "item": "minecraft:golden_apple"
+    },
+    "T": {
+      "item": "minecraft:totem_of_undying"
+    },
+    "N": {
+      "item": "minecraft:netherite_ingot"
+    }
+  },
+  "result": {
+    "id": "minecraft:enchanted_golden_apple",
+    "count": 1
+  }
+}
+
+Recipe #3: 1.21.2+ (flat ingredients, result.id)
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "ATA",
+    "TNT",
+    "ATA"
+  ],
+  "key": {
+    "A": "minecraft:golden_apple",
+    "T": "minecraft:totem_of_undying",
+    "N": "minecraft:netherite_ingot"
+  },
+  "result": {
+    "id": "minecraft:enchanted_golden_apple",
+    "count": 1
+  }
+}
