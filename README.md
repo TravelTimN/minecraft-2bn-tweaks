@@ -4,20 +4,20 @@
 
 ## Table of Contents
 
-| | Crafting Tweaks | |
-| :---: | --- | ---: |
-| ♻️ | [**Back-to-Blocks**](#️-back-to-blocks) | [💾](#download) |
-| 🎨 | [**Dyes**](#-dyes) | [💾](#download-1) |
-| 🪞 | [**Echo Shard**](#-echo-shard) | [💾](#download-2) |
-| 🪽 | [**Elytra**](#-elytra) | [💾](#download-3) |
-| 🍏 | [**Enchanted Golden Apple**](#-enchanted-golden-apple) | [💾](#download-4) |
-| 🌊 | [**Heart of the Sea**](#-heart-of-the-sea) | [💾](#download-5) |
-| 💿 | [**Music Discs**](#-music-discs) | [💾](#download-6) |
-| 🏺 | [**Pottery Sherds**](#-pottery-sherds) | [💾](#download-7) |
-| 💀 | [**Skulls**](#-skulls) | [💾](#download-8) |
-| ➕🧱 | [**More Blocks**](#-more-blocks) | [💾](#download-9) |
-| ♻️🎨 | [**Universal Dyeing**](#️-universal-dyeing) | [💾](#download-10) |
-| ⚖️ | [**License**](#️-license) | |
+| | Crafting Tweaks |
+| :---: | --- |
+| ♻️ | [**Back-to-Blocks**](#️-back-to-blocks) |
+| 🎨 | [**Dyes**](#-dyes) |
+| 🪞 | [**Echo Shard**](#-echo-shard) |
+| 🪽 | [**Elytra**](#-elytra) |
+| 🍏 | [**Enchanted Golden Apple**](#-enchanted-golden-apple) |
+| 🌊 | [**Heart of the Sea**](#-heart-of-the-sea) |
+| 💿 | [**Music Discs**](#-music-discs) |
+| 🏺 | [**Pottery Sherds**](#-pottery-sherds) |
+| 💀 | [**Skulls**](#-skulls) |
+| ➕🧱 | [**More Blocks**](#-more-blocks) |
+| ♻️🎨 | [**Universal Dyeing**](#️-universal-dyeing) |
+| ⚖️ | [**License**](#️-license) |
 
 ---
 
@@ -38,7 +38,7 @@ A Minecraft datapack that adds hundreds of crafting recipes to reverse decorativ
 
 **[View the full recipe list in Google Sheets](https://docs.google.com/spreadsheets/d/1t9lmXWqlyno15NTqfUDTYcuZuNVCAmxs4Pt4w9a5CPI)**
 
-### Download
+**Download**
 
 | Supported Versions | Download (.zip) |
 | --- | --- |
@@ -59,7 +59,7 @@ This datapack expands your dye-making repertoire with **alternative, lore-friend
 
 All recipes aim to be balanced, thematic, and helpful for younger players, or just anyone who's dyeing for a better solution.
 
-### Download
+**Download**
 
 | Supported Versions | Download (.zip) |
 | --- | --- |
@@ -75,7 +75,7 @@ Great for recovery compasses, lore builds, or just skipping the part where you g
 
 ![craftable echo shard](craftables/echo-shard/echo-shard.png)
 
-### Download
+**Download**
 
 | Supported Versions | Download (.zip) |
 | --- | --- |
@@ -91,7 +91,7 @@ Because let's face it: if you've already fought your way through the Nether and 
 
 ![craftable elytra](craftables/elytra/elytra.png)
 
-### Download
+**Download**
 
 | Supported Versions | Download (.zip) |
 | --- | --- |
@@ -107,7 +107,7 @@ Yes, it's expensive. Yes, it's overkill. Yes, it's *exactly what Notch didn't wa
 
 ![craftable enchanted golden apple](craftables/enchanted-golden-apple/enchanted_golden_apple.png)
 
-### Download
+**Download**
 
 | Supported Versions | Download (.zip) |
 | --- | --- |
@@ -123,7 +123,7 @@ Perfect for conduit crafters, Atlantis builders, or players who just want their 
 
 ![craftable heart of the sea](craftables/heart-of-the-sea/heart-of-the-sea.png)
 
-### Download
+**Download**
 
 | Supported Versions | Download (.zip) |
 | --- | --- |
@@ -141,7 +141,7 @@ Perfect for jukebox collectors, mapmakers, or anyone who thinks *Pigstep* should
 
 ![craftable music discs](craftables/music-discs/screenshots/2bn-craftable-music-discs.png)
 
-### Download
+**Download**
 
 | Supported Versions | Download (.zip) |
 | --- | --- |
@@ -157,7 +157,7 @@ Perfect for decorative builders or lore nerds who want matching sets without rai
 
 ![pottery-sherds](craftables/pottery-sherds/pottery-sherds.png)
 
-### Download
+**Download**
 
 | Supported Versions | Download (.zip) |
 | --- | --- |
@@ -173,7 +173,7 @@ This datapack adds **shaped crafting recipes** to create some iconic mob heads u
 
 ![craftable skulls](craftables/skulls/screenshots/2bn-craftable-skulls.png)
 
-### Download
+**Download**
 
 | Supported Versions | Download (.zip) |
 | --- | --- |
@@ -199,7 +199,7 @@ A Minecraft datapack that enhances vanilla crafting by increasing the **yield** 
 
 **[View the full recipe list in Google Sheets](https://docs.google.com/spreadsheets/d/1t9lmXWqlyno15NTqfUDTYcuZuNVCAmxs4Pt4w9a5CPI/edit?gid=1434501916#gid=1434501916)**
 
-### Download
+**Download**
 
 | Supported Versions | Download (.zip) |
 | --- | --- |
@@ -227,7 +227,7 @@ Use **any dye** to recolor these blocks, or use **ice** to scrub them back to th
 
 **[View the full recipe list in Google Sheets](https://docs.google.com/spreadsheets/d/1t9lmXWqlyno15NTqfUDTYcuZuNVCAmxs4Pt4w9a5CPI/edit?gid=931243409#gid=931243409)**
 
-### Download
+**Download**
 
 | Supported Versions | Download (.zip) |
 | --- | --- |
