@@ -8,11 +8,11 @@
 | :---: | --- | ---: |
 | ♻️ | [**Back-to-Blocks**](#️-back-to-blocks) | [💾](#download-2bn-tweaks-back-to-blocks) |
 | 🎨 | [**Dyes**](#-dyes) | [💾](#download-2bn-tweaks-craftable-dyes) |
+| 🪞 | [**Echo Shard**](#-echo-shard) | [💾](#download-2bn-tweaks-craftable-echo-shard) |
 | 💿 | [**Music Discs**](#-music-discs) | [💾](#download-2bn-tweaks-craftable-music-discs) |
 | 🏺 | [**Pottery Sherds**](#-pottery-sherds) | [💾](#download-2bn-tweaks-craftable-pottery-sherds) |
 | 💀 | [**Skulls**](#-skulls) | [💾](#download-2bn-tweaks-craftable-skulls) |
 | 🪽 | [**Craftable Elytra**](#-craftable-elytra) | [💾](#download-2bn-craftable-elytra) |
-| ✨ | [**Craftable Rarities**](#-craftable-rarities) | [💾](#download-2bn-craftable-rarities) |
 | ➕🧱 | [**More Blocks**](#-more-blocks) | [💾](#download-2bn-tweaks-more-blocks) |
 | ♻️🎨 | [**Universal Dyeing**](#️-universal-dyeing) | [💾](#download-2bn-tweaks-universal-dyeing) |
 | ⚖️ | [**License**](#️-license) | |
@@ -70,6 +70,22 @@ All recipes aim to be balanced, thematic, and helpful for younger players, or ju
 | Supported Versions | Download (.zip) |
 | --- | --- |
 | 1.20.0 - 1.21.7+ | 💾 [Download 2BN-Tweaks: Craftable Dyes](craftables/dyes/2BN-Tweaks_Craftable_Dyes.zip?raw=1) |
+
+---
+
+### 🪞 [Echo Shard](craftables/echo-shard/)
+
+Craftable echo shards, so you can avoid looting multiple Ancient Cities *and* avoid making eye contact with the Warden. Echoes of wisdom, not screams.
+
+Great for recovery compasses, lore builds, or just skipping the part where you get yeeted into the void by a blind shrieking deathbeast.
+
+![craftable echo shard](craftables/echo-shard/echo-shard.png)
+
+### Download 2BN-Tweaks Craftable Echo-Shard
+
+| Supported Versions | Download (.zip) |
+| --- | --- |
+| 1.20.0 – 1.21.7+ | 💾 [Download 2BN-Tweaks: Craftable Echo-Shard](craftables/echo-shard/2BN-Tweaks_Craftable_Echo-Shard.zip?raw=1) |
 
 ---
 
@@ -135,26 +151,6 @@ Some players are terrified of visiting the End dimension, and therefore have to 
 | --- | --- |
 | 1.21.0 | [Download 💾](craftable-elytra/1.21.0/2bn-craftable-elytra/2bn-craftable-elytra.zip) |
 | 1.20.4 | [Download 💾](craftable-elytra/1.20.4/2bn-craftable-elytra/2bn-craftable-elytra.zip) |
-
----
-
-## ✨ [Craftable Rarities](craftable-rarities/)
-
-Sometimes items are quite difficult to collect, or perhaps you're trying to obtain a stack of everything as part of the [BlazeandCaves](https://docs.google.com/spreadsheets/d/1zlRBAkHZhoMlGBbLIvKGxY4wufVVpAhYko48QH6LDNs/edit?gid=0#gid=0) "super challenges". We've made it possible to craft a few of the more *difficult-to-obtain* items:
-
-- [Disc Fragment 5](https://minecraft.wiki/w/Disc_Fragment)
-- [Echo Shard](https://minecraft.wiki/w/Echo_Shard)
-- [Heart of the Sea](https://minecraft.wiki/w/Heart_of_the_Sea)
-- [Enchanted Golden Apple](https://minecraft.wiki/w/Enchanted_Golden_Apple)
-
-![craftable rarities](craftable-rarities/screenshots/craftable-rarities.png)
-
-### Download 2BN Craftable Rarities
-
-| Version | Download (.zip) |
-| --- | --- |
-| 1.21.0 | [Download 💾](craftable-rarities/1.21.0/2bn-craftable-rarities/2bn-craftable-rarities.zip) |
-| 1.20.4 | [Download 💾](craftable-rarities/1.20.4/2bn-craftable-rarities/2bn-craftable-rarities.zip) |
 
 ---
 
