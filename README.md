@@ -9,10 +9,10 @@
 | ♻️ | [**Back-to-Blocks**](#️-back-to-blocks) | [💾](#download-2bn-tweaks-back-to-blocks) |
 | 🎨 | [**Dyes**](#-dyes) | [💾](#download-2bn-tweaks-craftable-dyes) |
 | 🪞 | [**Echo Shard**](#-echo-shard) | [💾](#download-2bn-tweaks-craftable-echo-shard) |
+| 🪽 | [**Elytra**](#-elytra) | [💾](#download-2bn-tweaks-craftable-elytra) |
 | 💿 | [**Music Discs**](#-music-discs) | [💾](#download-2bn-tweaks-craftable-music-discs) |
 | 🏺 | [**Pottery Sherds**](#-pottery-sherds) | [💾](#download-2bn-tweaks-craftable-pottery-sherds) |
 | 💀 | [**Skulls**](#-skulls) | [💾](#download-2bn-tweaks-craftable-skulls) |
-| 🪽 | [**Craftable Elytra**](#-craftable-elytra) | [💾](#download-2bn-craftable-elytra) |
 | ➕🧱 | [**More Blocks**](#-more-blocks) | [💾](#download-2bn-tweaks-more-blocks) |
 | ♻️🎨 | [**Universal Dyeing**](#️-universal-dyeing) | [💾](#download-2bn-tweaks-universal-dyeing) |
 | ⚖️ | [**License**](#️-license) | |
@@ -89,6 +89,22 @@ Great for recovery compasses, lore builds, or just skipping the part where you g
 
 ---
 
+## 🪽 [Elytra](craftables/elytra/)
+
+Soar in style - without looting End Cities like a desperate loot goblin. This datapack lets you **craft your own Elytra** using a blend of feather, phantom, and full-blown netherite.
+
+Because let's face it: if you've already fought your way through the Nether and survived sleep deprivation long enough to farm phantom bits... you've *earned* your wings.
+
+![craftable elytra](craftables/elytra/elytra.png)
+
+### Download 2BN-Tweaks Craftable Elytra
+
+| Supported Versions | Download (.zip) |
+| --- | --- |
+| 1.20.0 – 1.21.7+ | 💾 [Download 2BN-Tweaks: Craftable Elytra](craftables/elytra/2BN-Tweaks_Craftable_Elytra.zip?raw=1) |
+
+---
+
 ### 💿 [Music Discs](craftables/music-discs/)
 
 This datapack adds shaped crafting recipes for every **music disc** and **disc fragment** - because sometimes you just want the tunes without the *kaboom*.
@@ -136,21 +152,6 @@ This datapack adds **shaped crafting recipes** to create some iconic mob heads u
 | Supported Versions | Download (.zip) |
 | --- | --- |
 | 1.20.0 – 1.21.7+ | 💾 [Download 2BN-Tweaks: Craftable Skulls](craftables/skulls/2BN-Tweaks_Craftable_Skulls.zip?raw=1) |
-
----
-
-## 🪽 [Craftable Elytra](craftable-elytra/)
-
-Some players are terrified of visiting the End dimension, and therefore have to pay other players to obtain [Elytra](https://minecraft.wiki/w/Elytra) or Shulker Boxes for them. It might take a bit longer and be rather expensive, but some may consider it far better than going to the End. Plus, for hardcore players, this means potentially having wings before defeating the dragon, Jane!
-
-![elytra](craftable-elytra/screenshots/craftable-elytra.png)
-
-### Download 2BN Craftable Elytra
-
-| Version | Download (.zip) |
-| --- | --- |
-| 1.21.0 | [Download 💾](craftable-elytra/1.21.0/2bn-craftable-elytra/2bn-craftable-elytra.zip) |
-| 1.20.4 | [Download 💾](craftable-elytra/1.20.4/2bn-craftable-elytra/2bn-craftable-elytra.zip) |
 
 ---
 
