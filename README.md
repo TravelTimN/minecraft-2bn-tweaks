@@ -227,7 +227,7 @@ Use **any dye** to recolor these blocks, or use **ice** to scrub them back to th
 
 **[View the full recipe list in Google Sheets](https://docs.google.com/spreadsheets/d/1t9lmXWqlyno15NTqfUDTYcuZuNVCAmxs4Pt4w9a5CPI/edit?gid=931243409#gid=931243409)**
 
-### Download 2BN-Tweaks Universal-Dyeing
+### Download
 
 | Supported Versions | Download (.zip) |
 | --- | --- |
