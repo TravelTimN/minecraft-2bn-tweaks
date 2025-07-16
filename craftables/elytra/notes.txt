@@ -1,0 +1,126 @@
+2BN-Tweaks | Craftables | Elytra
+
+
+=== INFO ===
+
+Craftable elytra, for those who are afraid to visit the End Islands, but are avid Nether miners.
+
+
+=== UPDATES ===
+
+https://minecraft.wiki/w/Pack_format#List_of_data_pack_formats
+
+1.20.0 [07 JUN 2023]:
+  Pack: 15
+  "Trails & Tales": Elytra already in game as of 1.19.0 pack 10.
+  Directory: data/<namespace>/recipes/..
+  Recipe Result Attribute: `item`
+  Template: Recipe #1
+  Recipes: legacy (self)
+
+1.20.2 [21 SEP 2023]:
+  Pack: 18
+  Mojang introduced `overlay_#` in `pack.mcmeta`.
+  No need for `overlay_18`, recipe format is unchanged.
+
+1.21.0 [13 JUN 2024]:
+  Pack: 48
+  "Tricky Trials"
+  Renamed Recipe Directory: `recipes/` -> `recipe/`
+  Changed Recipe Result Attribute: `item` -> `id`
+  Directory: overlay_48/data/<namespace>/recipe/..
+  Template: Recipe #2
+  Recipes: legacy (redo), 48 (self)
+
+1.21.2 [22 OCT 2024]:
+  Pack: 57
+  "Bundles of Bravery"
+  Recipe ingredients use flat-method, instead of dicts with `tag`/`item`.
+  Directory: overlay_57/data/<namespace>/recipe/..
+  Template: Recipe #3
+  Recipes: legacy (redo), 48 (redo), 57 (self)
+
+
+=== GENERATED ===
+
+  - Legacy      : elytra created
+  - Overlay 48  : elytra created
+  - Overlay 57  : elytra created
+
+
+=== BUGS ===
+
+✅ All versions/overlays tested, no bugs.
+
+
+
+=== RECIPE FORMATS : SHAPED ===
+
+Recipe #1: 1.20.0 - 1.20.6 (result.item)
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "NNN",
+    "MNM",
+    "F F"
+  ],
+  "key": {
+    "N": {
+      "item": "minecraft:netherite_ingot"
+    },
+    "M": {
+      "item": "minecraft:phantom_membrane"
+    },
+    "F": {
+      "item": "minecraft:feather"
+    }
+  },
+  "result": {
+    "item": "minecraft:elytra",
+    "count": 1
+  }
+}
+
+Recipe #2: 1.21.0 - 1.21.1 (result.item -> result.id)
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "NNN",
+    "MNM",
+    "F F"
+  ],
+  "key": {
+    "N": {
+      "item": "minecraft:netherite_ingot"
+    },
+    "M": {
+      "item": "minecraft:phantom_membrane"
+    },
+    "F": {
+      "item": "minecraft:feather"
+    }
+  },
+  "result": {
+    "id": "minecraft:elytra",
+    "count": 1
+  }
+}
+
+Recipe #3: 1.21.2+ (flat ingredients, result.id)
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "NNN",
+    "MNM",
+    "F F"
+  ],
+  "key": {
+    "N": "minecraft:netherite_ingot",
+    "M": "minecraft:phantom_membrane",
+    "F": "minecraft:feather"
+  },
+  "result": {
+    "id": "minecraft:elytra",
+    "count": 1
+  }
+}
