@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "SDS",
+    "DAD",
+    "SDS"
+  ],
+  "key": {
+    "A": "minecraft:amethyst_shard",
+    "D": "minecraft:deepslate",
+    "S": "minecraft:sculk"
+  },
+  "result": {
+    "id": "minecraft:echo_shard",
+    "count": 1
+  }
+}
