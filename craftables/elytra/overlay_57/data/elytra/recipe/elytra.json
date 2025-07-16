@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "NNN",
+    "MNM",
+    "F F"
+  ],
+  "key": {
+    "N": "minecraft:netherite_ingot",
+    "M": "minecraft:phantom_membrane",
+    "F": "minecraft:feather"
+  },
+  "result": {
+    "id": "minecraft:elytra",
+    "count": 1
+  }
+}
