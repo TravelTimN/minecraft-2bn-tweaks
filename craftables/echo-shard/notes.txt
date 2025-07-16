@@ -50,7 +50,7 @@ https://minecraft.wiki/w/Pack_format#List_of_data_pack_formats
 
 === BUGS ===
 
-⚠️ TBC
+✅ All versions/overlays tested, no bugs.
 
 
 
