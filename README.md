@@ -8,10 +8,10 @@
 | :---: | --- | ---: |
 | ♻️ | [**Back-to-Blocks**](#️-back-to-blocks) | [💾](#download-2bn-tweaks-back-to-blocks) |
 | 🎨 | [**Dyes**](#-dyes) | [💾](#download-2bn-tweaks-craftable-dyes) |
+| 💿 | [**Music Discs**](#-music-discs) | [💾](#download-2bn-tweaks-craftable-music-discs) |
 | 🏺 | [**Pottery Sherds**](#-pottery-sherds) | [💾](#download-2bn-tweaks-craftable-pottery-sherds) |
 | 💀 | [**Skulls**](#-skulls) | [💾](#download-2bn-tweaks-craftable-skulls) |
 | 🪽 | [**Craftable Elytra**](#-craftable-elytra) | [💾](#download-2bn-craftable-elytra) |
-| 💿 | [**Craftable Music Discs**](#-craftable-music-discs) | [💾](#download-2bn-craftable-music-discs) |
 | ✨ | [**Craftable Rarities**](#-craftable-rarities) | [💾](#download-2bn-craftable-rarities) |
 | ➕🧱 | [**More Blocks**](#-more-blocks) | [💾](#download-2bn-tweaks-more-blocks) |
 | ♻️🎨 | [**Universal Dyeing**](#️-universal-dyeing) | [💾](#download-2bn-tweaks-universal-dyeing) |
@@ -73,6 +73,24 @@ All recipes aim to be balanced, thematic, and helpful for younger players, or ju
 
 ---
 
+### 💿 [Music Discs](craftables/music-discs/)
+
+This datapack adds shaped crafting recipes for every **music disc** and **disc fragment** - because sometimes you just want the tunes without the *kaboom*.
+
+No more luring charged creepers toward scary mobs, or your sanity. Just craft your vibe, and drop the beat!
+
+Perfect for jukebox collectors, mapmakers, or anyone who thinks *Pigstep* should be more accessible than a Bastion's basement.
+
+![craftable music discs](craftables/music-discs/screenshots/2bn-craftable-music-discs.png)
+
+### Download 2BN-Tweaks Craftable Music-Discs
+
+| Supported Versions | Download (.zip) |
+| --- | --- |
+| 1.20.0 - 1.21.7+ | 💾 [Download 2BN-Tweaks: Craftable Music-Discs](craftables/music-discs/2BN-Tweaks_Craftable_Music-Discs.zip?raw=1) |
+
+---
+
 ### 🏺 [Pottery Sherds](craftables/pottery-sherds/)
 
 Triplicate those precious archaeological finds! This datapack lets you **clone pottery sherds** using bricks and terracotta. Simply combine any pottery sherd with supporting materials to get three more, so you end up with **4 total**.
@@ -95,7 +113,7 @@ This datapack adds **shaped crafting recipes** to create some iconic mob heads u
 
 **Note:** Recipes are intentionally expensive and lore-balanced. You're literally *reanimating skulls* here. Not exactly light work, but perhaps easier than using charged creepers, eh?
 
-![craftable skulls](craftables/skulls/craftable-skulls.png)
+![craftable skulls](craftables/skulls/screenshots/2bn-craftable-skulls.png)
 
 ### Download 2BN-Tweaks Craftable Skulls
 
@@ -117,21 +135,6 @@ Some players are terrified of visiting the End dimension, and therefore have to 
 | --- | --- |
 | 1.21.0 | [Download 💾](craftable-elytra/1.21.0/2bn-craftable-elytra/2bn-craftable-elytra.zip) |
 | 1.20.4 | [Download 💾](craftable-elytra/1.20.4/2bn-craftable-elytra/2bn-craftable-elytra.zip) |
-
----
-
-## 💿 [Craftable Music Discs](craftable-music-discs/)
-
-Music fans, listen up! Gone are the days where you must hunt for your favorite [music disc](https://minecraft.wiki/w/Music_Disc). Now you can craft your favorites, and twerk along to the beat!
-
-![music discs](craftable-music-discs/screenshots/2bn-craftable-music-discs.png)
-
-### Download 2BN Craftable Music Discs
-
-| Version | Download (.zip) |
-| --- | --- |
-| 1.21.0 | [Download 💾](craftable-music-discs/1.21.0/2bn-craftable-music-discs/2bn-craftable-music-discs.zip) |
-| 1.20.4 | [Download 💾](craftable-music-discs/1.20.4/2bn-craftable-discs/2bn-craftable-discs.zip) |
 
 ---
 
