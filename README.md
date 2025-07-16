@@ -89,7 +89,7 @@ Great for recovery compasses, lore builds, or just skipping the part where you g
 
 ---
 
-## 🪽 [Elytra](craftables/elytra/)
+### 🪽 [Elytra](craftables/elytra/)
 
 Soar in style - without looting End Cities like a desperate loot goblin. This datapack lets you **craft your own Elytra** using a blend of feather, phantom, and full-blown netherite.
 
