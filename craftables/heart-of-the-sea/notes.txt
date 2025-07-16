@@ -1,0 +1,126 @@
+2BN-Tweaks | Craftables | Heart-of-the-Sea
+
+
+=== INFO ===
+
+Craftable heart of the sea, saving you from aimlessly looting treasure maps and dodging drowned for a single underwater bauble.
+
+
+=== UPDATES ===
+
+https://minecraft.wiki/w/Pack_format#List_of_data_pack_formats
+
+1.20.0 [07 JUN 2023]:
+  Pack: 15
+  "Trails & Tales": Heart-of-the-Sea already in game as of 1.13.0 pack 4.
+  Directory: data/<namespace>/recipes/..
+  Recipe Result Attribute: `item`
+  Template: Recipe #1
+  Recipes: legacy (self)
+
+1.20.2 [21 SEP 2023]:
+  Pack: 18
+  Mojang introduced `overlay_#` in `pack.mcmeta`.
+  No need for `overlay_18`, recipe format is unchanged.
+
+1.21.0 [13 JUN 2024]:
+  Pack: 48
+  "Tricky Trials"
+  Renamed Recipe Directory: `recipes/` -> `recipe/`
+  Changed Recipe Result Attribute: `item` -> `id`
+  Directory: overlay_48/data/<namespace>/recipe/..
+  Template: Recipe #2
+  Recipes: legacy (redo), 48 (self)
+
+1.21.2 [22 OCT 2024]:
+  Pack: 57
+  "Bundles of Bravery"
+  Recipe ingredients use flat-method, instead of dicts with `tag`/`item`.
+  Directory: overlay_57/data/<namespace>/recipe/..
+  Template: Recipe #3
+  Recipes: legacy (redo), 48 (redo), 57 (self)
+
+
+=== GENERATED ===
+
+  - Legacy      : heart-of-the-sea created
+  - Overlay 48  : heart-of-the-sea created
+  - Overlay 57  : heart-of-the-sea created
+
+
+=== BUGS ===
+
+✅ All versions/overlays tested, no bugs.
+
+
+
+=== RECIPE FORMATS : SHAPED ===
+
+Recipe #1: 1.20.0 - 1.20.6 (result.item)
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "SCS",
+    "CDC",
+    "SCS"
+  ],
+  "key": {
+    "S": {
+      "item": "minecraft:prismarine_shard"
+    },
+    "C": {
+      "item": "minecraft:prismarine_crystals"
+    },
+    "D": {
+      "item": "minecraft:diamond"
+    }
+  },
+  "result": {
+    "item": "minecraft:heart_of_the_sea",
+    "count": 1
+  }
+}
+
+Recipe #2: 1.21.0 - 1.21.1 (result.item -> result.id)
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "SCS",
+    "CDC",
+    "SCS"
+  ],
+  "key": {
+    "S": {
+      "item": "minecraft:prismarine_shard"
+    },
+    "C": {
+      "item": "minecraft:prismarine_crystals"
+    },
+    "D": {
+      "item": "minecraft:diamond"
+    }
+  },
+  "result": {
+    "id": "minecraft:heart_of_the_sea",
+    "count": 1
+  }
+}
+
+Recipe #3: 1.21.2+ (flat ingredients, result.id)
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "SCS",
+    "CDC",
+    "SCS"
+  ],
+  "key": {
+    "S": "minecraft:prismarine_shard",
+    "C": "minecraft:prismarine_crystals",
+    "D": "minecraft:diamond"
+  },
+  "result": {
+    "id": "minecraft:heart_of_the_sea",
+    "count": 1
+  }
+}
