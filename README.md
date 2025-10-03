@@ -32,7 +32,7 @@ A Minecraft datapack that adds hundreds of crafting recipes to reverse decorativ
 | signs | hanging signs | slabs | stairs |
 | fences | fence gates | walls | |
 | quartz | redstone components | workstations | utility blocks |
-| bulbs | grates | resin | |
+| bulbs | grates | chests | resin |
 
 <sup>*</sup> Lossy base form means the original materials aren't fully recoverable; reverse-crafting comes with a deliberate loss, and is not intended to be 1:1.
 
@@ -42,7 +42,7 @@ A Minecraft datapack that adds hundreds of crafting recipes to reverse decorativ
 
 | Supported Versions | Download (.zip) |
 | --- | --- |
-| 1.20.0 – 1.21.7+ | 💾 [Download 2BN-Tweaks: Back-to-Blocks](back-to-blocks/2BN-Tweaks_Back-to-Blocks.zip?raw=1) |
+| 1.20.0 – 1.21.9+ | 💾 [Download 2BN-Tweaks: Back-to-Blocks](back-to-blocks/2BN-Tweaks_Back-to-Blocks.zip?raw=1) |
 
 ---
 
@@ -63,7 +63,7 @@ All recipes aim to be balanced, thematic, and helpful for younger players, or ju
 
 | Supported Versions | Download (.zip) |
 | --- | --- |
-| 1.20.0 - 1.21.7+ | 💾 [Download 2BN-Tweaks: Craftable Dyes](craftables/dyes/2BN-Tweaks_Craftable_Dyes.zip?raw=1) |
+| 1.20.0 - 1.21.9+ | 💾 [Download 2BN-Tweaks: Craftable Dyes](craftables/dyes/2BN-Tweaks_Craftable_Dyes.zip?raw=1) |
 
 ---
 
@@ -79,7 +79,7 @@ Great for recovery compasses, lore builds, or just skipping the part where you g
 
 | Supported Versions | Download (.zip) |
 | --- | --- |
-| 1.20.0 – 1.21.7+ | 💾 [Download 2BN-Tweaks: Craftable Echo-Shard](craftables/echo-shard/2BN-Tweaks_Craftable_Echo-Shard.zip?raw=1) |
+| 1.20.0 – 1.21.9+ | 💾 [Download 2BN-Tweaks: Craftable Echo-Shard](craftables/echo-shard/2BN-Tweaks_Craftable_Echo-Shard.zip?raw=1) |
 
 ---
 
@@ -95,7 +95,7 @@ Because let's face it: if you've already fought your way through the Nether and 
 
 | Supported Versions | Download (.zip) |
 | --- | --- |
-| 1.20.0 – 1.21.7+ | 💾 [Download 2BN-Tweaks: Craftable Elytra](craftables/elytra/2BN-Tweaks_Craftable_Elytra.zip?raw=1) |
+| 1.20.0 – 1.21.9+ | 💾 [Download 2BN-Tweaks: Craftable Elytra](craftables/elytra/2BN-Tweaks_Craftable_Elytra.zip?raw=1) |
 
 ---
 
@@ -111,7 +111,7 @@ Yes, it's expensive. Yes, it's overkill. Yes, it's *exactly what Notch didn't wa
 
 | Supported Versions | Download (.zip) |
 | --- | --- |
-| 1.20.0 – 1.21.7+ | 💾 [Download 2BN-Tweaks: Craftable Enchanted-Golden-Apple](craftables/enchanted-golden-apple/2BN-Tweaks_Craftable_Enchanted-Golden-Apple.zip?raw=1) |
+| 1.20.0 – 1.21.9+ | 💾 [Download 2BN-Tweaks: Craftable Enchanted-Golden-Apple](craftables/enchanted-golden-apple/2BN-Tweaks_Craftable_Enchanted-Golden-Apple.zip?raw=1) |
 
 ---
 
@@ -127,7 +127,7 @@ Perfect for conduit crafters, Atlantis builders, or players who just want their 
 
 | Supported Versions | Download (.zip) |
 | --- | --- |
-| 1.20.0 – 1.21.7+ | 💾 [Download 2BN-Tweaks: Craftable Heart-of-the-Sea](craftables/heart-of-the-sea/2BN-Tweaks_Craftable_Heart-of-the-Sea.zip?raw=1) |
+| 1.20.0 – 1.21.9+ | 💾 [Download 2BN-Tweaks: Craftable Heart-of-the-Sea](craftables/heart-of-the-sea/2BN-Tweaks_Craftable_Heart-of-the-Sea.zip?raw=1) |
 
 ---
 
@@ -145,7 +145,7 @@ Perfect for jukebox collectors, mapmakers, or anyone who thinks *Pigstep* should
 
 | Supported Versions | Download (.zip) |
 | --- | --- |
-| 1.20.0 - 1.21.7+ | 💾 [Download 2BN-Tweaks: Craftable Music-Discs](craftables/music-discs/2BN-Tweaks_Craftable_Music-Discs.zip?raw=1) |
+| 1.20.0 - 1.21.9+ | 💾 [Download 2BN-Tweaks: Craftable Music-Discs](craftables/music-discs/2BN-Tweaks_Craftable_Music-Discs.zip?raw=1) |
 
 ---
 
@@ -161,7 +161,7 @@ Perfect for decorative builders or lore nerds who want matching sets without rai
 
 | Supported Versions | Download (.zip) |
 | --- | --- |
-| 1.20.0 – 1.21.7+ | 💾 [Download 2BN-Tweaks: Craftable Pottery-Sherds](craftables/pottery-sherds/2BN-Tweaks_Craftable_Pottery-Sherds.zip?raw=1) |
+| 1.20.0 – 1.21.9+ | 💾 [Download 2BN-Tweaks: Craftable Pottery-Sherds](craftables/pottery-sherds/2BN-Tweaks_Craftable_Pottery-Sherds.zip?raw=1) |
 
 ---
 
@@ -177,7 +177,7 @@ This datapack adds **shaped crafting recipes** to create some iconic mob heads u
 
 | Supported Versions | Download (.zip) |
 | --- | --- |
-| 1.20.0 – 1.21.7+ | 💾 [Download 2BN-Tweaks: Craftable Skulls](craftables/skulls/2BN-Tweaks_Craftable_Skulls.zip?raw=1) |
+| 1.20.0 – 1.21.9+ | 💾 [Download 2BN-Tweaks: Craftable Skulls](craftables/skulls/2BN-Tweaks_Craftable_Skulls.zip?raw=1) |
 
 ---
 
@@ -191,11 +191,11 @@ A Minecraft datapack that enhances vanilla crafting by increasing the **yield** 
 | bricks | 1 | 4 |
 | pressure plates | 1 | 2 |
 | stairs | 4 | 6 / 8 <sup>*</sup> |
-| trapdoors | 1 | 2 / 4 / 6 <sup>**</sup> |
+| trapdoors | 1 | 2 / 6 <sup>**</sup> |
 
 <sup>*</sup> Wood = 8 / Others = 6.
 
-<sup>**</sup> Iron = 2 / Copper = 4 / Wood = 6.
+<sup>**</sup> Iron | Copper = 2 / Wood = 6.
 
 **[View the full recipe list in Google Sheets](https://docs.google.com/spreadsheets/d/1t9lmXWqlyno15NTqfUDTYcuZuNVCAmxs4Pt4w9a5CPI/edit?gid=1434501916#gid=1434501916)**
 
@@ -203,7 +203,7 @@ A Minecraft datapack that enhances vanilla crafting by increasing the **yield** 
 
 | Supported Versions | Download (.zip) |
 | --- | --- |
-| 1.20.0 – 1.21.7+ | 💾 [Download 2BN-Tweaks: More-Blocks](more-blocks/2BN-Tweaks_More-Blocks.zip?raw=1) |
+| 1.20.0 – 1.21.9+ | 💾 [Download 2BN-Tweaks: More-Blocks](more-blocks/2BN-Tweaks_More-Blocks.zip?raw=1) |
 
 ---
 
@@ -231,7 +231,7 @@ Use **any dye** to recolor these blocks, or use **ice** to scrub them back to th
 
 | Supported Versions | Download (.zip) |
 | --- | --- |
-| 1.20.0 – 1.21.7+ | 💾 [Download 2BN-Tweaks: Universal-Dyeing](universal-dyeing/2BN-Tweaks_Universal-Dyeing.zip?raw=1) |
+| 1.20.0 – 1.21.9+ | 💾 [Download 2BN-Tweaks: Universal-Dyeing](universal-dyeing/2BN-Tweaks_Universal-Dyeing.zip?raw=1) |
 
 ---
 
