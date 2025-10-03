@@ -18,7 +18,11 @@ DO_NOT_PLURALIZE = {
 
 def pluralize(category):
     """Return plural form unless explicitly skipped."""
-    return category if category in DO_NOT_PLURALIZE else f"{category}s"
+    if category in DO_NOT_PLURALIZE:
+        return category
+    if category == "shelf":
+        return "shelves"
+    return f"{category}s"
 
 
 RECIPE_FORMATS = {
@@ -52,7 +56,7 @@ def get_output_path(pack):
 # Manual inflection points where recipe syntax changes significantly
 SIMULATED_OVERLAYS = {
     57: ["legacy", 48],  # recipe format overhaul
-    # 83: ["legacy", "48, "61", "83"],  # TODO: soonTM
+    # 88: ["legacy", "48, "61", "88"],  # TODO: example, not legit
 }
 
 # Determine packs in CSV and convert digit strings to integers

@@ -1,0 +1,11 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "group": "shelves_to_blocks",
+    "ingredients": [
+        "minecraft:acacia_shelf"
+    ],
+    "result": {
+        "count": 4,
+        "id": "minecraft:acacia_planks"
+    }
+}

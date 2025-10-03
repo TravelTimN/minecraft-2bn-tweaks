@@ -1,0 +1,11 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "group": "shelves_to_blocks",
+    "ingredients": [
+        "minecraft:birch_shelf"
+    ],
+    "result": {
+        "count": 4,
+        "id": "minecraft:birch_planks"
+    }
+}

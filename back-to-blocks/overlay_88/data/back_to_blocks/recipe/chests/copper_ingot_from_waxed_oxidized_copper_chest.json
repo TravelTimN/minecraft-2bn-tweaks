@@ -1,0 +1,11 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "group": "chests_to_blocks",
+    "ingredients": [
+        "minecraft:waxed_oxidized_copper_chest"
+    ],
+    "result": {
+        "count": 4,
+        "id": "minecraft:copper_ingot"
+    }
+}

@@ -1,0 +1,11 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "group": "miscellaneous_to_blocks",
+    "ingredients": [
+        "minecraft:scaffolding"
+    ],
+    "result": {
+        "count": 1,
+        "id": "minecraft:bamboo"
+    }
+}
