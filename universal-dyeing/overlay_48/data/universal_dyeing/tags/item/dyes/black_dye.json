@@ -2,6 +2,8 @@
   "replace": false,
   "values": [
     "minecraft:black_dye",
+    "minecraft:charcoal",
+    "minecraft:coal",
     "minecraft:ink_sac",
     "minecraft:wither_rose"
   ]

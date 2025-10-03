@@ -19,7 +19,7 @@ DYE_ALTERNATES = {
     },
     "orange": {
         "legacy": ["orange_tulip", "torchflower", "orange_dye"],
-        61: ["open_eyeblossom"]
+        61: ["open_eyeblossom", "resin_clump"]
     },
     "yellow": {
         "legacy": ["dandelion", "sunflower", "yellow_dye"]
@@ -28,7 +28,7 @@ DYE_ALTERNATES = {
         "legacy": ["sea_pickle", "lime_dye"]
     },
     "green": {
-        "legacy": ["cactus", "green_dye"]
+        "legacy": ["cactus", "green_dye", "kelp"]
     },
     "cyan": {
         "legacy": ["pitcher_plant", "cyan_dye"]
@@ -43,7 +43,7 @@ DYE_ALTERNATES = {
         "legacy": ["allium", "lilac", "magenta_dye"]
     },
     "purple": {
-        "legacy": ["purple_dye"]
+        "legacy": ["amethyst_shard", "chorus_fruit", "purple_dye"]
     },
     "pink": {
         "legacy": ["peony", "pink_petals", "pink_tulip", "pink_dye"],
@@ -53,7 +53,7 @@ DYE_ALTERNATES = {
         "legacy": ["cocoa_beans", "brown_dye"]
     },
     "black": {
-        "legacy": ["ink_sac", "wither_rose", "black_dye"]
+        "legacy": ["coal", "charcoal", "ink_sac", "wither_rose", "black_dye"]
     },
     "gray": {
         "legacy": ["gray_dye"],
@@ -77,7 +77,7 @@ RECIPE_FORMATS = {
 SIMULATED_OVERLAYS = {
     48: ["legacy"],                # Recipe format switch: (item -> id)
     57: ["legacy", 48],            # Format switch: (id -> flat)
-    61: ["legacy", 48, 57],        # Dye alt: closed_eyeblossom (gray), open_eyeblossom (orange)
+    61: ["legacy", 48, 57],        # Dye alt: closed_eyeblossom (gray), open_eyeblossom (orange), resin_clump (orange)
     71: ["legacy", 48, 57, 61],    # Dye alt: cactus_flower (pink)
 }
 

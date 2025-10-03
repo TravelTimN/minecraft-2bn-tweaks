@@ -1,6 +1,8 @@
 {
   "replace": false,
   "values": [
+    "minecraft:amethyst_shard",
+    "minecraft:chorus_fruit",
     "minecraft:purple_dye"
   ]
 }
