@@ -2,26 +2,23 @@
     "pack": {
         "description": "§42§cB§6N§f-§eT§aw§be§9a§5k§ds §f> §eCraftables §f: §bElytra",
         "pack_format": 15,
-		"supported_formats": {
-            "min_inclusive": 15,
-			"max_inclusive": 81
-		}
+		"min_format": 15,
+		"max_format": 88,
+		"supported_formats": [15, 88]
 	},
 	"overlays": {
 		"entries": [
 			{
                 "directory": "overlay_48",
-				"formats": {
-					"min_inclusive": 48,
-					"max_inclusive": 2147483647
-				}
+				"min_format": 48,
+				"max_format": 2147483647,
+				"formats": [48, 2147483647]
 			},
 			{
                 "directory": "overlay_57",
-				"formats": {
-					"min_inclusive": 57,
-					"max_inclusive": 2147483647
-				}
+				"min_format": 57,
+				"max_format": 2147483647,
+				"formats": [57, 2147483647]
 			}
 		]
 	}
