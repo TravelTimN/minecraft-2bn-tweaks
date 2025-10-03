@@ -19,7 +19,7 @@ RECIPE_FORMATS = {
 DYES_BY_PACK = {
     "orange": {
         61: ["resin_clump"],
-        # 83: ["copper_nugget"]  # sample only, will not be used
+        # 88: ["copper_nugget"]  # sample only, will not be used
     },
     "green": {
         "legacy": ["kelp"]

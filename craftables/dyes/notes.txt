@@ -47,12 +47,29 @@ https://minecraft.wiki/w/Pack_format#List_of_data_pack_formats
   Template: Recipe #3
   Recipes: legacy (redo), 48 (redo), 57 (redo), 61 (self)
 
-1.21.8 (⚠️ unconfirmed) [TBC]:
-  Pack: 83 (⚠️ unconfirmed)
-  "Fall-Drop 2025": Introduces copper chests (from Copper Golems).
-  Directory: overlay_83/data/<namespace>/recipe/..
-  Template: Recipe #3
-  Recipes: legacy (redo), 48 (redo), 57 (redo), 61 (redo), 83 (⚠️ unconfirmed/self)
+1.21.9 [03 SEP 2025]:
+  Pack: 88
+  "The Copper Age": Reformatting of `pack.mcmeta` file. (https://minecraft.wiki/w/Pack.mcmeta)
+
+  pack.mcmeta:
+  - The supported_formats field has been removed.
+      - If the pack declares support for a pack version with the previous format (data pack < 82, resource pack < 65), it is still required.
+      - Otherwise, it is not allowed and must be removed.
+  - The pack_format field is now optional.
+      - If the pack declares support for a pack version with the previous format (data pack < 82, resource pack < 65), it is still required.
+  - Added required field min_format - specifies the minimum version supported.
+      - A full version is specified as a list of two integers, e.g [74, 1]
+      - Specifying a single integer is interpreted as that major version, e.g. 74 is the same thing as [74, 0].
+      - Specifying a list of a single integer is interpreted the same as specifying that integer alone.
+  - Added required field max_format - specified the maximum version supported.
+      - A full version is specified as a list of two integers, e.g [74, 1]
+      - Specifying a single integer is interpreted as any minor version, i.e. the minor version is 0x7fffffff.
+      - Specifying a list of a single integer is interpreted the same as specifying that integer alone.
+  - For overlay entries:
+      - The formats field has been removed.
+          - If the pack includes any overlay range that includes a pack version with the previous format (data pack < 82, resource pack < 65), it is still required for all overlay definitions.
+          - Otherwise, it is not allowed and must be removed.
+      - Added required field min_format and max_format with the same formats the fields above with the same name for the pack section.
 
 
 === GENERATED ===
