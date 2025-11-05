@@ -27,7 +27,7 @@
 				"formats": [80, 2147483647]
 			},
 			{
-                "directory": "overlay_88",
+                "directory": "overlay_81",
 				"min_format": 81,
 				"max_format": 2147483647,
 				"formats": [81, 2147483647]
