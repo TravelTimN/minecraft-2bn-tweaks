@@ -1,5 +1,7 @@
 # Minecraft 2BN Tweaks
 
+![2BN-Tweaks](2bn-tweaks.png)
+
 ---
 
 ## Table of Contents
