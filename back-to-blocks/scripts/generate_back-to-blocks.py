@@ -4,8 +4,27 @@ import json
 
 # === Load CSV === #
 
-csv_path = "2BN-Tweaks_Back-to-Blocks.csv"
-df = pd.read_csv(csv_path)
+
+def normalize_pack(pack):
+    if pd.isna(pack):
+        return None
+    pack = str(pack).strip().lower()
+    if pack == "legacy":
+        return "legacy"
+    try:
+        number = float(pack)
+    except ValueError:
+        raise ValueError(f"Invalid pack value: {pack}")
+    if number.is_integer():
+        return int(number)
+    return number
+
+
+csv_url = "https://docs.google.com/spreadsheets/d/1t9lmXWqlyno15NTqfUDTYcuZuNVCAmxs4Pt4w9a5CPI/export?format=csv&gid=0"
+df = pd.read_csv(csv_url)
+
+df["pack"] = df["pack"].apply(normalize_pack)
+df = df.dropna(subset=["pack"])
 
 
 # === Helpers === #
@@ -36,19 +55,29 @@ def get_recipe_format(pack):
     """Return recipe style: item, id, or flat."""
     if pack == "legacy":
         return "item"
-    for attr, rng in RECIPE_FORMATS.items():
-        if isinstance(pack, int) and pack in rng:
-            return attr
+    if isinstance(pack, (int, float)):
+        for attr, rng in RECIPE_FORMATS.items():
+            if pack in rng:
+                return attr
+        if pack >= 57:
+            return "flat"
     raise ValueError(f"Unknown format for pack: {pack}")
+
+
+def pack_folder_name(pack):
+    if isinstance(pack, float) and not pack.is_integer():
+        return str(pack).replace(".", "_")
+
+    return str(int(pack)) if isinstance(pack, float) else str(pack)
 
 
 def get_output_path(pack):
     """Return full directory path for a given pack."""
     # 1.21 changed `recipes/` -> `recipe/` (pack 48+)
-    folder = "recipes" if pack == "legacy" or (isinstance(pack, int) and pack < 48) else "recipe"
+    folder = "recipes" if pack == "legacy" or (isinstance(pack, (int, float)) and pack < 48) else "recipe"
     if pack == "legacy":
         return os.path.join("..", "data", "back_to_blocks", folder)
-    return os.path.join("..", f"overlay_{pack}", "data", "back_to_blocks", folder)
+    return os.path.join("..", f"overlay_{pack_folder_name(pack)}", "data", "back_to_blocks", folder)
 
 
 # === Overlay Rules === #
@@ -56,19 +85,24 @@ def get_output_path(pack):
 # Manual inflection points where recipe syntax changes significantly
 SIMULATED_OVERLAYS = {
     57: ["legacy", 48],  # recipe format overhaul
-    # 88: ["legacy", "48, "61", "88"],  # TODO: example, not legit
+    # 88: ["legacy", "48, "61", "88"],  # NOTE: example, not legit
 }
 
+def pack_sort_key(pack):
+    if pack == "legacy":
+        return (0, 0)
+    if isinstance(pack, (int, float)):
+        return (1, pack)
+    return (2, str(pack))
+
+
 # Determine packs in CSV and convert digit strings to integers
-all_csv_packs = sorted([
-    int(p) if str(p).isdigit() else p
-    for p in df["pack"].unique()
-], key=lambda x: (999 if x == "legacy" else x))  # legacy always first
+all_csv_packs = sorted(df["pack"].unique(), key=pack_sort_key)
 
 # Determine all packs including simulated ones
 all_packs = sorted(
     set(all_csv_packs + list(SIMULATED_OVERLAYS.keys())),
-    key=lambda x: (999 if x == "legacy" else x)
+    key=pack_sort_key
 )
 
 
@@ -85,14 +119,14 @@ for pack in all_packs:
         # Automatically include all lower packs, up-to and including current
         source_packs = [
             p for p in all_csv_packs
-            if p != "legacy" and isinstance(p, int) and p <= pack
+            if p != "legacy" and isinstance(p, (int, float)) and p <= pack
         ]
         if "legacy" in all_csv_packs:
             source_packs.insert(0, "legacy")
 
     # Combine data for all source packs for this overlay
     pack_df = pd.concat([
-        df[df["pack"].astype(str) == str(source)] for source in source_packs
+        df[df["pack"] == source] for source in source_packs
     ])
 
     # Create the folder for specified pack.
@@ -104,10 +138,10 @@ for pack in all_packs:
     recipe_count = 0
 
     for _, row in pack_df.iterrows():
-        category = row["category"].strip().lower()
+        category = str(row["category"]).strip().lower()
         category_plural = pluralize(category)
-        ingredient = row["ingredient_material"].strip().lower()
-        result = row["recipe_result"].strip().lower()
+        ingredient = str(row["ingredient_material"]).strip().lower()
+        result = str(row["recipe_result"]).strip().lower()
         quantity = int(row["quantity"])
         count = int(row["count"])
 
