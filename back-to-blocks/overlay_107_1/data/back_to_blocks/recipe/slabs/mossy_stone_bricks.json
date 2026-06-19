@@ -1,0 +1,12 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "group": "slabs_to_blocks",
+    "ingredients": [
+        "minecraft:mossy_stone_brick_slab",
+        "minecraft:mossy_stone_brick_slab"
+    ],
+    "result": {
+        "count": 1,
+        "id": "minecraft:mossy_stone_bricks"
+    }
+}

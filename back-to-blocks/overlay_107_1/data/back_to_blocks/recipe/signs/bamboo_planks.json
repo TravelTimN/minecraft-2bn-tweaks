@@ -1,0 +1,11 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "group": "signs_to_blocks",
+    "ingredients": [
+        "minecraft:bamboo_sign"
+    ],
+    "result": {
+        "count": 1,
+        "id": "minecraft:bamboo_planks"
+    }
+}
