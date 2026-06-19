@@ -59,7 +59,6 @@ https://minecraft.wiki/w/Pack_format#List_of_data_pack_formats
   - Trapdoors: crafted with 4 ingots now, not 6 (result = 1 trapdoor, not 2).
   - Bars: 6 copper ingots = 16 (new) copper_bars
   - Chains: "chain" has been renamed to iron_chain, now that copper_chain exists
-  - Chests: Back-to-Blocks reverse into 4 copper ingots
 
   Shelf:
   - Recipe: 6x stripped log/stem = 6 shelves
@@ -84,6 +83,39 @@ https://minecraft.wiki/w/Pack_format#List_of_data_pack_formats
           - If the pack includes any overlay range that includes a pack version with the previous format (data pack < 82, resource pack < 65), it is still required for all overlay definitions.
           - Otherwise, it is not allowed and must be removed.
       - Added required field min_format and max_format with the same formats the fields above with the same name for the pack section.
+
+26.1 [24 MAR 2026]:
+  Pack: 101.1
+  "Tiny Takeover": Baby mob variations and golden dandelion added.
+  Nothing changed in any 2BN-packs.
+
+26.2 [16 JUN 2026]:
+  Pack: 107.1
+  "Chaos Cubed": Introduced cinnabar, sulfur, "Bounce" music disc.
+  - 2BN Back-to-Blocks:
+    - Cinnabar: slab, stairs, wall (+polished, +bricks)
+    - Sulfur: slab, stairs, wall (+polished, +bricks)
+  - 2BN More-Blocks:
+    - Cinnabar: stairs (+polished, +bricks)
+    - Sulfur: stairs (+polished, +bricks)
+  Directory: overlay_107/data/<namespace>/recipe/..
+  Template: Recipe #3
+  Recipes: legacy (redo), 48 (redo), 57 (redo), 61 (redo), 88 (redo), 107 (self)
+
+26.3 [Q3 2026]:
+  Pack: 108.1 [⚠️ TBD]
+  "3rd Drop 2026": Introduced dappled forest, poplar wood, wool slabs, wool stairs, straw bed (unconfirmed)
+  - 2BN Back-to-Blocks:
+    - Poplar: boat, button, chest_boat, door, fence, fence_gate, hanging_sign, pressure_plate, shelf, sign, slab, stairs, trapdoor, wall
+    - Wool: slab, stairs (16 colors each)
+  - 2BN More-Blocks:
+    - Poplar: bark, pressure_plate, stairs, trapdoor
+    - Wool: stairs (16 colors)
+  - 2BN Universal-Dyeing:
+    - Wool: slab, stairs (16 colors each)
+  Directory: overlay_108/data/<namespace>/recipe/..
+  Template: Recipe #3
+  Recipes: legacy (redo), 48 (redo), 57 (redo), 61 (redo), 88 (redo), 107 (redo), 108 (self)
 
 
 
@@ -143,12 +175,33 @@ Recipe #2: 1.21.0 - 1.21.1 (result.item -> result.id)
 
 
 Recipe #3: 1.21.2+ (flat ingredients, result.id)
+# shapeless
 {
   "type": "minecraft:crafting_shapeless",
   "group": f"{category_plural}_to_blocks",
   "ingredients": [
     f"minecraft:{ingredient_material}",
     f"minecraft:{ingredient_material}"
+  ],
+  "result": {
+    "count": {count},
+    "id": f"minecraft:{recipe_result}"
+  }
+}
+
+# shaped
+{
+  "type": "minecraft:crafting_shaped",
+  "group": f"{category_plural}_to_blocks",
+  "key": {
+    "A": f"minecraft:{ingredient_material1}",
+    "B": f"minecraft:{ingredient_material2}",
+    "C": f"minecraft:{ingredient_material3}",
+  },
+  "pattern": [
+    "AAA",
+    "BBB",
+    "CCC"
   ],
   "result": {
     "count": {count},
