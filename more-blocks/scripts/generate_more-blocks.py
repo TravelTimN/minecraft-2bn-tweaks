@@ -1,12 +1,37 @@
-import pandas as pd
-import os
 import json
+import os
+import pandas as pd
+import re
 
-# === Configuration === #
-CSV_PATH = "2BN-Tweaks_More-Blocks.csv"
+# === pack.mcmeta config === #
+
+PACK_DESCRIPTION = "§42§cB§6N§f-§eT§aw§be§9a§5k§ds §f> §eMore-Blocks"
+BASE_PACK_FORMAT = 15
+MAX_PACK_FORMAT = 107.1
 
 # === Load CSV === #
-df = pd.read_csv(CSV_PATH)
+
+
+def normalize_pack(pack):
+    if pd.isna(pack):
+        return None
+    pack = str(pack).strip().lower()
+    if pack == "legacy":
+        return "legacy"
+    try:
+        number = float(pack)
+    except ValueError:
+        raise ValueError(f"Invalid pack value: {pack}")
+    if number.is_integer():
+        return int(number)
+    return number
+
+
+csv_url = "https://docs.google.com/spreadsheets/d/1t9lmXWqlyno15NTqfUDTYcuZuNVCAmxs4Pt4w9a5CPI/export?format=csv&gid=1434501916"
+df = pd.read_csv(csv_url)
+
+df["pack"] = df["pack"].apply(normalize_pack)
+df = df.dropna(subset=["pack"])
 
 # === Helpers === #
 DO_NOT_PLURALIZE = {
@@ -25,14 +50,25 @@ RECIPE_FORMATS = {
     "flat": range(57, 999),    # pack 57+
 }
 
+
 def get_recipe_format(pack):
     """Return recipe style: item, id, or flat."""
     if pack == "legacy":
         return "item"
-    for fmt, rng in RECIPE_FORMATS.items():
-        if isinstance(pack, int) and pack in rng:
-            return fmt
-    raise ValueError(f"Unknown recipe format for pack: {pack}")
+    if isinstance(pack, (int, float)):
+        for attr, rng in RECIPE_FORMATS.items():
+            if pack in rng:
+                return attr
+        if pack >= 57:
+            return "flat"
+    raise ValueError(f"Unknown format for pack: {pack}")
+
+
+def pack_folder_name(pack):
+    if isinstance(pack, float) and not pack.is_integer():
+        return str(pack).replace(".", "_")
+
+    return str(int(pack)) if isinstance(pack, float) else str(pack)
 
 
 def get_output_path(pack):
@@ -42,7 +78,7 @@ def get_output_path(pack):
     must go in the default "minecraft" vanilla folder, not a custom <namespace>.
     Also, no sub-category folders, just straight into the recipe(s) folder.
     """
-    if pack == "legacy" or (isinstance(pack, int) and pack < 48):
+    if pack == "legacy" or (isinstance(pack, (int, float)) and pack < 48):
         # 1.21.1 and below go into "recipes/" (plural)
         folder = "recipes"
     else:
@@ -54,7 +90,7 @@ def get_output_path(pack):
         base = os.path.join("..", "data", "minecraft", folder)
     else:
         # Overlays are top-level as well, starting from 1.20.2 (pack 18+)
-        base = os.path.join("..", f"overlay_{pack}", "data", "minecraft", folder)
+        base = os.path.join("..", f"overlay_{pack_folder_name(pack)}", "data", "minecraft", folder)
     return base
 
 
@@ -67,16 +103,78 @@ SIMULATED_OVERLAYS = {
     57: ["legacy", 48],  # simulated for Recipe#3 formatting
 }
 
+
+def pack_sort_key(pack):
+    if pack == "legacy":
+        return (0, 0)
+    if isinstance(pack, (int, float)):
+        return (1, pack)
+    return (2, str(pack))
+
+
+def max_format_before(pack):
+    """Return the inclusive max format before the next overlay starts."""
+    if isinstance(pack, float) and not pack.is_integer():
+        return int(pack)
+    return pack - 1
+
+
+def build_overlay_entries(packs):
+    overlay_packs = [
+        pack for pack in packs
+        if pack != "legacy" and isinstance(pack, (int, float)) and pack >= 48
+    ]
+
+    entries = []
+    for index, pack in enumerate(overlay_packs):
+        if index + 1 < len(overlay_packs):
+            max_format = max_format_before(overlay_packs[index + 1])
+        else:
+            max_format = 2147483647
+
+        entries.append({
+            "directory": f"overlay_{pack_folder_name(pack)}",
+            "min_format": pack,
+            "max_format": max_format,
+            "formats": [pack, max_format]
+        })
+
+    return entries
+
+
+def write_pack_mcmeta(packs):
+    pack_mcmeta = {
+        "pack": {
+            "description": PACK_DESCRIPTION,
+            "pack_format": BASE_PACK_FORMAT,
+            "min_format": BASE_PACK_FORMAT,
+            "max_format": MAX_PACK_FORMAT,
+            "supported_formats": [BASE_PACK_FORMAT, MAX_PACK_FORMAT]
+        },
+        "overlays": {
+            "entries": build_overlay_entries(packs)
+        }
+    }
+
+    filepath = os.path.join("..", "pack.mcmeta")
+    text = json.dumps(pack_mcmeta, indent=4, ensure_ascii=False)
+    text = re.sub(
+        r"\[\n\s+(-?\d+(?:\.\d+)?),\n\s+(-?\d+(?:\.\d+)?)\n\s+\]",
+        r"[\1, \2]",
+        text
+    )
+    with open(filepath, "w", encoding="utf-8") as f:
+        f.write(text)
+        f.write("\n")
+
+
 # Determine packs in CSV and convert digit strings to ints ("legacy" = 0)
-all_csv_packs = sorted(
-    [int(p) if str(p).isdigit() else p for p in df["pack"].unique()],
-    key=lambda x: (0 if x == "legacy" else x)
-)
+all_csv_packs = sorted(df["pack"].unique(), key=pack_sort_key)
 
 # Determine all packs including simulated ones ("legacy" = 0)
 all_packs = sorted(
     set(all_csv_packs) | set(SIMULATED_OVERLAYS.keys()),
-    key=lambda x: (0 if x == "legacy" else x)
+    key=pack_sort_key
 )
 
 # === Recipe Generation === #
@@ -94,7 +192,10 @@ for pack in all_packs:
         source_packs = ["legacy"]
     else:
         # Include all previous numeric packs up to (and including) this one and legacy
-        source_packs = [p for p in all_csv_packs if p != "legacy" and isinstance(p, int) and p <= pack]
+        source_packs = [
+            p for p in all_csv_packs
+            if p != "legacy" and isinstance(p, (int, float)) and p <= pack
+        ]
         if "legacy" in all_csv_packs:
             source_packs.insert(0, "legacy")
 
@@ -188,8 +289,12 @@ for pack in all_packs:
     recipe_counts[pack] = count_recipes
 
 
+# generate the pack.mcmeta with overlays [where applicable]
+write_pack_mcmeta(all_packs)
+
+
 # === Summary === #
 for pack, cnt in recipe_counts.items():
     # Printing results to terminal
     label = "Legacy" if pack == "legacy" else f"Overlay {pack}"
-    print(f"  - {label:<12}: recipes generated = {cnt}")
+    print(f"  - {label:<14}: recipes generated = {cnt}")
