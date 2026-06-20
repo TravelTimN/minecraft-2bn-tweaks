@@ -33,8 +33,7 @@ A Minecraft datapack that adds hundreds of crafting recipes to reverse decorativ
 | buttons | pressure plates | doors | trapdoors |
 | signs | hanging signs | slabs | stairs |
 | fences | fence gates | walls | |
-| quartz | redstone components | workstations | utility blocks |
-| bulbs | grates | chests | resin |
+| copper | resin | quartz | |
 
 <sup>*</sup> Lossy base form means the original materials aren't fully recoverable; reverse-crafting comes with a deliberate loss, and is not intended to be 1:1.
 
@@ -44,7 +43,7 @@ A Minecraft datapack that adds hundreds of crafting recipes to reverse decorativ
 
 | Supported Versions | Download (.zip) |
 | --- | --- |
-| 1.20.0 – 1.21.9+ | 💾 [Download 2BN-Tweaks: Back-to-Blocks](back-to-blocks/2BN-Tweaks_Back-to-Blocks.zip?raw=1) |
+| 1.20.0 – 26.2+ | 💾 [Download 2BN-Tweaks: Back-to-Blocks](back-to-blocks/2BN-Tweaks_Back-to-Blocks.zip?raw=1) |
 
 ---
 
@@ -246,9 +245,9 @@ You are free to:
 - So long as you provide attribution (*see below*)
 - And license derivatives under the same terms
 
-> 📜 **Attribution**  
-> **[2BN-Tweaks](https://github.com/TravelTimN/minecraft-2bn-tweaks)**  
-> Created by [TravelTimN](https://github.com/TravelTimN)  
+> 📜 **Attribution**
+> **[2BN-Tweaks](https://github.com/TravelTimN/minecraft-2bn-tweaks)**
+> Created by [TravelTimN](https://github.com/TravelTimN)
 > Licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0)
 
 ---
