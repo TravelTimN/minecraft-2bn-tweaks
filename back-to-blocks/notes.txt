@@ -103,9 +103,9 @@ https://minecraft.wiki/w/Pack_format#List_of_data_pack_formats
   Pack: 108.1 [⚠️ TBD]
   "3rd Drop 2026": Introduced dappled forest, poplar wood, wool slabs, wool stairs, straw bed (unconfirmed)
   - 2BN Back-to-Blocks:
-    - Poplar: boat, button, chest_boat, door, fence, fence_gate, hanging_sign, pressure_plate, shelf, sign, slab, stairs, trapdoor, wall
+    - Poplar: boat, button, chest_boat, door, fence, fence_gate, hanging_sign, pressure_plate, shelf, sign, slab, stairs, trapdoor
     - Wool: slab, stairs (16 colors each)
-  Directory: overlay_108/data/<namespace>/recipe/..
+  Directory: overlay_108_1/data/<namespace>/recipe/..
   Template: Recipe #3
   Recipes: legacy (redo), 48 (redo), 57 (redo), 61 (redo), 88 (redo), 107.1 (redo), 108.1 (self)
 
