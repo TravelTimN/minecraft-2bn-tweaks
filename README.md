@@ -191,12 +191,12 @@ A Minecraft datapack that enhances vanilla crafting by increasing the **yield** 
 | bark (wood/hyphae) | 3 | 4 |
 | bricks | 1 | 4 |
 | pressure plates | 1 | 2 |
-| stairs | 4 | 6 / 8 <sup>*</sup> |
-| trapdoors | 1 | 2 / 6 <sup>**</sup> |
+| stairs | 4 | 6 |
+| trapdoors | 1 | 2 / 6 <sup>*</sup> |
 
-<sup>*</sup> Wood = 8 / Others = 6.
-
-<sup>**</sup> Iron | Copper = 2 / Wood = 6.
+<sup>*</sup> Trapdoor Material Yields:
+- Iron | Copper = 2
+- Wood = 6
 
 **[View the full recipe list in Google Sheets](https://docs.google.com/spreadsheets/d/1t9lmXWqlyno15NTqfUDTYcuZuNVCAmxs4Pt4w9a5CPI/edit?gid=1434501916#gid=1434501916)**
 
@@ -204,7 +204,7 @@ A Minecraft datapack that enhances vanilla crafting by increasing the **yield** 
 
 | Supported Versions | Download (.zip) |
 | --- | --- |
-| 1.20.0 – 1.21.9+ | 💾 [Download 2BN-Tweaks: More-Blocks](more-blocks/2BN-Tweaks_More-Blocks.zip?raw=1) |
+| 1.20.0 – 26.2+ | 💾 [Download 2BN-Tweaks: More-Blocks](more-blocks/2BN-Tweaks_More-Blocks.zip?raw=1) |
 
 ---
 
