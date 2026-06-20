@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "bricks",
+  "pattern": [
+    "##",
+    "##"
+  ],
+  "key": {
+    "#": [
+      "minecraft:brick"
+    ]
+  },
+  "result": {
+    "id": "minecraft:bricks",
+    "count": 4
+  }
+}

@@ -13,7 +13,7 @@ https://minecraft.wiki/w/Pack_format#List_of_data_pack_formats
 1.20.0 [07 JUN 2023]:
   Pack: 15
   "Trails & Tales": Introduced cherry & bamboo (+mosaic) blocks/items.
-  Directory: data/<namespace>/recipes/..
+  Directory: data/minecraft/recipes/..
   Recipe Result Attribute: `item`
   Template: Recipe #1
   Recipes: legacy (self)
@@ -28,7 +28,7 @@ https://minecraft.wiki/w/Pack_format#List_of_data_pack_formats
   "Tricky Trials": Introduced more copper & tuff blocks/items.
   Renamed Recipe Directory: `recipes/` -> `recipe/`
   Changed Recipe Result Attribute: `item` -> `id`
-  Directory: overlay_48/data/<namespace>/recipe/..
+  Directory: overlay_48/data/minecraft/recipe/..
   Template: Recipe #2
   Recipes: legacy (redo), 48 (self)
 
@@ -36,14 +36,14 @@ https://minecraft.wiki/w/Pack_format#List_of_data_pack_formats
   Pack: 57
   "Bundles of Bravery": Introduced the new crafting recipe format.
   Recipe ingredients use flat-method, instead of dicts with `tag`/`item`.
-  Directory: overlay_57/data/<namespace>/recipe/..
+  Directory: overlay_57/data/minecraft/recipe/..
   Template: Recipe #3
   Recipes: legacy (redo), 48 (redo), 57 (self)
 
 1.21.4 [03 DEC 2024]:
   Pack: 61
   "The Garden Awakens": Introduced pale oak & resin blocks/items.
-  Directory: overlay_61/data/<namespace>/recipe/..
+  Directory: overlay_61/data/minecraft/recipe/..
   Template: Recipe #3
   Recipes: legacy (redo), 48 (redo), 57 (redo), 61 (self)
 
@@ -51,19 +51,17 @@ https://minecraft.wiki/w/Pack_format#List_of_data_pack_formats
   Pack: 88
   "The Copper Age": Introduced several copper items, blocks, armor, tools, weapons, golems, etc.
   Reformatting of `pack.mcmeta` file. (https://minecraft.wiki/w/Pack.mcmeta)
-  Directory: overlay_88/data/<namespace>/recipe/..
-  Template: Recipe #3
-  Recipes: legacy (redo), 48 (redo), 57 (redo), 61 (redo), 88 (self)
+  Directory: overlay_88/data/minecraft/recipe/..
+  No 2BN More-Blocks recipes added.
+  No overlay_88 needed; existing overlay_61 recipes remain valid.
 
   Copper:
   - Trapdoors: crafted with 4 ingots now, not 6 (result = 1 trapdoor, not 2).
   - Bars: 6 copper ingots = 16 (new) copper_bars
   - Chains: "chain" has been renamed to iron_chain, now that copper_chain exists
-  - Chests: Back-to-Blocks reverse into 4 copper ingots
 
   Shelf:
   - Recipe: 6x stripped log/stem = 6 shelves
-  - Datapack: Back-to-Blocks reverse into 4 planks
 
   pack.mcmeta:
   - The supported_formats field has been removed.
@@ -85,18 +83,44 @@ https://minecraft.wiki/w/Pack_format#List_of_data_pack_formats
           - Otherwise, it is not allowed and must be removed.
       - Added required field min_format and max_format with the same formats the fields above with the same name for the pack section.
 
+26.1 [24 MAR 2026]:
+  Pack: 101.1
+  "Tiny Takeover": Baby mob variations and golden dandelion added.
+  Nothing changed in any 2BN-packs.
+
+26.2 [16 JUN 2026]:
+  Pack: 107.1
+  "Chaos Cubed": Introduced cinnabar, sulfur, "Bounce" music disc.
+  - 2BN More-Blocks:
+    - Cinnabar: stairs (+polished, +bricks)
+    - Sulfur: stairs (+polished, +bricks)
+  Directory: overlay_107_1/data/minecraft/recipe/..
+  Template: Recipe #3
+  Recipes: legacy (redo), 48 (redo), 57 (redo), 61 (redo), 107.1 (self)
+
+26.3 [Q3 2026]:
+  Pack: 108.1 [⚠️ TBD]
+  "3rd Drop 2026": Introduced dappled forest, poplar wood, wool slabs, wool stairs, straw bed (unconfirmed)
+  - 2BN More-Blocks:
+    - Poplar: bark, pressure_plate, stairs, trapdoor
+    - Wool: stairs (16 colors)
+  Directory: overlay_108_1/data/minecraft/recipe/..
+  Template: Recipe #3
+  Recipes: legacy (redo), 48 (redo), 57 (redo), 61 (redo), 107.1 (redo), 108.1 (self)
+
 
 === GENERATED ===
 
-  - Legacy      : recipes generated = 96
-  - Overlay 48  : recipes generated = 108
-  - Overlay 57  : recipes generated = 108
-  - Overlay 61  : recipes generated = 115
+  - Legacy        : recipes generated = 96
+  - Overlay 48    : recipes generated = 108
+  - Overlay 57    : recipes generated = 108
+  - Overlay 61    : recipes generated = 115
+  - Overlay 107.1 : recipes generated = 121
 
 
 === BUGS ===
 
-✅ [Fixed]
+✅ [Fixed] ⚠️
 Random recipes just wouldn't provide the desired result count.
 After a lot of manual testing, it turns out that since these are vanilla recipes,
 just getting the result count updated, the recipes themselves need to be

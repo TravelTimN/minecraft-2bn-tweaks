@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "bark",
+  "pattern": [
+    "##",
+    "##"
+  ],
+  "key": {
+    "#": [
+      "minecraft:acacia_log"
+    ]
+  },
+  "result": {
+    "id": "minecraft:acacia_wood",
+    "count": 4
+  }
+}

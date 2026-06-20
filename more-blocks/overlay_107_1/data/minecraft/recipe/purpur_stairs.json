@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "stairs",
+  "pattern": [
+    "#  ",
+    "## ",
+    "###"
+  ],
+  "key": {
+    "#": [
+      "minecraft:purpur_block",
+      "minecraft:purpur_pillar"
+    ]
+  },
+  "result": {
+    "id": "minecraft:purpur_stairs",
+    "count": 6
+  }
+}
