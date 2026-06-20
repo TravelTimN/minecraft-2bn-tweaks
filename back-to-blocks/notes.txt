@@ -95,12 +95,9 @@ https://minecraft.wiki/w/Pack_format#List_of_data_pack_formats
   - 2BN Back-to-Blocks:
     - Cinnabar: slab, stairs, wall (+polished, +bricks)
     - Sulfur: slab, stairs, wall (+polished, +bricks)
-  - 2BN More-Blocks:
-    - Cinnabar: stairs (+polished, +bricks)
-    - Sulfur: stairs (+polished, +bricks)
-  Directory: overlay_107/data/<namespace>/recipe/..
+  Directory: overlay_107_1/data/<namespace>/recipe/..
   Template: Recipe #3
-  Recipes: legacy (redo), 48 (redo), 57 (redo), 61 (redo), 88 (redo), 107 (self)
+  Recipes: legacy (redo), 48 (redo), 57 (redo), 61 (redo), 88 (redo), 107.1 (self)
 
 26.3 [Q3 2026]:
   Pack: 108.1 [⚠️ TBD]
@@ -108,29 +105,25 @@ https://minecraft.wiki/w/Pack_format#List_of_data_pack_formats
   - 2BN Back-to-Blocks:
     - Poplar: boat, button, chest_boat, door, fence, fence_gate, hanging_sign, pressure_plate, shelf, sign, slab, stairs, trapdoor, wall
     - Wool: slab, stairs (16 colors each)
-  - 2BN More-Blocks:
-    - Poplar: bark, pressure_plate, stairs, trapdoor
-    - Wool: stairs (16 colors)
-  - 2BN Universal-Dyeing:
-    - Wool: slab, stairs (16 colors each)
   Directory: overlay_108/data/<namespace>/recipe/..
   Template: Recipe #3
-  Recipes: legacy (redo), 48 (redo), 57 (redo), 61 (redo), 88 (redo), 107 (redo), 108 (self)
+  Recipes: legacy (redo), 48 (redo), 57 (redo), 61 (redo), 88 (redo), 107.1 (redo), 108.1 (self)
 
 
 
 === GENERATED ===
 
-  - Legacy      : recipes generated = 277
-  - Overlay 48  : recipes generated = 335
-  - Overlay 57  : recipes generated = 335
-  - Overlay 61  : recipes generated = 351
-  - Overlay 88  : recipes generated = 371
+  - Legacy      : recipes generated = 234
+  - Overlay 48  : recipes generated = 291
+  - Overlay 57  : recipes generated = 291
+  - Overlay 61  : recipes generated = 306
+  - Overlay 88  : recipes generated = 318
+  - Overlay 107.1: recipes generated = 336
 
 
 === BUGS ===
 
-No current  bugs identified
+No current bugs identified
 
 
 
