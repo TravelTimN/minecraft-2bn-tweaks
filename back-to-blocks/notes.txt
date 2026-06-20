@@ -113,12 +113,12 @@ https://minecraft.wiki/w/Pack_format#List_of_data_pack_formats
 
 === GENERATED ===
 
-  - Legacy      : recipes generated = 234
-  - Overlay 48  : recipes generated = 291
-  - Overlay 57  : recipes generated = 291
-  - Overlay 61  : recipes generated = 306
-  - Overlay 88  : recipes generated = 318
-  - Overlay 107.1: recipes generated = 336
+  - Legacy        : recipes generated = 234
+  - Overlay 48    : recipes generated = 291
+  - Overlay 57    : recipes generated = 291
+  - Overlay 61    : recipes generated = 306
+  - Overlay 88    : recipes generated = 318
+  - Overlay 107.1 : recipes generated = 336
 
 
 === BUGS ===

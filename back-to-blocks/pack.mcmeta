@@ -2,42 +2,42 @@
     "pack": {
         "description": "§42§cB§6N§f-§eT§aw§be§9a§5k§ds §f> §eBack-to-Blocks",
         "pack_format": 15,
-		"min_format": 15,
-		"max_format": 107.1,
-		"supported_formats": [15, 107.1]
-	},
-	"overlays": {
-		"entries": [
-			{
+        "min_format": 15,
+        "max_format": 107.1,
+        "supported_formats": [15, 107.1]
+    },
+    "overlays": {
+        "entries": [
+            {
                 "directory": "overlay_48",
-				"min_format": 48,
-				"max_format": 56,
-				"formats": [48, 56]
-			},
-			{
+                "min_format": 48,
+                "max_format": 56,
+                "formats": [48, 56]
+            },
+            {
                 "directory": "overlay_57",
-				"min_format": 57,
-				"max_format": 60,
-				"formats": [57, 60]
-			},
-			{
+                "min_format": 57,
+                "max_format": 60,
+                "formats": [57, 60]
+            },
+            {
                 "directory": "overlay_61",
-				"min_format": 61,
-				"max_format": 87,
-				"formats": [61, 87]
-			},
-			{
+                "min_format": 61,
+                "max_format": 87,
+                "formats": [61, 87]
+            },
+            {
                 "directory": "overlay_88",
-				"min_format": 88,
-				"max_format": 107,
-				"formats": [88, 107]
-			},
-			{
+                "min_format": 88,
+                "max_format": 107,
+                "formats": [88, 107]
+            },
+            {
                 "directory": "overlay_107_1",
-				"min_format": 107.1,
-				"max_format": 2147483647,
-				"formats": [107.1, 2147483647]
-			}
-		]
-	}
+                "min_format": 107.1,
+                "max_format": 2147483647,
+                "formats": [107.1, 2147483647]
+            }
+        ]
+    }
 }

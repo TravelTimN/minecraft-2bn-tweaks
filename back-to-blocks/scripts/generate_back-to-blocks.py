@@ -1,6 +1,13 @@
-import pandas as pd
-import os
 import json
+import os
+import pandas as pd
+import re
+
+# === pack.mcmeta config === #
+
+PACK_DESCRIPTION = "§42§cB§6N§f-§eT§aw§be§9a§5k§ds §f> §eBack-to-Blocks"
+BASE_PACK_FORMAT = 15
+MAX_PACK_FORMAT = 107.1
 
 # === Load CSV === #
 
@@ -94,6 +101,62 @@ def pack_sort_key(pack):
     if isinstance(pack, (int, float)):
         return (1, pack)
     return (2, str(pack))
+
+
+def max_format_before(pack):
+    """Return the inclusive max format before the next overlay starts."""
+    if isinstance(pack, float) and not pack.is_integer():
+        return int(pack)
+    return pack - 1
+
+
+def build_overlay_entries(packs):
+    overlay_packs = [
+        pack for pack in packs
+        if pack != "legacy" and isinstance(pack, (int, float)) and pack >= 48
+    ]
+
+    entries = []
+    for index, pack in enumerate(overlay_packs):
+        if index + 1 < len(overlay_packs):
+            max_format = max_format_before(overlay_packs[index + 1])
+        else:
+            max_format = 2147483647
+
+        entries.append({
+            "directory": f"overlay_{pack_folder_name(pack)}",
+            "min_format": pack,
+            "max_format": max_format,
+            "formats": [pack, max_format]
+        })
+
+    return entries
+
+
+def write_pack_mcmeta(packs):
+    pack_mcmeta = {
+        "pack": {
+            "description": PACK_DESCRIPTION,
+            "pack_format": BASE_PACK_FORMAT,
+            "min_format": BASE_PACK_FORMAT,
+            "max_format": MAX_PACK_FORMAT,
+            "supported_formats": [BASE_PACK_FORMAT, MAX_PACK_FORMAT]
+        },
+        "overlays": {
+            "entries": build_overlay_entries(packs)
+        }
+    }
+
+    filepath = os.path.join("..", "pack.mcmeta")
+    text = json.dumps(pack_mcmeta, indent=4, ensure_ascii=False)
+    text = re.sub(
+        r"\[\n\s+(-?\d+(?:\.\d+)?),\n\s+(-?\d+(?:\.\d+)?)\n\s+\]",
+        r"[\1, \2]",
+        text
+    )
+    with open(filepath, "w", encoding="utf-8") as f:
+        f.write(text)
+        f.write("\n")
 
 
 # Determine packs in CSV and convert digit strings to integers
@@ -213,10 +276,14 @@ for pack in all_packs:
     recipe_counts[pack] = recipe_count
 
 
+# generate the pack.mcmeta with overlays [where applicable]
+write_pack_mcmeta(all_packs)
+
+
 # === Summary Output === #
 
 for pack in all_packs:
     if pack not in recipe_counts:
         continue
     label = "Legacy" if pack == "legacy" else f"Overlay {pack}"
-    print(f"  - {label:<12}: recipes generated = {recipe_counts[pack]}")
+    print(f"  - {label:<14}: recipes generated = {recipe_counts[pack]}")
