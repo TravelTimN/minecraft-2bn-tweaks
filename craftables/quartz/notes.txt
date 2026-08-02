@@ -1,0 +1,60 @@
+2BN-Tweaks | Craftables | Quartz
+
+
+=== INFO ===
+
+Craftable raw Nether Quartz: 4x Netherrack, 4x Basalt, 1x Magma Block -> 8x Nether Quartz.
+Balanced for mid-game Nether survival: magma cream blocks are cheap to reach,
+and basalt exists in abundance in the basalt deltas.
+
+
+=== UPDATES ===
+
+https://minecraft.wiki/w/Pack_format#List_of_data_pack_formats
+
+26.2 [2026]:
+  Pack: 107.1
+  Directory: data/<namespace>/recipe/..
+  Recipe Result Attribute: `id`
+  Recipe Ingredients: flat-method (array of item id strings)
+  pack.mcmeta: new schema (min_format / max_format, integer pairs)
+  Recipes: raw_quartz (self)
+
+
+=== GENERATED ===
+
+  - 26.2         : raw_quartz created
+  - Pack zip     : 2BN-Tweaks_Craftable_Quartz.zip
+
+
+=== BUGS ===
+
+✅ Fully tested in single-player and 2BN-SMP multiplayer games successfully.
+
+
+=== RECIPE FORMAT : SHAPED (26.2 / pack 107.1) ===
+
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "raw_quartz",
+  "pattern": [
+    "NBN",
+    "BMB",
+    "NBN"
+  ],
+  "key": {
+    "N": [
+      "minecraft:netherrack"
+    ],
+    "B": [
+      "minecraft:basalt"
+    ],
+    "M": [
+      "minecraft:magma_block"
+    ]
+  },
+  "result": {
+    "id": "minecraft:quartz",
+    "count": 8
+  }
+}
