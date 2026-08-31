@@ -1,0 +1,21 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "group": "chorus_fruit",
+    "pattern": [
+        "BBB",
+        "BEB",
+        "BBB"
+    ],
+    "key": {
+        "B": [
+            "minecraft:beetroot"
+        ],
+        "E": [
+            "minecraft:ender_pearl"
+        ]
+    },
+    "result": {
+        "id": "minecraft:chorus_fruit",
+        "count": 1
+    }
+}
