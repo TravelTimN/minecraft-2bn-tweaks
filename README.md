@@ -19,6 +19,7 @@
   - 🏺 [Pottery Sherds](#-pottery-sherds)
   - 💎 [Quartz](#-quartz)
   - 💀 [Skulls](#-skulls)
+  - 🔚 [The End](#-the-end)
 - ⚖️ [**License**](#️-license)
 
 ---
@@ -237,6 +238,24 @@ This datapack adds **shaped crafting recipes** to create some iconic mob heads u
 | Supported Versions | Download (.zip) |
 | --- | --- |
 | 1.20.0 – 1.21.9+ | 💾 [Download 2BN-Tweaks: Craftable Skulls](craftables/skulls/2BN-Tweaks_Craftable_Skulls.zip?raw=1) |
+
+### 🔚 [The End](craftables/the-end/)
+
+This datapack brings a little bit of the End to the Overworld, without having to defeat a dragon first.
+
+Craft End Stone from stone and Ender Pearls, turn beetroot into Chorus Fruit, and create Chorus Flowers to grow your own renewable chorus plants.
+
+Perfect for builders who need End Stone, Purpur, and End Rods for their builds, while keeping the End itself safely off-limits until everyone is ready.
+
+| Chorus Fruit | Chorus Flower | End Stone |
+| :---: | :---: | :---: |
+| ![craftable chorus fruit](craftables/the-end/chorus_fruit.png) | ![craftable chorus flower](craftables/the-end/chorus_flower.png) | ![craftable end stone](craftables/the-end/end_stone.png) |
+
+**Download**
+
+| Supported Versions | Download (.zip) |
+| --- | --- |
+| 26.2 | 💾 [Download 2BN-Tweaks: Craftable End](craftables/the-end/2BN-Tweaks_Craftable_End.zip?raw=1) |
 
 ---
 
