@@ -1,0 +1,11 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "group": "pressure_plates_to_blocks",
+    "ingredients": [
+        "minecraft:spruce_pressure_plate"
+    ],
+    "result": {
+        "count": 1,
+        "id": "minecraft:spruce_planks"
+    }
+}

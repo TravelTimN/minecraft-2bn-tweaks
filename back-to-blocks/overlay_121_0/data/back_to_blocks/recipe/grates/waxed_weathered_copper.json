@@ -1,0 +1,11 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "group": "grates_to_blocks",
+    "ingredients": [
+        "minecraft:waxed_weathered_copper_grate"
+    ],
+    "result": {
+        "count": 1,
+        "id": "minecraft:waxed_weathered_copper"
+    }
+}

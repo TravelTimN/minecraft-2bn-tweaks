@@ -1,0 +1,12 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "group": "slabs_to_blocks",
+    "ingredients": [
+        "minecraft:red_concrete_slab",
+        "minecraft:red_concrete_slab"
+    ],
+    "result": {
+        "count": 1,
+        "id": "minecraft:red_concrete"
+    }
+}

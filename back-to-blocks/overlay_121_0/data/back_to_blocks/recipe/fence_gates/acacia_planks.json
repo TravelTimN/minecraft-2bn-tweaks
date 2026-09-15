@@ -1,0 +1,11 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "group": "fence_gates_to_blocks",
+    "ingredients": [
+        "minecraft:acacia_fence_gate"
+    ],
+    "result": {
+        "count": 1,
+        "id": "minecraft:acacia_planks"
+    }
+}

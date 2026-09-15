@@ -1,0 +1,12 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "group": "slabs_to_blocks",
+    "ingredients": [
+        "minecraft:light_blue_wool_slab",
+        "minecraft:light_blue_wool_slab"
+    ],
+    "result": {
+        "count": 1,
+        "id": "minecraft:light_blue_wool"
+    }
+}

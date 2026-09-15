@@ -1,0 +1,11 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "group": "stairs_to_blocks",
+    "ingredients": [
+        "minecraft:purple_wool_stairs"
+    ],
+    "result": {
+        "count": 1,
+        "id": "minecraft:purple_wool"
+    }
+}

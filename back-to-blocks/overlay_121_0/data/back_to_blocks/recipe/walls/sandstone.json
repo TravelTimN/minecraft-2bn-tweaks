@@ -1,0 +1,11 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "group": "walls_to_blocks",
+    "ingredients": [
+        "minecraft:sandstone_wall"
+    ],
+    "result": {
+        "count": 1,
+        "id": "minecraft:sandstone"
+    }
+}

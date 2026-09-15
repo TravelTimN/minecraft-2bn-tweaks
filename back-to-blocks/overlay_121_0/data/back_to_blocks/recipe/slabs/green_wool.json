@@ -1,0 +1,12 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "group": "slabs_to_blocks",
+    "ingredients": [
+        "minecraft:green_wool_slab",
+        "minecraft:green_wool_slab"
+    ],
+    "result": {
+        "count": 1,
+        "id": "minecraft:green_wool"
+    }
+}

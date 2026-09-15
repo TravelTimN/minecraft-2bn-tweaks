@@ -1,0 +1,11 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "group": "cushions_to_blocks",
+    "ingredients": [
+        "minecraft:purple_cushion"
+    ],
+    "result": {
+        "count": 1,
+        "id": "minecraft:purple_wool"
+    }
+}

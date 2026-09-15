@@ -1,0 +1,11 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "group": "stairs_to_blocks",
+    "ingredients": [
+        "minecraft:andesite_stairs"
+    ],
+    "result": {
+        "count": 1,
+        "id": "minecraft:andesite"
+    }
+}

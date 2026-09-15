@@ -1,0 +1,12 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "group": "slabs_to_blocks",
+    "ingredients": [
+        "minecraft:prismarine_slab",
+        "minecraft:prismarine_slab"
+    ],
+    "result": {
+        "count": 1,
+        "id": "minecraft:prismarine"
+    }
+}
