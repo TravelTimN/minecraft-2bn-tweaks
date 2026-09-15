@@ -3,8 +3,8 @@
         "description": "§42§cB§6N§f-§eT§aw§be§9a§5k§ds §f> §eBack-to-Blocks",
         "pack_format": 15,
         "min_format": 15,
-        "max_format": 107.1,
-        "supported_formats": [15, 107.1]
+        "max_format": 121.0,
+        "supported_formats": [15, 121.0]
     },
     "overlays": {
         "entries": [
@@ -23,20 +23,26 @@
             {
                 "directory": "overlay_61",
                 "min_format": 61,
-                "max_format": 87,
-                "formats": [61, 87]
+                "max_format": 87.0,
+                "formats": [61, 87.0]
             },
             {
-                "directory": "overlay_88",
-                "min_format": 88,
+                "directory": "overlay_88_0",
+                "min_format": 88.0,
                 "max_format": 107,
-                "formats": [88, 107]
+                "formats": [88.0, 107]
             },
             {
                 "directory": "overlay_107_1",
                 "min_format": 107.1,
+                "max_format": 120.0,
+                "formats": [107.1, 120.0]
+            },
+            {
+                "directory": "overlay_121_0",
+                "min_format": 121.0,
                 "max_format": 2147483647,
-                "formats": [107.1, 2147483647]
+                "formats": [121.0, 2147483647]
             }
         ]
     }

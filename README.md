@@ -33,7 +33,7 @@ A Minecraft datapack that adds hundreds of crafting recipes to reverse decorativ
 | boats | chest boats | rafts | chest rafts |
 | buttons | pressure plates | doors | trapdoors |
 | signs | hanging signs | slabs | stairs |
-| fences | fence gates | walls | |
+| fences | fence gates | walls | cushions |
 | copper | resin | quartz | |
 
 <sup>*</sup> Lossy base form means the original materials aren't fully recoverable; reverse-crafting comes with a deliberate loss, and is not intended to be 1:1.
@@ -44,7 +44,7 @@ A Minecraft datapack that adds hundreds of crafting recipes to reverse decorativ
 
 | Supported Versions | Download (.zip) |
 | --- | --- |
-| 1.20.0 – 26.2+ | 💾 [Download 2BN-Tweaks: Back-to-Blocks](back-to-blocks/2BN-Tweaks_Back-to-Blocks.zip?raw=1) |
+| 1.20.0 – 26.3+ | 💾 [Download 2BN-Tweaks: Back-to-Blocks](back-to-blocks/2BN-Tweaks_Back-to-Blocks.zip?raw=1) |
 
 ---
 
