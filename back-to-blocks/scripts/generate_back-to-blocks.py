@@ -5,9 +5,13 @@ import re
 
 # === pack.mcmeta config === #
 
+SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+PROJECT_DIR = os.path.dirname(SCRIPT_DIR)
+
 PACK_DESCRIPTION = "§42§cB§6N§f-§eT§aw§be§9a§5k§ds §f> §eBack-to-Blocks"
 BASE_PACK_FORMAT = 15
-MAX_PACK_FORMAT = 107.1
+MAX_PACK_FORMAT = 121.0
+DECIMAL_PACK_FORMAT_START = 82
 
 # === Load CSV === #
 
@@ -15,13 +19,15 @@ MAX_PACK_FORMAT = 107.1
 def normalize_pack(pack):
     if pd.isna(pack):
         return None
-    pack = str(pack).strip().lower()
-    if pack == "legacy":
+    raw_pack = str(pack).strip().lower()
+    if raw_pack == "legacy":
         return "legacy"
     try:
-        number = float(pack)
+        number = float(raw_pack)
     except ValueError:
-        raise ValueError(f"Invalid pack value: {pack}")
+        raise ValueError(f"Invalid pack value: {raw_pack}")
+    if number >= DECIMAL_PACK_FORMAT_START:
+        return number
     if number.is_integer():
         return int(number)
     return number
@@ -72,7 +78,7 @@ def get_recipe_format(pack):
 
 
 def pack_folder_name(pack):
-    if isinstance(pack, float) and not pack.is_integer():
+    if isinstance(pack, float):
         return str(pack).replace(".", "_")
 
     return str(int(pack)) if isinstance(pack, float) else str(pack)
@@ -83,8 +89,8 @@ def get_output_path(pack):
     # 1.21 changed `recipes/` -> `recipe/` (pack 48+)
     folder = "recipes" if pack == "legacy" or (isinstance(pack, (int, float)) and pack < 48) else "recipe"
     if pack == "legacy":
-        return os.path.join("..", "data", "back_to_blocks", folder)
-    return os.path.join("..", f"overlay_{pack_folder_name(pack)}", "data", "back_to_blocks", folder)
+        return os.path.join(PROJECT_DIR, "data", "back_to_blocks", folder)
+    return os.path.join(PROJECT_DIR, f"overlay_{pack_folder_name(pack)}", "data", "back_to_blocks", folder)
 
 
 # === Overlay Rules === #
@@ -147,7 +153,7 @@ def write_pack_mcmeta(packs):
         }
     }
 
-    filepath = os.path.join("..", "pack.mcmeta")
+    filepath = os.path.join(PROJECT_DIR, "pack.mcmeta")
     text = json.dumps(pack_mcmeta, indent=4, ensure_ascii=False)
     text = re.sub(
         r"\[\n\s+(-?\d+(?:\.\d+)?),\n\s+(-?\d+(?:\.\d+)?)\n\s+\]",
