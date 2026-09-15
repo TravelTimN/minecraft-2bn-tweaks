@@ -70,7 +70,7 @@ A Minecraft datapack that enhances vanilla crafting by increasing the **yield** 
 
 | Supported Versions | Download (.zip) |
 | --- | --- |
-| 1.20.0 – 26.2+ | 💾 [Download 2BN-Tweaks: More-Blocks](more-blocks/2BN-Tweaks_More-Blocks.zip?raw=1) |
+| 1.20.0 – 26.3+ | 💾 [Download 2BN-Tweaks: More-Blocks](more-blocks/2BN-Tweaks_More-Blocks.zip?raw=1) |
 
 ---
 
