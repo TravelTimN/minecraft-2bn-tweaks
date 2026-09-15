@@ -8,7 +8,7 @@ Inspiration from Vanilla Tweaks, but heavily modified.
 
 === UPDATES ===
 
-https://minecraft.wiki/w/Pack_format#List_of_data_pack_formats
+https://minecraft.wiki/w/Pack_format#List_of_pack_formats
 
 1.20.0 [07 JUN 2023]:
   Pack: 15
@@ -99,15 +99,21 @@ https://minecraft.wiki/w/Pack_format#List_of_data_pack_formats
   Template: Recipe #3
   Recipes: legacy (redo), 48 (redo), 57 (redo), 61 (redo), 88 (redo), 107.1 (self)
 
-26.3 [Q3 2026]:
-  Pack: 108.1 [⚠️ TBD]
-  "3rd Drop 2026": Introduced dappled forest, poplar wood, wool slabs, wool stairs, straw bed (unconfirmed)
+26.3 [15 SEP 2026]:
+  Pack: 121.0
+  "Wilderness Bound": Introduced dappled forest biome, and:
+    - poplar trees/wood items
+    - red shrubs, shelf mushrooms
+    - wool slabs/stairs/cushions
+    - concrete slabs/stairs
+    - straw beds
   - 2BN Back-to-Blocks:
     - Poplar: boat, button, chest_boat, door, fence, fence_gate, hanging_sign, pressure_plate, shelf, sign, slab, stairs, trapdoor
-    - Wool: slab, stairs (16 colors each)
-  Directory: overlay_108_1/data/<namespace>/recipe/..
+    - Wool: cushion, slab, stairs (16 colors each)
+    - Concrete: slab, stairs (16 colors each)
+  Directory: overlay_121_0/data/<namespace>/recipe/..
   Template: Recipe #3
-  Recipes: legacy (redo), 48 (redo), 57 (redo), 61 (redo), 88 (redo), 107.1 (redo), 108.1 (self)
+  Recipes: legacy (redo), 48 (redo), 57 (redo), 61 (redo), 88 (redo), 107.1 (redo), 121.0 (self)
 
 
 
