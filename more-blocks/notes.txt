@@ -47,6 +47,11 @@ https://minecraft.wiki/w/Pack_format#List_of_pack_formats
   Template: Recipe #3
   Recipes: legacy (redo), 48 (redo), 57 (redo), 61 (self)
 
+Java Edition 25w31a [29 JUL 2025]:
+  Pack: 82.0
+  First snapshot for 1.21.9, introduced new pack formatting using decimals/floats.
+  Everything prior to 82.0 used whole integers, and everything beyond this will use decimals.
+
 1.21.9 [03 SEP 2025]:
   Pack: 88
   "The Copper Age": Introduced several copper items, blocks, armor, tools, weapons, golems, etc.

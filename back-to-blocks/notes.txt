@@ -47,13 +47,18 @@ https://minecraft.wiki/w/Pack_format#List_of_pack_formats
   Template: Recipe #3
   Recipes: legacy (redo), 48 (redo), 57 (redo), 61 (self)
 
+Java Edition 25w31a [29 JUL 2025]:
+  Pack: 82.0
+  First snapshot for 1.21.9, introduced new pack formatting using decimals/floats.
+  Everything prior to 82.0 used whole integers, and everything beyond this will use decimals.
+
 1.21.9 [03 SEP 2025]:
-  Pack: 88
+  Pack: 88.0
   "The Copper Age": Introduced several copper items, blocks, armor, tools, weapons, golems, etc.
   Reformatting of `pack.mcmeta` file. (https://minecraft.wiki/w/Pack.mcmeta)
-  Directory: overlay_88/data/<namespace>/recipe/..
+  Directory: overlay_88_0/data/<namespace>/recipe/..
   Template: Recipe #3
-  Recipes: legacy (redo), 48 (redo), 57 (redo), 61 (redo), 88 (self)
+  Recipes: legacy (redo), 48 (redo), 57 (redo), 61 (redo), 88.0 (self)
 
   Copper:
   - Trapdoors: crafted with 4 ingots now, not 6 (result = 1 trapdoor, not 2).
@@ -97,7 +102,7 @@ https://minecraft.wiki/w/Pack_format#List_of_pack_formats
     - Sulfur: slab, stairs, wall (+polished, +bricks)
   Directory: overlay_107_1/data/<namespace>/recipe/..
   Template: Recipe #3
-  Recipes: legacy (redo), 48 (redo), 57 (redo), 61 (redo), 88 (redo), 107.1 (self)
+  Recipes: legacy (redo), 48 (redo), 57 (redo), 61 (redo), 88.0 (redo), 107.1 (self)
 
 26.3 [15 SEP 2026]:
   Pack: 121.0
@@ -113,7 +118,7 @@ https://minecraft.wiki/w/Pack_format#List_of_pack_formats
     - Concrete: slab, stairs (16 colors each)
   Directory: overlay_121_0/data/<namespace>/recipe/..
   Template: Recipe #3
-  Recipes: legacy (redo), 48 (redo), 57 (redo), 61 (redo), 88 (redo), 107.1 (redo), 121.0 (self)
+  Recipes: legacy (redo), 48 (redo), 57 (redo), 61 (redo), 88.0 (redo), 107.1 (redo), 121.0 (self)
 
 
 
@@ -123,8 +128,9 @@ https://minecraft.wiki/w/Pack_format#List_of_pack_formats
   - Overlay 48    : recipes generated = 291
   - Overlay 57    : recipes generated = 291
   - Overlay 61    : recipes generated = 306
-  - Overlay 88    : recipes generated = 318
+  - Overlay 88.0  : recipes generated = 318
   - Overlay 107.1 : recipes generated = 336
+  - Overlay 121.0 : recipes generated = 429
 
 
 === BUGS ===
