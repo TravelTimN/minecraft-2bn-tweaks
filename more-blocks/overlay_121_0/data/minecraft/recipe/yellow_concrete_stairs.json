@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "stairs",
+  "pattern": [
+    "#  ",
+    "## ",
+    "###"
+  ],
+  "key": {
+    "#": [
+      "minecraft:yellow_concrete"
+    ]
+  },
+  "result": {
+    "id": "minecraft:yellow_concrete_stairs",
+    "count": 6
+  }
+}

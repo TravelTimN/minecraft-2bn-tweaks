@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "stairs",
+  "pattern": [
+    "#  ",
+    "## ",
+    "###"
+  ],
+  "key": {
+    "#": [
+      "minecraft:magenta_concrete"
+    ]
+  },
+  "result": {
+    "id": "minecraft:magenta_concrete_stairs",
+    "count": 6
+  }
+}
