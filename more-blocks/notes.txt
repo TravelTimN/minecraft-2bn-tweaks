@@ -53,12 +53,12 @@ Java Edition 25w31a [29 JUL 2025]:
   Everything prior to 82.0 used whole integers, and everything beyond this will use decimals.
 
 1.21.9 [03 SEP 2025]:
-  Pack: 88
+  Pack: 88.0
   "The Copper Age": Introduced several copper items, blocks, armor, tools, weapons, golems, etc.
   Reformatting of `pack.mcmeta` file. (https://minecraft.wiki/w/Pack.mcmeta)
-  Directory: overlay_88/data/minecraft/recipe/..
+  Directory: overlay_88_0/data/minecraft/recipe/..
   No 2BN More-Blocks recipes added.
-  No overlay_88 needed; existing overlay_61 recipes remain valid.
+  No overlay_88_0 needed; existing overlay_61 recipes remain valid through 107.0.
 
   Copper:
   - Trapdoors: crafted with 4 ingots now, not 6 (result = 1 trapdoor, not 2).
@@ -113,10 +113,11 @@ Java Edition 25w31a [29 JUL 2025]:
     - straw beds
   - 2BN More-Blocks:
     - Poplar: bark (+stripped), pressure_plate, stairs, trapdoor
+    - Concrete: stairs (16 colors)
     - Wool: stairs (16 colors)
-  Directory: overlay_121_0/data/<namespace>/recipe/..
+  Directory: overlay_121_0/data/minecraft/recipe/..
   Template: Recipe #3
-  Recipes: legacy (redo), 48 (redo), 57 (redo), 61 (redo), 88 (redo), 107.1 (redo), 121.0 (self)
+  Recipes: legacy (redo), 48 (redo), 57 (redo), 61 (redo), 107.1 (redo), 121.0 (self)
 
 
 === GENERATED ===
@@ -126,6 +127,7 @@ Java Edition 25w31a [29 JUL 2025]:
   - Overlay 57    : recipes generated = 108
   - Overlay 61    : recipes generated = 115
   - Overlay 107.1 : recipes generated = 121
+  - Overlay 121.0 : recipes generated = 158
 
 
 === BUGS ===
