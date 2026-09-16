@@ -249,13 +249,13 @@ Perfect for builders who need End Stone, Purpur, and End Rods for their builds, 
 
 | Chorus Fruit | Chorus Flower | End Stone |
 | :---: | :---: | :---: |
-| ![craftable chorus fruit](craftables/the-end/chorus_fruit.png) | ![craftable chorus flower](craftables/the-end/chorus_flower.png) | ![craftable end stone](craftables/the-end/end_stone.png) |
+| ![craftable chorus fruit](craftables/the-end/screenshots/chorus_fruit.png) | ![craftable chorus flower](craftables/the-end/screenshots/chorus_flower.png) | ![craftable end stone](craftables/the-end/screenshots/end_stone.png) |
 
 **Download**
 
 | Supported Versions | Download (.zip) |
 | --- | --- |
-| 26.2 | 💾 [Download 2BN-Tweaks: Craftable End](craftables/the-end/2BN-Tweaks_Craftable_End.zip?raw=1) |
+| 1.20.0 – 26.3+ | 💾 [Download 2BN-Tweaks: Craftable End Items](craftables/the-end/2BN-Tweaks_Craftable_End.zip?raw=1) |
 
 ---
 

@@ -1,0 +1,143 @@
+2BN-Tweaks | Craftables | The End
+
+
+=== INFO ===
+
+Craft End Stone, Chorus Fruit, and Chorus Flowers before visiting the End.
+
+
+=== UPDATES ===
+
+https://minecraft.wiki/w/Pack_format#List_of_pack_formats
+
+1.20.0 [07 JUN 2023]:
+  Pack: 15
+  "Trails & Tales": End Stone, Chorus Fruit, Chorus Flowers, beetroot, stone, and ender pearls are all already in game.
+  Directory: data/<namespace>/recipes/..
+  Recipe Result Attribute: `item`
+  Template: Recipe #1
+  Recipes: legacy (self)
+
+1.20.2 [21 SEP 2023]:
+  Pack: 18
+  Mojang introduced `overlay_#` in `pack.mcmeta`.
+  No need for `overlay_18`, recipe format is unchanged.
+
+1.21.0 [13 JUN 2024]:
+  Pack: 48
+  "Tricky Trials"
+  Renamed Recipe Directory: `recipes/` -> `recipe/`
+  Changed Recipe Result Attribute: `item` -> `id`
+  Directory: overlay_48/data/<namespace>/recipe/..
+  Template: Recipe #2
+  Recipes: legacy (redo), 48 (self)
+
+1.21.2 [22 OCT 2024]:
+  Pack: 57
+  "Bundles of Bravery"
+  Recipe ingredients use flat-method, instead of dicts with `tag`/`item`.
+  Directory: overlay_57/data/<namespace>/recipe/..
+  Template: Recipe #3
+  Recipes: legacy (redo), 48 (redo), 57 (self)
+
+Java Edition 25w31a [29 JUL 2025]:
+  Pack: 82.0
+  First snapshot for 1.21.9, introduced new pack formatting using decimals/floats.
+  Everything prior to 82.0 used whole integers, and everything beyond this will use decimals.
+
+1.21.9 [03 SEP 2025]:
+  Pack: 88.0
+  "The Copper Age": Reformatting of `pack.mcmeta` file. (https://minecraft.wiki/w/Pack.mcmeta)
+
+26.1 [24 MAR 2026]:
+  Pack: 101.1
+  No 2BN-Craftable End recipes added.
+
+26.2 [16 JUN 2026]:
+  Pack: 107.1
+  Original Craftable End pack was created for the 2BN-SMP.
+  The recipe ingredients existed earlier, so this pack now supports 1.20.0+.
+
+26.3 [15 SEP 2026]:
+  Pack: 121.0
+  No 2BN-Craftable End recipes added.
+
+
+=== GENERATED ===
+
+  - Legacy      : recipes created = 3
+  - Overlay 48  : recipes created = 3
+  - Overlay 57  : recipes created = 3
+
+
+=== BUGS ===
+
+✅ All versions/overlays tested, no bugs.
+
+
+=== RECIPE FORMATS : SHAPED ===
+
+Recipe #1: 1.20.0 - 1.20.6 (result.item)
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "end_stone",
+  "pattern": [
+    "SSS",
+    "SES",
+    "SSS"
+  ],
+  "key": {
+    "S": {
+      "item": "minecraft:stone"
+    },
+    "E": {
+      "item": "minecraft:ender_pearl"
+    }
+  },
+  "result": {
+    "item": "minecraft:end_stone",
+    "count": 8
+  }
+}
+
+Recipe #2: 1.21.0 - 1.21.1 (result.item -> result.id)
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "end_stone",
+  "pattern": [
+    "SSS",
+    "SES",
+    "SSS"
+  ],
+  "key": {
+    "S": {
+      "item": "minecraft:stone"
+    },
+    "E": {
+      "item": "minecraft:ender_pearl"
+    }
+  },
+  "result": {
+    "id": "minecraft:end_stone",
+    "count": 8
+  }
+}
+
+Recipe #3: 1.21.2+ (flat ingredients, result.id)
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "end_stone",
+  "pattern": [
+    "SSS",
+    "SES",
+    "SSS"
+  ],
+  "key": {
+    "S": "minecraft:stone",
+    "E": "minecraft:ender_pearl"
+  },
+  "result": {
+    "id": "minecraft:end_stone",
+    "count": 8
+  }
+}

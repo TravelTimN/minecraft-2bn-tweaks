@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "end_stone",
+  "pattern": [
+    "SSS",
+    "SES",
+    "SSS"
+  ],
+  "key": {
+    "S": "minecraft:stone",
+    "E": "minecraft:ender_pearl"
+  },
+  "result": {
+    "id": "minecraft:end_stone",
+    "count": 8
+  }
+}
