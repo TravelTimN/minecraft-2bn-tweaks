@@ -165,7 +165,7 @@ Yes, it's expensive. Yes, it's overkill. Yes, it's *exactly what Notch didn't wa
 
 | Supported Versions | Download (.zip) |
 | --- | --- |
-| 1.20.0 – 1.21.9+ | 💾 [Download 2BN-Tweaks: Craftable Enchanted-Golden-Apple](craftables/enchanted-golden-apple/2BN-Tweaks_Craftable_Enchanted-Golden-Apple.zip?raw=1) |
+| 1.20.0 – 26.3+ | 💾 [Download 2BN-Tweaks: Craftable Enchanted-Golden-Apple](craftables/enchanted-golden-apple/2BN-Tweaks_Craftable_Enchanted-Golden-Apple.zip?raw=1) |
 
 ### 🌊 [Heart of the Sea](craftables/heart-of-the-sea/)
 
