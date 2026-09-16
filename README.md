@@ -209,7 +209,7 @@ Perfect for decorative builders or lore nerds who want matching sets without rai
 
 | Supported Versions | Download (.zip) |
 | --- | --- |
-| 1.20.0 – 1.21.9+ | 💾 [Download 2BN-Tweaks: Craftable Pottery-Sherds](craftables/pottery-sherds/2BN-Tweaks_Craftable_Pottery-Sherds.zip?raw=1) |
+| 1.20.0 – 26.3+ | 💾 [Download 2BN-Tweaks: Craftable Pottery-Sherds](craftables/pottery-sherds/2BN-Tweaks_Craftable_Pottery-Sherds.zip?raw=1) |
 
 ### 💎 [Quartz](craftables/quartz/)
 
