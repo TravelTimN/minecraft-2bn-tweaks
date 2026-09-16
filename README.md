@@ -179,7 +179,7 @@ Perfect for conduit crafters, Atlantis builders, or players who just want their 
 
 | Supported Versions | Download (.zip) |
 | --- | --- |
-| 1.20.0 – 1.21.9+ | 💾 [Download 2BN-Tweaks: Craftable Heart-of-the-Sea](craftables/heart-of-the-sea/2BN-Tweaks_Craftable_Heart-of-the-Sea.zip?raw=1) |
+| 1.20.0 – 26.3+ | 💾 [Download 2BN-Tweaks: Craftable Heart-of-the-Sea](craftables/heart-of-the-sea/2BN-Tweaks_Craftable_Heart-of-the-Sea.zip?raw=1) |
 
 ### 💿 [Music Discs](craftables/music-discs/)
 

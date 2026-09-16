@@ -46,7 +46,7 @@ Java Edition 25w31a [29 JUL 2025]:
   Everything prior to 82.0 used whole integers, and everything beyond this will use decimals.
 
 1.21.9 [03 SEP 2025]:
-  Pack: 88
+  Pack: 88.0
   "The Copper Age": Reformatting of `pack.mcmeta` file. (https://minecraft.wiki/w/Pack.mcmeta)
 
   pack.mcmeta:
@@ -68,6 +68,18 @@ Java Edition 25w31a [29 JUL 2025]:
           - If the pack includes any overlay range that includes a pack version with the previous format (data pack < 82, resource pack < 65), it is still required for all overlay definitions.
           - Otherwise, it is not allowed and must be removed.
       - Added required field min_format and max_format with the same formats the fields above with the same name for the pack section.
+
+26.1 [24 MAR 2026]:
+  Pack: 101.1
+  No 2BN-Craftable Heart of the Sea recipes added.
+
+26.2 [16 JUN 2026]:
+  Pack: 107.1
+  No 2BN-Craftable Heart of the Sea recipes added.
+
+26.3 [15 SEP 2026]:
+  Pack: 121.0
+  No 2BN-Craftable Heart of the Sea recipes added.
 
 
 === GENERATED ===
