@@ -80,15 +80,15 @@ A Minecraft datapack that breaks the vanilla dye barrier. **Re-dye** or **un-dye
 
 Use **any dye** to recolor these blocks, or use **ice** to scrub them back to their non-dyed form<sup>*</sup>.
 
-| | | |
-| --- | --- | --- |
-| candles<sup>*</sup> | | |
-| carpets | wool | |
-| concrete | concrete powder | |
-| terracotta* | glazed terracotta | |
-| stained glass<sup>*</sup> | stained glass panes<sup>*</sup> | |
-| sand | sandstone | smooth sandstone |
-| red sand<sup>*</sup> | red sandstone<sup>*</sup> | smooth red sandstone<sup>*</sup> |
+| | | | | |
+| --- | --- | --- | --- | --- |
+| candles<sup>*</sup> | | | | |
+| carpets | cushions | wool | wool slabs | wool stairs |
+| concrete powder | concrete | concrete slabs | concrete stairs | |
+| terracotta* | glazed terracotta | | | |
+| stained glass<sup>*</sup> | stained glass panes<sup>*</sup> | | | |
+| sand | sandstone | smooth sandstone | | |
+| red sand<sup>*</sup> | red sandstone<sup>*</sup> | smooth red sandstone<sup>*</sup> | | |
 
 <sup>*</sup> These blocks can be **un-dyed** using ice to revert them to their natural, uncolored state.
 
@@ -98,7 +98,7 @@ Use **any dye** to recolor these blocks, or use **ice** to scrub them back to th
 
 | Supported Versions | Download (.zip) |
 | --- | --- |
-| 1.20.0 – 1.21.9+ | 💾 [Download 2BN-Tweaks: Universal-Dyeing](universal-dyeing/2BN-Tweaks_Universal-Dyeing.zip?raw=1) |
+| 1.20.0 – 26.3+ | 💾 [Download 2BN-Tweaks: Universal-Dyeing](universal-dyeing/2BN-Tweaks_Universal-Dyeing.zip?raw=1) |
 
 ---
 
