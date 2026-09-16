@@ -137,7 +137,7 @@ Great for recovery compasses, lore builds, or just skipping the part where you g
 
 | Supported Versions | Download (.zip) |
 | --- | --- |
-| 1.20.0 – 1.21.9+ | 💾 [Download 2BN-Tweaks: Craftable Echo-Shard](craftables/echo-shard/2BN-Tweaks_Craftable_Echo-Shard.zip?raw=1) |
+| 1.20.0 – 26.3+ | 💾 [Download 2BN-Tweaks: Craftable Echo-Shard](craftables/echo-shard/2BN-Tweaks_Craftable_Echo-Shard.zip?raw=1) |
 
 ### 🪽 [Elytra](craftables/elytra/)
 
