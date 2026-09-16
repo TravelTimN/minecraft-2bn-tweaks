@@ -123,7 +123,7 @@ All recipes aim to be balanced, thematic, and helpful for younger players, or ju
 
 | Supported Versions | Download (.zip) |
 | --- | --- |
-| 1.20.0 - 1.21.9+ | 💾 [Download 2BN-Tweaks: Craftable Dyes](craftables/dyes/2BN-Tweaks_Craftable_Dyes.zip?raw=1) |
+| 1.20.0 – 26.3+ | 💾 [Download 2BN-Tweaks: Craftable Dyes](craftables/dyes/2BN-Tweaks_Craftable_Dyes.zip?raw=1) |
 
 ### 🪞 [Echo Shard](craftables/echo-shard/)
 
