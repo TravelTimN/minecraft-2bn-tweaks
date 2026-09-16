@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "raw_quartz",
+  "pattern": [
+    "NBN",
+    "BMB",
+    "NBN"
+  ],
+  "key": {
+    "N": {
+      "item": "minecraft:netherrack"
+    },
+    "B": {
+      "item": "minecraft:basalt"
+    },
+    "M": {
+      "item": "minecraft:magma_block"
+    }
+  },
+  "result": {
+    "id": "minecraft:quartz",
+    "count": 8
+  }
+}

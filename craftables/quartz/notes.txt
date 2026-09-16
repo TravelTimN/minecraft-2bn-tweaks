@@ -4,32 +4,71 @@
 === INFO ===
 
 Craftable raw Nether Quartz: 4x Netherrack, 4x Basalt, 1x Magma Block -> 8x Nether Quartz.
-Balanced for mid-game Nether survival: magma cream blocks are cheap to reach,
-and basalt exists in abundance in the basalt deltas.
+Balanced for mid-game Nether survival: magma blocks are cheap to reach, and basalt exists in abundance in basalt deltas.
 
 
 === UPDATES ===
 
 https://minecraft.wiki/w/Pack_format#List_of_pack_formats
 
+1.20.0 [07 JUN 2023]:
+  Pack: 15
+  "Trails & Tales": Netherrack, basalt, magma blocks, and Nether Quartz are all already in game.
+  Directory: data/<namespace>/recipes/..
+  Recipe Result Attribute: `item`
+  Template: Recipe #1
+  Recipes: legacy (self)
+
+1.20.2 [21 SEP 2023]:
+  Pack: 18
+  Mojang introduced `overlay_#` in `pack.mcmeta`.
+  No need for `overlay_18`, recipe format is unchanged.
+
+1.21.0 [13 JUN 2024]:
+  Pack: 48
+  "Tricky Trials"
+  Renamed Recipe Directory: `recipes/` -> `recipe/`
+  Changed Recipe Result Attribute: `item` -> `id`
+  Directory: overlay_48/data/<namespace>/recipe/..
+  Template: Recipe #2
+  Recipes: legacy (redo), 48 (self)
+
+1.21.2 [22 OCT 2024]:
+  Pack: 57
+  "Bundles of Bravery"
+  Recipe ingredients use flat-method, instead of dicts with `tag`/`item`.
+  Directory: overlay_57/data/<namespace>/recipe/..
+  Template: Recipe #3
+  Recipes: legacy (redo), 48 (redo), 57 (self)
+
 Java Edition 25w31a [29 JUL 2025]:
   Pack: 82.0
   First snapshot for 1.21.9, introduced new pack formatting using decimals/floats.
   Everything prior to 82.0 used whole integers, and everything beyond this will use decimals.
 
-26.2 [2026]:
+1.21.9 [03 SEP 2025]:
+  Pack: 88.0
+  "The Copper Age": Reformatting of `pack.mcmeta` file. (https://minecraft.wiki/w/Pack.mcmeta)
+
+26.1 [24 MAR 2026]:
+  Pack: 101.1
+  No 2BN-Craftable Quartz recipes added.
+
+26.2 [16 JUN 2026]:
   Pack: 107.1
-  Directory: data/<namespace>/recipe/..
-  Recipe Result Attribute: `id`
-  Recipe Ingredients: flat-method (array of item id strings)
-  pack.mcmeta: new schema (min_format / max_format, integer pairs)
-  Recipes: raw_quartz (self)
+  Original Craftable Quartz pack was created for the 2BN-SMP.
+  The recipe ingredients existed earlier, so this pack now supports 1.20.0+.
+
+26.3 [15 SEP 2026]:
+  Pack: 121.0
+  No 2BN-Craftable Quartz recipes added.
 
 
 === GENERATED ===
 
-  - 26.2         : raw_quartz created
-  - Pack zip     : 2BN-Tweaks_Craftable_Quartz.zip
+  - Legacy      : raw_quartz created
+  - Overlay 48  : raw_quartz created
+  - Overlay 57  : raw_quartz created
 
 
 === BUGS ===
@@ -37,8 +76,9 @@ Java Edition 25w31a [29 JUL 2025]:
 ✅ Fully tested in single-player and 2BN-SMP multiplayer games successfully.
 
 
-=== RECIPE FORMAT : SHAPED (26.2 / pack 107.1) ===
+=== RECIPE FORMATS : SHAPED ===
 
+Recipe #1: 1.20.0 - 1.20.6 (result.item)
 {
   "type": "minecraft:crafting_shaped",
   "group": "raw_quartz",
@@ -48,15 +88,61 @@ Java Edition 25w31a [29 JUL 2025]:
     "NBN"
   ],
   "key": {
-    "N": [
-      "minecraft:netherrack"
-    ],
-    "B": [
-      "minecraft:basalt"
-    ],
-    "M": [
-      "minecraft:magma_block"
-    ]
+    "N": {
+      "item": "minecraft:netherrack"
+    },
+    "B": {
+      "item": "minecraft:basalt"
+    },
+    "M": {
+      "item": "minecraft:magma_block"
+    }
+  },
+  "result": {
+    "item": "minecraft:quartz",
+    "count": 8
+  }
+}
+
+Recipe #2: 1.21.0 - 1.21.1 (result.item -> result.id)
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "raw_quartz",
+  "pattern": [
+    "NBN",
+    "BMB",
+    "NBN"
+  ],
+  "key": {
+    "N": {
+      "item": "minecraft:netherrack"
+    },
+    "B": {
+      "item": "minecraft:basalt"
+    },
+    "M": {
+      "item": "minecraft:magma_block"
+    }
+  },
+  "result": {
+    "id": "minecraft:quartz",
+    "count": 8
+  }
+}
+
+Recipe #3: 1.21.2+ (flat ingredients, result.id)
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "raw_quartz",
+  "pattern": [
+    "NBN",
+    "BMB",
+    "NBN"
+  ],
+  "key": {
+    "N": "minecraft:netherrack",
+    "B": "minecraft:basalt",
+    "M": "minecraft:magma_block"
   },
   "result": {
     "id": "minecraft:quartz",

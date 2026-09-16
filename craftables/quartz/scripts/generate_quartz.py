@@ -1,89 +1,194 @@
 import json
 import os
-import zipfile
+import re
 
-# === Configuration ===
-# 26.2 only -> pack_format 107.1 == [107, 1]
-PACK_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+# === Configuration === #
+SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+PROJECT_DIR = os.path.dirname(SCRIPT_DIR)
 
 NAMESPACE = "quartz"
-RECIPE_NAME = "raw_quartz"          # recipe id -> quartz:raw_quartz
-OUTPUT_ITEM = "minecraft:quartz"    # Nether Quartz (raw)
-OUTPUT_COUNT = 8
 PACK_DESCRIPTION = "§42§cB§6N§f-§eT§aw§be§9a§5k§ds §f> §eCraftables §f: §bQuartz"
-PACK_FORMAT = [107, 1]              # 26.2
+BASE_PACK_FORMAT = 15
+MAX_PACK_FORMAT = 121.0
+DECIMAL_PACK_FORMAT_START = 82
 
-# 3x3 shaped pattern: N B N / B M B / N B N
+RECIPE_NAME = "raw_quartz"
+OUTPUT_ITEM = "minecraft:quartz"
+OUTPUT_COUNT = 8
+
 PATTERN = [
     "NBN",
     "BMB",
     "NBN"
 ]
+
 INGREDIENTS = {
-    "N": "minecraft:netherrack",
-    "B": "minecraft:basalt",
-    "M": "minecraft:magma_block",
+    "N": "netherrack",
+    "B": "basalt",
+    "M": "magma_block"
 }
 
-ZIP_NAME = "2BN-Tweaks_Craftable_Quartz.zip"
+RECIPE_FORMATS = {
+    "item": range(0, 48),       # pack < 48
+    "id": range(48, 57),        # pack 48-56
+    "flat": range(57, 999),     # pack 57+
+}
 
-# Paths that should NOT be bundled inside the installable zip
-SKIP_FOR_ZIP = {"scripts", "notes.txt"}
+PACKS = ["legacy", 48, 57]
 
 
-def write_pack_mcmeta():
+# === Helpers === #
+def normalize_pack(pack):
+    if pack == "legacy":
+        return "legacy"
+    number = float(str(pack).strip())
+    if number >= DECIMAL_PACK_FORMAT_START:
+        return number
+    if number.is_integer():
+        return int(number)
+    return number
+
+
+def get_recipe_format(pack):
+    if pack == "legacy":
+        return "item"
+    for fmt, rng in RECIPE_FORMATS.items():
+        if isinstance(pack, (int, float)) and pack in rng:
+            return fmt
+    if isinstance(pack, (int, float)) and pack >= 57:
+        return "flat"
+    raise ValueError(f"Unknown format for pack: {pack}")
+
+
+def pack_folder_name(pack):
+    if isinstance(pack, float):
+        return str(pack).replace(".", "_")
+    return str(pack)
+
+
+def get_output_path(pack):
+    if pack == "legacy" or (isinstance(pack, (int, float)) and pack < 48):
+        folder = "recipes"
+    else:
+        folder = "recipe"
+
+    if pack == "legacy":
+        base = "data"
+    else:
+        base = os.path.join(f"overlay_{pack_folder_name(pack)}", "data")
+    return os.path.join(PROJECT_DIR, base, NAMESPACE, folder)
+
+
+def pack_sort_key(pack):
+    if pack == "legacy":
+        return (0, 0)
+    if isinstance(pack, (int, float)):
+        return (1, pack)
+    return (2, str(pack))
+
+
+def max_format_before(pack):
+    """Return the inclusive max format before the next overlay starts."""
+    if isinstance(pack, float):
+        major, minor = str(pack).split(".")
+        if int(minor) > 0:
+            return float(f"{major}.{int(minor) - 1}")
+        return float(int(major) - 1)
+    return pack - 1
+
+
+def build_overlay_entries(packs):
+    overlay_packs = [
+        pack for pack in packs
+        if pack != "legacy" and isinstance(pack, (int, float)) and pack >= 48
+    ]
+
+    entries = []
+    for index, pack in enumerate(overlay_packs):
+        if index + 1 < len(overlay_packs):
+            max_format = max_format_before(overlay_packs[index + 1])
+        else:
+            max_format = 2147483647
+
+        entries.append({
+            "directory": f"overlay_{pack_folder_name(pack)}",
+            "min_format": pack,
+            "max_format": max_format,
+            "formats": [pack, max_format]
+        })
+
+    return entries
+
+
+def write_pack_mcmeta(packs):
     pack_mcmeta = {
         "pack": {
             "description": PACK_DESCRIPTION,
-            "min_format": PACK_FORMAT,
-            "max_format": PACK_FORMAT,
+            "pack_format": BASE_PACK_FORMAT,
+            "min_format": BASE_PACK_FORMAT,
+            "max_format": MAX_PACK_FORMAT,
+            "supported_formats": [BASE_PACK_FORMAT, MAX_PACK_FORMAT]
+        },
+        "overlays": {
+            "entries": build_overlay_entries(packs)
         }
     }
-    path = os.path.join(PACK_DIR, "pack.mcmeta")
-    with open(path, "w", encoding="utf-8") as f:
-        json.dump(pack_mcmeta, f, indent=4)
-    print("  - pack.mcmeta written")
+
+    text = json.dumps(pack_mcmeta, indent=4, ensure_ascii=False)
+    text = re.sub(
+        r"\[\n\s+(-?\d+(?:\.\d+)?),\n\s+(-?\d+(?:\.\d+)?)\n\s+\]",
+        r"[\1, \2]",
+        text
+    )
+
+    with open(os.path.join(PROJECT_DIR, "pack.mcmeta"), "w", encoding="utf-8") as f:
+        f.write(text)
+        f.write("\n")
 
 
-def write_recipe():
-    recipe = {
+def build_recipe(fmt):
+    if fmt == "flat":
+        key = {k: f"minecraft:{v}" for k, v in INGREDIENTS.items()}
+        result = {
+            "id": OUTPUT_ITEM,
+            "count": OUTPUT_COUNT
+        }
+    else:
+        key = {
+            k: {"item": f"minecraft:{v}"}
+            for k, v in INGREDIENTS.items()
+        }
+        result_key = "id" if fmt == "id" else "item"
+        result = {
+            result_key: OUTPUT_ITEM,
+            "count": OUTPUT_COUNT
+        }
+
+    return {
         "type": "minecraft:crafting_shaped",
         "group": RECIPE_NAME,
         "pattern": PATTERN,
-        # flat-method ingredients (array of item ids) - pack 57+
-        "key": {k: [item] for k, item in INGREDIENTS.items()},
-        "result": {
-            "id": OUTPUT_ITEM,
-            "count": OUTPUT_COUNT,
-        },
+        "key": key,
+        "result": result
     }
-    # 26.2 uses the singular "recipe" directory
-    rel = os.path.join("data", NAMESPACE, "recipe", f"{RECIPE_NAME}.json")
-    path = os.path.join(PACK_DIR, rel)
-    os.makedirs(os.path.dirname(path), exist_ok=True)
-    with open(path, "w", encoding="utf-8") as f:
-        json.dump(recipe, f, indent=4)
-    print(f"  - {rel} written")
 
 
-def build_zip():
-    zip_path = os.path.join(PACK_DIR, ZIP_NAME)
-    with zipfile.ZipFile(zip_path, "w", zipfile.ZIP_DEFLATED) as zf:
-        for root, dirs, files in os.walk(PACK_DIR):
-            # don't descend into skipped directories
-            dirs[:] = [d for d in dirs if d not in SKIP_FOR_ZIP and not d.startswith("__")]
-            for fname in files:
-                full = os.path.join(root, fname)
-                rel = os.path.relpath(full, PACK_DIR)
-                if rel in SKIP_FOR_ZIP or rel == ZIP_NAME:
-                    continue
-                zf.write(full, arcname=rel)
-    print(f"  - {ZIP_NAME} built")
+# === Recipe Generation === #
+all_packs = sorted((normalize_pack(pack) for pack in PACKS), key=pack_sort_key)
+
+print("\n=== Quartz Generation Summary ===")
+for pack in all_packs:
+    fmt = get_recipe_format(pack)
+    output_path = get_output_path(pack)
+    os.makedirs(output_path, exist_ok=True)
+
+    filepath = os.path.join(output_path, f"{RECIPE_NAME}.json")
+    with open(filepath, "w", encoding="utf-8") as f:
+        json.dump(build_recipe(fmt), f, indent=2)
+
+    label = "Legacy" if pack == "legacy" else f"Overlay {pack}"
+    print(f"  - {label:<12}: raw_quartz created")
 
 
-if __name__ == "__main__":
-    print("\n=== Quartz Generation Summary ===")
-    write_pack_mcmeta()
-    write_recipe()
-    build_zip()
-    print()
+# Generate pack.mcmeta with current overlay ranges.
+write_pack_mcmeta(all_packs)

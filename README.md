@@ -223,7 +223,7 @@ Perfect for builders, redstoners, and anyone who'd rather spend their Nether tim
 
 | Supported Versions | Download (.zip) |
 | --- | --- |
-| 26.2 | 💾 [Download 2BN-Tweaks: Craftable Quartz](craftables/quartz/2BN-Tweaks_Craftable_Quartz.zip?raw=1) |
+| 1.20.0 – 26.3+ | 💾 [Download 2BN-Tweaks: Craftable Quartz](craftables/quartz/2BN-Tweaks_Craftable_Quartz.zip?raw=1) |
 
 ### 💀 [Skulls](craftables/skulls/)
 
