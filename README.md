@@ -151,7 +151,7 @@ Because let's face it: if you've already fought your way through the Nether and 
 
 | Supported Versions | Download (.zip) |
 | --- | --- |
-| 1.20.0 – 1.21.9+ | 💾 [Download 2BN-Tweaks: Craftable Elytra](craftables/elytra/2BN-Tweaks_Craftable_Elytra.zip?raw=1) |
+| 1.20.0 – 26.3+ | 💾 [Download 2BN-Tweaks: Craftable Elytra](craftables/elytra/2BN-Tweaks_Craftable_Elytra.zip?raw=1) |
 
 ### 🍏 [Enchanted Golden Apple](craftables/enchanted-golden-apple/)
 
