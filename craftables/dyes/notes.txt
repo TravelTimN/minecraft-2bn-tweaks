@@ -53,7 +53,7 @@ Java Edition 25w31a [29 JUL 2025]:
   Everything prior to 82.0 used whole integers, and everything beyond this will use decimals.
 
 1.21.9 [03 SEP 2025]:
-  Pack: 88
+  Pack: 88.0
   "The Copper Age": Reformatting of `pack.mcmeta` file. (https://minecraft.wiki/w/Pack.mcmeta)
 
   pack.mcmeta:
@@ -76,6 +76,21 @@ Java Edition 25w31a [29 JUL 2025]:
           - Otherwise, it is not allowed and must be removed.
       - Added required field min_format and max_format with the same formats the fields above with the same name for the pack section.
 
+26.1 [24 MAR 2026]:
+  Pack: 101.1
+  "Tiny Takeover": Baby mob variations and golden dandelion added.
+  No 2BN Craftable Dyes recipes added.
+
+26.2 [16 JUN 2026]:
+  Pack: 107.1
+  "Chaos Cubed": Introduced cinnabar and sulfur.
+  No 2BN Craftable Dyes recipes added.
+
+26.3 [15 SEP 2026]:
+  Pack: 121.0
+  "Wilderness Bound": Introduced the dappled forest biome, poplar, cushions, wool slabs/stairs, concrete slabs/stairs, and straw beds.
+  No 2BN Craftable Dyes recipes added.
+
 
 === GENERATED ===
 
@@ -86,8 +101,6 @@ Java Edition 25w31a [29 JUL 2025]:
 
 
 === BUGS ===
-
-✅ All successful in every version tested, including 1.21.7 SMP server.
 
 
 

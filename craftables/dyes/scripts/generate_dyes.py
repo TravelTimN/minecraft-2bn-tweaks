@@ -1,8 +1,16 @@
 import os
 import json
+import re
 
 # === Configuration === #
+SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+PROJECT_DIR = os.path.dirname(SCRIPT_DIR)
+
 NAMESPACE = "dyes"
+PACK_DESCRIPTION = "§42§cB§6N§f-§eT§aw§be§9a§5k§ds §f> §eCraftables §f: §bDyes"
+BASE_PACK_FORMAT = 15
+MAX_PACK_FORMAT = 121.0
+DECIMAL_PACK_FORMAT_START = 82
 
 SIMULATED_OVERLAYS = {
     48: ["legacy"],             # result.item -> result.id
@@ -34,21 +42,40 @@ DYES_BY_PACK = {
 
 
 # === Helpers === #
+def normalize_pack(pack):
+    if pack == "legacy":
+        return "legacy"
+    number = float(str(pack).strip())
+    if number >= DECIMAL_PACK_FORMAT_START:
+        return number
+    if number.is_integer():
+        return int(number)
+    return number
+
+
 def get_recipe_format(pack):
     if pack == "legacy":
         return "item"
     for fmt, rng in RECIPE_FORMATS.items():
-        if isinstance(pack, int) and pack in rng:
+        if isinstance(pack, (int, float)) and pack in rng:
             return fmt
+    if isinstance(pack, (int, float)) and pack >= 57:
+        return "flat"
     raise ValueError(f"Unknown format for pack: {pack}")
 
 
+def pack_folder_name(pack):
+    if isinstance(pack, float):
+        return str(pack).replace(".", "_")
+    return str(pack)
+
+
 def get_output_path(pack):
-    if pack == "legacy" or (isinstance(pack, int) and pack < 48):
+    if pack == "legacy" or (isinstance(pack, (int, float)) and pack < 48):
         # 1.21.1 and below go into "recipes/" (plural)
         folder = "recipes"
     else:
-        # 1.21.2+ go into "recipe/" (singular)
+        # 1.21.0+ go into "recipe/" (singular)
         folder = "recipe"
 
     if pack == "legacy":
@@ -56,16 +83,83 @@ def get_output_path(pack):
         base = "data"
     else:
         # Overlays are top-level as well, starting from 1.20.2 (pack 18+)
-        base = f"overlay_{pack}/data"
-    return os.path.join("..", base, NAMESPACE, folder)
+        base = os.path.join(f"overlay_{pack_folder_name(pack)}", "data")
+    return os.path.join(PROJECT_DIR, base, NAMESPACE, folder)
+
+
+def pack_sort_key(pack):
+    if pack == "legacy":
+        return (0, 0)
+    if isinstance(pack, (int, float)):
+        return (1, pack)
+    return (2, str(pack))
+
+
+def max_format_before(pack):
+    """Return the inclusive max format before the next overlay starts."""
+    if isinstance(pack, float):
+        major, minor = str(pack).split(".")
+        if int(minor) > 0:
+            return float(f"{major}.{int(minor) - 1}")
+        return float(int(major) - 1)
+    return pack - 1
+
+
+def build_overlay_entries(packs):
+    overlay_packs = [
+        pack for pack in packs
+        if pack != "legacy" and isinstance(pack, (int, float)) and pack >= 48
+    ]
+
+    entries = []
+    for index, pack in enumerate(overlay_packs):
+        if index + 1 < len(overlay_packs):
+            max_format = max_format_before(overlay_packs[index + 1])
+        else:
+            max_format = 2147483647
+
+        entries.append({
+            "directory": f"overlay_{pack_folder_name(pack)}",
+            "min_format": pack,
+            "max_format": max_format,
+            "formats": [pack, max_format]
+        })
+
+    return entries
+
+
+def write_pack_mcmeta(packs):
+    pack_mcmeta = {
+        "pack": {
+            "description": PACK_DESCRIPTION,
+            "pack_format": BASE_PACK_FORMAT,
+            "min_format": BASE_PACK_FORMAT,
+            "max_format": MAX_PACK_FORMAT,
+            "supported_formats": [BASE_PACK_FORMAT, MAX_PACK_FORMAT]
+        },
+        "overlays": {
+            "entries": build_overlay_entries(packs)
+        }
+    }
+
+    text = json.dumps(pack_mcmeta, indent=4, ensure_ascii=False)
+    text = re.sub(
+        r"\[\n\s+(-?\d+(?:\.\d+)?),\n\s+(-?\d+(?:\.\d+)?)\n\s+\]",
+        r"[\1, \2]",
+        text
+    )
+
+    with open(os.path.join(PROJECT_DIR, "pack.mcmeta"), "w", encoding="utf-8") as f:
+        f.write(text)
+        f.write("\n")
 
 
 # === Determine all packs === #
 all_packs = set()
 for versions in DYES_BY_PACK.values():
-    all_packs.update(versions.keys())
+    all_packs.update(normalize_pack(version) for version in versions.keys())
 all_packs.update(SIMULATED_OVERLAYS.keys())
-all_packs = sorted(all_packs, key=lambda x: (0 if x == "legacy" else int(x)))
+all_packs = sorted(all_packs, key=pack_sort_key)
 
 
 # === Recipe Generation === #
@@ -87,12 +181,18 @@ for pack in all_packs:
         valid = False
         ingredients = []
         for version, items in versions.items():
-            if version == "legacy":
-                version_num = 0
-            else:
-                version_num = int(version)
+            version_pack = normalize_pack(version)
 
-            if (pack == "legacy" and version == "legacy") or (isinstance(pack, int) and version_num <= pack):
+            if (
+                (pack == "legacy" and version_pack == "legacy")
+                or (
+                    isinstance(pack, (int, float))
+                    and (
+                        version_pack == "legacy"
+                        or (isinstance(version_pack, (int, float)) and version_pack <= pack)
+                    )
+                )
+            ):
                 ingredients.extend(items)
                 valid = True
 
@@ -141,8 +241,12 @@ for pack in all_packs:
     recipe_counts[pack] = count
 
 
+# Generate pack.mcmeta with current overlay ranges.
+write_pack_mcmeta(all_packs)
+
+
 # === Summary Output === #
 print("\n=== Craftable Dyes Generation Summary ===")
 for pack, cnt in recipe_counts.items():
     label = "Legacy" if pack == "legacy" else f"Overlay {pack}"
-    print(f"  - {label:<12}: recipes created = {cnt}")
+    print(f"  - {label:<14}: recipes created = {cnt}")
