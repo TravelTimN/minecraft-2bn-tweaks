@@ -195,7 +195,7 @@ Perfect for jukebox collectors, mapmakers, or anyone who thinks *Pigstep* should
 
 | Supported Versions | Download (.zip) |
 | --- | --- |
-| 1.20.0 - 1.21.9+ | 💾 [Download 2BN-Tweaks: Craftable Music-Discs](craftables/music-discs/2BN-Tweaks_Craftable_Music-Discs.zip?raw=1) |
+| 1.20.0 – 26.3+ | 💾 [Download 2BN-Tweaks: Craftable Music-Discs](craftables/music-discs/2BN-Tweaks_Craftable_Music-Discs.zip?raw=1) |
 
 ### 🏺 [Pottery Sherds](craftables/pottery-sherds/)
 

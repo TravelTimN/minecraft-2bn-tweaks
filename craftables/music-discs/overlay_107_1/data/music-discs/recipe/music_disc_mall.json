@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "music_discs",
+  "pattern": [
+    "AAA",
+    "ABA",
+    "AAA"
+  ],
+  "key": {
+    "A": "minecraft:coal",
+    "B": "minecraft:purple_glazed_terracotta"
+  },
+  "result": {
+    "id": "minecraft:music_disc_mall",
+    "count": 1
+  }
+}

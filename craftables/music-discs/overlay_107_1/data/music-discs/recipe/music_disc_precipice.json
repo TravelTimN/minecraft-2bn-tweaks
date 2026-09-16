@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "music_discs",
+  "pattern": [
+    "AAA",
+    "ABA",
+    "CAD"
+  ],
+  "key": {
+    "A": "minecraft:copper_ore",
+    "B": "minecraft:raw_copper_block",
+    "C": "minecraft:exposed_copper",
+    "D": "minecraft:weathered_copper"
+  },
+  "result": {
+    "id": "minecraft:music_disc_precipice",
+    "count": 1
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "music_discs",
+  "pattern": [
+    "   ",
+    " D ",
+    "   "
+  ],
+  "key": {
+    "D": "minecraft:music_disc_5"
+  },
+  "result": {
+    "id": "minecraft:disc_fragment_5",
+    "count": 9
+  }
+}

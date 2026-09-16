@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "music_discs",
+  "pattern": [
+    "AAA",
+    "ABA",
+    "AAA"
+  ],
+  "key": {
+    "A": "minecraft:coal",
+    "B": "minecraft:potent_sulfur"
+  },
+  "result": {
+    "id": "minecraft:music_disc_bounce",
+    "count": 1
+  }
+}

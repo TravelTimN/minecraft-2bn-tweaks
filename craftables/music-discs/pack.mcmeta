@@ -2,36 +2,42 @@
     "pack": {
         "description": "§42§cB§6N§f-§eT§aw§be§9a§5k§ds §f> §eCraftables §f: §bMusic-Discs",
         "pack_format": 15,
-		"min_format": 15,
-		"max_format": 88,
-		"supported_formats": [15, 88]
-	},
-	"overlays": {
-		"entries": [
-			{
+        "min_format": 15,
+        "max_format": 121.0,
+        "supported_formats": [15, 121.0]
+    },
+    "overlays": {
+        "entries": [
+            {
                 "directory": "overlay_48",
-				"min_format": 48,
-				"max_format": 2147483647,
-				"formats": [48, 2147483647]
-			},
-			{
+                "min_format": 48,
+                "max_format": 56,
+                "formats": [48, 56]
+            },
+            {
                 "directory": "overlay_57",
-				"min_format": 57,
-				"max_format": 2147483647,
-				"formats": [57, 2147483647]
-			},
-			{
+                "min_format": 57,
+                "max_format": 79,
+                "formats": [57, 79]
+            },
+            {
                 "directory": "overlay_80",
-				"min_format": 80,
-				"max_format": 2147483647,
-				"formats": [80, 2147483647]
-			},
-			{
+                "min_format": 80,
+                "max_format": 80,
+                "formats": [80, 80]
+            },
+            {
                 "directory": "overlay_81",
-				"min_format": 81,
-				"max_format": 2147483647,
-				"formats": [81, 2147483647]
-			}
-		]
-	}
+                "min_format": 81,
+                "max_format": 107.0,
+                "formats": [81, 107.0]
+            },
+            {
+                "directory": "overlay_107_1",
+                "min_format": 107.1,
+                "max_format": 2147483647,
+                "formats": [107.1, 2147483647]
+            }
+        ]
+    }
 }
