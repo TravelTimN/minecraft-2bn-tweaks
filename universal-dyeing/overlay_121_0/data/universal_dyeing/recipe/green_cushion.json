@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "universal_dyeing_cushion",
+  "pattern": [
+    "###",
+    "#O#",
+    "###"
+  ],
+  "key": {
+    "#": "#universal_dyeing:cushion",
+    "O": "#universal_dyeing:dyes/green_dye"
+  },
+  "result": {
+    "id": "minecraft:green_cushion",
+    "count": 8
+  }
+}

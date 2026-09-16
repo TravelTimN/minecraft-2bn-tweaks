@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "universal_dyeing_wool",
+  "pattern": [
+    "###",
+    "#O#",
+    "###"
+  ],
+  "key": {
+    "#": "#universal_dyeing:wool",
+    "O": "#universal_dyeing:dyes/red_dye"
+  },
+  "result": {
+    "id": "minecraft:red_wool",
+    "count": 8
+  }
+}

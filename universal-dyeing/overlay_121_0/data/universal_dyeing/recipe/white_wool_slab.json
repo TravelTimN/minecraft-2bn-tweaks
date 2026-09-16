@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "universal_dyeing_wool_slab",
+  "pattern": [
+    "###",
+    "#O#",
+    "###"
+  ],
+  "key": {
+    "#": "#universal_dyeing:wool_slab",
+    "O": "#universal_dyeing:dyes/white_dye"
+  },
+  "result": {
+    "id": "minecraft:white_wool_slab",
+    "count": 8
+  }
+}

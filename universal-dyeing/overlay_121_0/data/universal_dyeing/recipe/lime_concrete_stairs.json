@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "universal_dyeing_concrete_stairs",
+  "pattern": [
+    "###",
+    "#O#",
+    "###"
+  ],
+  "key": {
+    "#": "#universal_dyeing:concrete_stairs",
+    "O": "#universal_dyeing:dyes/lime_dye"
+  },
+  "result": {
+    "id": "minecraft:lime_concrete_stairs",
+    "count": 8
+  }
+}

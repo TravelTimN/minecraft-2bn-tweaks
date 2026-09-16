@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "universal_dyeing_carpet",
+  "pattern": [
+    "###",
+    "#O#",
+    "###"
+  ],
+  "key": {
+    "#": "#universal_dyeing:carpet",
+    "O": "#universal_dyeing:dyes/purple_dye"
+  },
+  "result": {
+    "id": "minecraft:purple_carpet",
+    "count": 8
+  }
+}

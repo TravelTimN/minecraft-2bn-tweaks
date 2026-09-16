@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "universal_dyeing_sandstone",
+  "pattern": [
+    "###",
+    "#O#",
+    "###"
+  ],
+  "key": {
+    "#": "minecraft:sandstone",
+    "O": "#universal_dyeing:dyes/red_dye"
+  },
+  "result": {
+    "id": "minecraft:red_sandstone",
+    "count": 8
+  }
+}

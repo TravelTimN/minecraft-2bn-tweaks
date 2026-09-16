@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "universal_dyeing_wool_stairs",
+  "pattern": [
+    "###",
+    "#O#",
+    "###"
+  ],
+  "key": {
+    "#": "#universal_dyeing:wool_stairs",
+    "O": "#universal_dyeing:dyes/orange_dye"
+  },
+  "result": {
+    "id": "minecraft:orange_wool_stairs",
+    "count": 8
+  }
+}

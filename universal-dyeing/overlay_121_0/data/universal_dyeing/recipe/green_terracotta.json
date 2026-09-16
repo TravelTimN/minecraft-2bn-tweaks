@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "universal_dyeing_terracotta",
+  "pattern": [
+    "###",
+    "#O#",
+    "###"
+  ],
+  "key": {
+    "#": "#universal_dyeing:terracotta",
+    "O": "#universal_dyeing:dyes/green_dye"
+  },
+  "result": {
+    "id": "minecraft:green_terracotta",
+    "count": 8
+  }
+}

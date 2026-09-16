@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "universal_dyeing_concrete_powder",
+  "pattern": [
+    "###",
+    "#O#",
+    "###"
+  ],
+  "key": {
+    "#": "#universal_dyeing:concrete_powder",
+    "O": "#universal_dyeing:dyes/gray_dye"
+  },
+  "result": {
+    "id": "minecraft:gray_concrete_powder",
+    "count": 8
+  }
+}

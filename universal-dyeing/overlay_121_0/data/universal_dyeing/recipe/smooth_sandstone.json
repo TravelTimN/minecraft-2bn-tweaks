@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "universal_dyeing_smooth_red_sandstone",
+  "pattern": [
+    "###",
+    "#O#",
+    "###"
+  ],
+  "key": {
+    "#": "minecraft:smooth_red_sandstone",
+    "O": "minecraft:ice"
+  },
+  "result": {
+    "id": "minecraft:smooth_sandstone",
+    "count": 8
+  }
+}

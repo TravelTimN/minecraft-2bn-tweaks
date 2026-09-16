@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:cactus_flower",
+    "minecraft:peony",
+    "minecraft:pink_dye",
+    "minecraft:pink_petals",
+    "minecraft:pink_tulip"
+  ]
+}

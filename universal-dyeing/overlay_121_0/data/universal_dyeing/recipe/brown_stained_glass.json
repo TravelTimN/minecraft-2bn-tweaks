@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "universal_dyeing_stained_glass",
+  "pattern": [
+    "###",
+    "#O#",
+    "###"
+  ],
+  "key": {
+    "#": "#universal_dyeing:stained_glass",
+    "O": "#universal_dyeing:dyes/brown_dye"
+  },
+  "result": {
+    "id": "minecraft:brown_stained_glass",
+    "count": 8
+  }
+}
