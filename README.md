@@ -237,7 +237,7 @@ This datapack adds **shaped crafting recipes** to create some iconic mob heads u
 
 | Supported Versions | Download (.zip) |
 | --- | --- |
-| 1.20.0 – 1.21.9+ | 💾 [Download 2BN-Tweaks: Craftable Skulls](craftables/skulls/2BN-Tweaks_Craftable_Skulls.zip?raw=1) |
+| 1.20.0 – 26.3+ | 💾 [Download 2BN-Tweaks: Craftable Skulls](craftables/skulls/2BN-Tweaks_Craftable_Skulls.zip?raw=1) |
 
 ### 🔚 [The End](craftables/the-end/)
 
