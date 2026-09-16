@@ -60,7 +60,7 @@ Java Edition 25w31a [29 JUL 2025]:
   Everything prior to 82.0 used whole integers, and everything beyond this will use decimals.
 
 1.21.9 [03 SEP 2025]:
-  Pack: 88
+  Pack: 88.0
   "The Copper Age": reformatting of `pack.mcmeta` file. (https://minecraft.wiki/w/Pack.mcmeta)
 
   pack.mcmeta:
@@ -91,7 +91,7 @@ Java Edition 25w31a [29 JUL 2025]:
 26.2 [16 JUN 2026]:
   Pack: 107.1
   "Chaos Cubed": Introduced cinnabar and sulfur.
-  No 2BN Universal-Dyeing recipes added.
+  Nothing changed in 2BN-Universal-Dyeing.
 
 26.3 [15 SEP 2026]:
   Pack: 121.0
@@ -106,16 +106,17 @@ Java Edition 25w31a [29 JUL 2025]:
     - Concrete: slab, stairs (16 colors each)
   Directory: overlay_121_0/data/<namespace>/recipe/..
   Template: Recipe #3
-  Recipes: legacy (redo), 48 (redo), 57 (redo), 61 (redo), 88 (redo), 107.1 (redo), 121.0 (self)
+  Recipes: legacy (redo), 121.0 (self)
 
 
 === GENERATED ===
 
-  - Legacy      : recipes = 154 | tag items = 9 | dye tags = 16
-  - Overlay 48  : recipes = 154 | tag items = 9 | dye tags = 16
-  - Overlay 57  : recipes = 154 | tag items = 9 | dye tags = 16
-  - Overlay 61  : recipes = 154 | tag items = 9 | dye tags = 16
-  - Overlay 71  : recipes = 154 | tag items = 9 | dye tags = 16
+  - Legacy          : recipes = 154 | tag items = 9  | dye tags = 16
+  - Overlay 48      : recipes = 154 | tag items = 9  | dye tags = 16
+  - Overlay 57      : recipes = 154 | tag items = 9  | dye tags = 16
+  - Overlay 61      : recipes = 154 | tag items = 9  | dye tags = 16
+  - Overlay 71      : recipes = 154 | tag items = 9  | dye tags = 16
+  - Overlay 121.0   : recipes = 234 | tag items = 14 | dye tags = 16
 
 
 === BUGS ===

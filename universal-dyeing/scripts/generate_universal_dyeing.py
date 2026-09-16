@@ -2,10 +2,18 @@
 import os
 import json
 import pandas as pd
+import re
 
 # === Configuration === #
-CSV_PATH = "2BN-Tweaks_Universal-Dyeing.csv"
+SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+PROJECT_DIR = os.path.dirname(SCRIPT_DIR)
+
+CSV_URL = "https://docs.google.com/spreadsheets/d/1t9lmXWqlyno15NTqfUDTYcuZuNVCAmxs4Pt4w9a5CPI/export?format=csv&gid=931243409"
 NAMESPACE = "universal_dyeing"
+PACK_DESCRIPTION = "§42§cB§6N§f-§eT§aw§be§9a§5k§ds §f> §eUniversal-Dyeing"
+BASE_PACK_FORMAT = 15
+MAX_PACK_FORMAT = 121.0
+DECIMAL_PACK_FORMAT_START = 82
 
 # === Color & Dye Alternates (version-aware) === #
 DYE_COLORS = [
@@ -82,6 +90,23 @@ SIMULATED_OVERLAYS = {
 }
 
 
+def normalize_pack(pack):
+    if pd.isna(pack):
+        return None
+    raw_pack = str(pack).strip().lower()
+    if raw_pack == "legacy":
+        return "legacy"
+    try:
+        number = float(raw_pack)
+    except ValueError:
+        raise ValueError(f"Invalid pack value: {raw_pack}")
+    if number >= DECIMAL_PACK_FORMAT_START:
+        return number
+    if number.is_integer():
+        return int(number)
+    return number
+
+
 def get_recipe_format(pack):
     """
     Return the recipe format type (`item`, `id`, or `flat`)
@@ -90,16 +115,24 @@ def get_recipe_format(pack):
     if pack == "legacy":
         return "item"
     for fmt, rng in RECIPE_FORMATS.items():
-        if isinstance(pack, int) and pack in rng:
+        if isinstance(pack, (int, float)) and pack in rng:
             return fmt
+    if isinstance(pack, (int, float)) and pack >= 57:
+        return "flat"
     raise ValueError(f"Unknown recipe format for pack: {pack}")
+
+
+def pack_folder_name(pack):
+    if isinstance(pack, float):
+        return str(pack).replace(".", "_")
+    return str(pack)
 
 
 def get_output_path(pack):
     """
     Return full directory path for a given pack.
     """
-    if pack == "legacy" or (isinstance(pack, int) and pack < 48):
+    if pack == "legacy" or (isinstance(pack, (int, float)) and pack < 48):
         # 1.21.1 and below go into "recipes/" (plural)
         folder = "recipes"
     else:
@@ -111,8 +144,8 @@ def get_output_path(pack):
         base = "data"
     else:
         # Overlays are top-level as well, starting from 1.20.2 (pack 18+)
-        base = f"overlay_{pack}/data"
-    return os.path.join("..", base, NAMESPACE, folder)
+        base = os.path.join(f"overlay_{pack_folder_name(pack)}", "data")
+    return os.path.join(PROJECT_DIR, base, NAMESPACE, folder)
 
 
 # === Helpers === #
@@ -123,12 +156,12 @@ def get_tag_output_path(pack):
     - packs >= 1.21.0 -> tags/item/
     """
     is_legacy = (pack == "legacy")
-    is_pre_48 = (isinstance(pack, int) and pack < 48)
+    is_pre_48 = (isinstance(pack, (int, float)) and pack < 48)
 
     if is_legacy:
         base = "data"
     else:
-        base = f"overlay_{pack}/data"
+        base = os.path.join(f"overlay_{pack_folder_name(pack)}", "data")
 
     # Before pack 48 -> "items" (plural) / after -> "item" (singular)
     if is_legacy or is_pre_48:
@@ -136,7 +169,7 @@ def get_tag_output_path(pack):
     else:
         tag_dir = "item"
 
-    return os.path.join("..", base, NAMESPACE, "tags", tag_dir)
+    return os.path.join(PROJECT_DIR, base, NAMESPACE, "tags", tag_dir)
 
 
 def get_flat_ingredient(item_or_tag):
@@ -164,7 +197,7 @@ def get_dye_tag_values(color, pack):
         else:
             version_num = int(version_key)
 
-        if version_key == "legacy" or (isinstance(pack, int) and pack >= version_num):
+        if version_key == "legacy" or (isinstance(pack, (int, float)) and pack >= version_num):
             values.extend(items)
 
     return sorted(set(f"minecraft:{item}" for item in values))
@@ -179,18 +212,85 @@ def safe_tag_filename(name):
     return name.split(":")[-1] if ":" in name else name
 
 
+def pack_sort_key(pack):
+    if pack == "legacy":
+        return (0, 0)
+    if isinstance(pack, (int, float)):
+        return (1, pack)
+    return (2, str(pack))
+
+
+def max_format_before(pack):
+    """Return the inclusive max format before the next overlay starts."""
+    if isinstance(pack, float):
+        major, minor = str(pack).split(".")
+        if int(minor) > 0:
+            return float(f"{major}.{int(minor) - 1}")
+        return float(int(major) - 1)
+    return pack - 1
+
+
+def build_overlay_entries(packs):
+    overlay_packs = [
+        pack for pack in packs
+        if pack != "legacy" and isinstance(pack, (int, float)) and pack >= 48
+    ]
+
+    entries = []
+    for index, pack in enumerate(overlay_packs):
+        if index + 1 < len(overlay_packs):
+            max_format = max_format_before(overlay_packs[index + 1])
+        else:
+            max_format = 2147483647
+
+        entries.append({
+            "directory": f"overlay_{pack_folder_name(pack)}",
+            "min_format": pack,
+            "max_format": max_format,
+            "formats": [pack, max_format]
+        })
+
+    return entries
+
+
+def write_pack_mcmeta(packs):
+    pack_mcmeta = {
+        "pack": {
+            "description": PACK_DESCRIPTION,
+            "pack_format": BASE_PACK_FORMAT,
+            "min_format": BASE_PACK_FORMAT,
+            "max_format": MAX_PACK_FORMAT,
+            "supported_formats": [BASE_PACK_FORMAT, MAX_PACK_FORMAT]
+        },
+        "overlays": {
+            "entries": build_overlay_entries(packs)
+        }
+    }
+
+    text = json.dumps(pack_mcmeta, indent=4, ensure_ascii=False)
+    text = re.sub(
+        r"\[\n\s+(-?\d+(?:\.\d+)?),\n\s+(-?\d+(?:\.\d+)?)\n\s+\]",
+        r"[\1, \2]",
+        text
+    )
+    with open(os.path.join(PROJECT_DIR, "pack.mcmeta"), "w", encoding="utf-8") as f:
+        f.write(text)
+        f.write("\n")
+
+
 # === Load CSV and determine all packs === #
 """
-Load the CSV recipe source file into a DataFrame.
-Replace all `0` values in the `pack` column with the string `legacy` for consistency.
+Load the Google Sheet CSV recipe source into a DataFrame.
+Normalize `pack` values into `legacy`, whole integers, or decimal floats.
     all_csv_packs = every unique pack explicitly declared in the CSV, sorted with `legacy` always first.
     all_packs = the union of all CSV packs and any simulated overlays (48, 57, etc).
 This ensures all recipe/tag content is generated for both real and simulated overlays.
 """
-df = pd.read_csv(CSV_PATH)
-df["pack"] = df["pack"].replace(0, "legacy")
-all_csv_packs = sorted(set(df["pack"]), key=lambda x: 0 if x == "legacy" else int(x))
-all_packs = sorted(set(all_csv_packs).union(SIMULATED_OVERLAYS.keys()), key=lambda x: 0 if x == "legacy" else int(x))
+df = pd.read_csv(CSV_URL)
+df["pack"] = df["pack"].apply(normalize_pack)
+df = df.dropna(subset=["pack"])
+all_csv_packs = sorted(set(df["pack"]), key=pack_sort_key)
+all_packs = sorted(set(all_csv_packs).union(SIMULATED_OVERLAYS.keys()), key=pack_sort_key)
 
 
 # === Tag Construction === #
@@ -198,22 +298,20 @@ all_packs = sorted(set(all_csv_packs).union(SIMULATED_OVERLAYS.keys()), key=lamb
 For each item category (`wool`, `glass`, etc), collect all recipe results where use_tag is TRUE.
 These are used to generate universal tag files (e.g. wool.json, concrete.json, etc).
 """
-tag_data = {}
-df_filtered = df[df["use_tag"] == True]  # Only keep rows that use tags
-
-for category in df_filtered["category"].unique():
+def build_tag_data(pack_df):
     # Only include categories where use_tag is TRUE
-    ingredient_items = df_filtered[df_filtered["category"] == category]["recipe_result"].tolist()
-    values = sorted(set(f"minecraft:{item}" for item in ingredient_items))
-    tag_data[safe_tag_filename(category)] = values
+    tag_data = {}
+    df_filtered = pack_df[pack_df["use_tag"] == True]
+    for category in df_filtered["category"].unique():
+        ingredient_items = df_filtered[df_filtered["category"] == category]["recipe_result"].tolist()
+        values = sorted(set(f"minecraft:{item}" for item in ingredient_items))
+        tag_data[safe_tag_filename(category)] = values
+    return tag_data
 
 
 # === Recipe + Tag Generation === #
 recipe_counts = {}
 for pack in all_packs:
-    if pack != "legacy":
-        pack = int(pack)
-
     # Iterate through all packs, including both actual and simulated overlays (legacy, 48, 57, 61, 71, etc).
     output_path = get_output_path(pack)
     tag_path = get_tag_output_path(pack)
@@ -222,10 +320,18 @@ for pack in all_packs:
 
     # Includes all packs (real or simulated) that feed into the current pack's recipe/tag output.
     # Prevents missing data if a pack appears only in the overlay definitions.
-    source_packs = SIMULATED_OVERLAYS.get(pack, [pack])
-    if pack not in source_packs:
-        source_packs += [pack]
+    source_packs = SIMULATED_OVERLAYS.get(pack)
+    if pack == "legacy":
+        source_packs = ["legacy"]
+    elif source_packs is None:
+        source_packs = [
+            p for p in all_csv_packs
+            if p == "legacy" or (isinstance(p, (int, float)) and p <= pack)
+        ]
+    elif pack not in source_packs:
+        source_packs = source_packs + [pack]
     df_pack = pd.concat([df[df["pack"] == source] for source in source_packs])
+    tag_data = build_tag_data(df_pack)
 
     recipe_format = get_recipe_format(pack)
     use_id = recipe_format in ["id", "flat"]
@@ -327,11 +433,15 @@ for pack in all_packs:
         tag_count += 1
 
     # For print summary tracking
-    recipe_counts[pack] = f"recipes = {recipe_count} | tag items = {tag_count} | dye tags = {dye_count}"
+    recipe_counts[pack] = f"recipes = {recipe_count:<3} | tag items = {tag_count:<2} | dye tags = {dye_count:<3}"
+
+
+# generate the pack.mcmeta with overlays [where applicable]
+write_pack_mcmeta(all_packs)
 
 
 # === Summary Output === #
 print("\n=== Universal Dyeing Generation Summary ===")
 for pack, count in recipe_counts.items():
     label = "Legacy" if pack == "legacy" else f"Overlay {pack}"
-    print(f"  - {label:<12}: {count}")
+    print(f"  - {label:<16}: {count}")
