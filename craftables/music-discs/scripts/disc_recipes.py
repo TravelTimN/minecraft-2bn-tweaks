@@ -183,5 +183,15 @@ DISCS_BY_PACK = {
                 "B": "cooked_chicken"
             }
         }
+    ],
+    107.1: [
+        {
+            "disc": "music_disc_bounce",
+            "pattern": ["AAA", "ABA", "AAA"],
+            "ingredients": {
+                "A": "coal",
+                "B": "potent_sulfur"
+            }
+        }
     ]
 }
