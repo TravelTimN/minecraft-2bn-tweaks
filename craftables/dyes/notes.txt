@@ -8,7 +8,7 @@ More ways to craft your favorite dye colors!
 
 === UPDATES ===
 
-https://minecraft.wiki/w/Pack_format#List_of_data_pack_formats
+https://minecraft.wiki/w/Pack_format#List_of_pack_formats
 
 1.20.0 [07 JUN 2023]:
   Pack: 15

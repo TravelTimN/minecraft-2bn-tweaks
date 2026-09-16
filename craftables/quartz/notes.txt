@@ -10,7 +10,12 @@ and basalt exists in abundance in the basalt deltas.
 
 === UPDATES ===
 
-https://minecraft.wiki/w/Pack_format#List_of_data_pack_formats
+https://minecraft.wiki/w/Pack_format#List_of_pack_formats
+
+Java Edition 25w31a [29 JUL 2025]:
+  Pack: 82.0
+  First snapshot for 1.21.9, introduced new pack formatting using decimals/floats.
+  Everything prior to 82.0 used whole integers, and everything beyond this will use decimals.
 
 26.2 [2026]:
   Pack: 107.1
