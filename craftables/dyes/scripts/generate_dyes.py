@@ -32,11 +32,23 @@ DYES_BY_PACK = {
     "green": {
         "legacy": ["kelp"]
     },
+    "light_blue": {
+        "legacy": ["prismarine_crystals"]
+    },
+    "cyan": {
+        "legacy": ["prismarine_shard"]
+    },
+    "blue": {
+        "legacy": ["sculk_vein"]
+    },
     "purple": {
         "legacy": ["amethyst_shard", "chorus_fruit"]
     },
     "black": {
         "legacy": ["coal", "charcoal"]
+    },
+    "light_gray": {
+        "legacy": ["clay_ball"]
     }
 }
 

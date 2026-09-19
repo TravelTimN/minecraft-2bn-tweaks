@@ -13,6 +13,7 @@ https://minecraft.wiki/w/Pack_format#List_of_pack_formats
 1.20.0 [07 JUN 2023]:
   Pack: 15
   "Trails & Tales": Introduced pink petals (pink dye)
+  2BN legacy dye additions include black, blue, cyan, green, light blue, light gray, and purple alternates.
   Directory: data/<namespace>/recipes/..
   Recipe Result Attribute: `item`
   Template: Recipe #1
@@ -94,10 +95,10 @@ Java Edition 25w31a [29 JUL 2025]:
 
 === GENERATED ===
 
-  - Legacy      : recipes created = 3
-  - Overlay 48  : recipes created = 3
-  - Overlay 57  : recipes created = 3
-  - Overlay 61  : recipes created = 4
+  - Legacy      : recipes created = 7
+  - Overlay 48  : recipes created = 7
+  - Overlay 57  : recipes created = 7
+  - Overlay 61  : recipes created = 8
 
 
 === BUGS ===

@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "dyes",
+  "ingredients": [
+    {
+      "item": "minecraft:sculk_vein"
+    }
+  ],
+  "result": {
+    "item": "minecraft:blue_dye",
+    "count": 1
+  }
+}

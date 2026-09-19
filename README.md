@@ -114,8 +114,12 @@ This datapack expands your dye-making repertoire with **alternative, lore-friend
 | --- | --- | --- |
 | 🧡 Orange | Resin Clump | 1.21.4+ |
 | 💚 Green | Kelp | 1.20.0+ |
+| 🩵 Light Blue | Prismarine Crystals | 1.20.0+ |
+| 🩵 Cyan | Prismarine Shard | 1.20.0+ |
+| 💙 Blue | Sculk Vein | 1.20.0+ |
 | 💜 Purple | Chorus Fruit, Amethyst Shard | 1.20.0+ |
 | 🖤 Black | Coal, Charcoal | 1.20.0+ |
+| 🩶 Light Gray | Clay Ball | 1.20.0+ |
 
 All recipes aim to be balanced, thematic, and helpful for younger players, or just anyone who's dyeing for a better solution.
 
