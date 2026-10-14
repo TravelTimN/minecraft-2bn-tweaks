@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "dyes",
+  "ingredients": [
+    "minecraft:prismarine_crystals"
+  ],
+  "result": {
+    "id": "minecraft:light_blue_dye",
+    "count": 1
+  }
+}

@@ -29,6 +29,9 @@ DYES_BY_PACK = {
         61: ["resin_clump"],
         # 88: ["copper_nugget"]  # sample only, will not be used
     },
+    "brown": {
+        71: ["leaf_litter"]
+    },
     "green": {
         "legacy": ["kelp"]
     },

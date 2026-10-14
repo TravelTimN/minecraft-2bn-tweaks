@@ -48,6 +48,16 @@ https://minecraft.wiki/w/Pack_format#List_of_pack_formats
   Template: Recipe #3
   Recipes: legacy (redo), 48 (redo), 57 (redo), 61 (self)
 
+1.21.5 [25 MAR 2025]:
+  Pack: 71
+  "Spring to Life": Introduced leaf litter.
+  Added shapeless recipe: 1 leaf litter -> 1 brown dye.
+  Directory: overlay_71/data/<namespace>/recipe/..
+  Template: Recipe #3
+  Recipes: legacy (redo), 48 (redo), 57 (redo), 61 (redo), 71 (self)
+  overlay_61 now covers packs 61-70; overlay_71 covers pack 71 onward.
+  Source: https://www.minecraft.net/en-us/article/minecraft-java-edition-1-21-5
+
 Java Edition 25w31a [29 JUL 2025]:
   Pack: 82.0
   First snapshot for 1.21.9, introduced new pack formatting using decimals/floats.
@@ -99,6 +109,7 @@ Java Edition 25w31a [29 JUL 2025]:
   - Overlay 48  : recipes created = 7
   - Overlay 57  : recipes created = 7
   - Overlay 61  : recipes created = 8
+  - Overlay 71  : recipes created = 9
 
 
 === BUGS ===

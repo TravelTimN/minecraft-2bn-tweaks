@@ -23,8 +23,14 @@
             {
                 "directory": "overlay_61",
                 "min_format": 61,
+                "max_format": 70,
+                "formats": [61, 70]
+            },
+            {
+                "directory": "overlay_71",
+                "min_format": 71,
                 "max_format": 2147483647,
-                "formats": [61, 2147483647]
+                "formats": [71, 2147483647]
             }
         ]
     }
