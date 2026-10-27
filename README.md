@@ -10,10 +10,12 @@
 - ➕🧱 [**More Blocks**](#️-more-blocks)
 - ♻️🎨 [**Universal Dyeing**](#️-universal-dyeing)
 - 🧰 [**Craftables**](#-craftables)
+  - 🌿 [Dead Bush](#-dead-bush)
   - 🎨 [Dyes](#-dyes)
   - 🪞 [Echo Shard](#-echo-shard)
   - 🪽 [Elytra](#-elytra)
   - 🍏 [Enchanted Golden Apple](#-enchanted-golden-apple)
+  - 🟨 [Gilded Blackstone](#-gilded-blackstone)
   - 🌊 [Heart of the Sea](#-heart-of-the-sea)
   - 💿 [Music Discs](#-music-discs)
   - 🏺 [Pottery Sherds](#-pottery-sherds)
@@ -104,7 +106,19 @@ Use **any dye** to recolor these blocks, or use **ice** to scrub them back to th
 
 ## 🧰 [Craftables](craftables/)
 
-A collection of **standalone crafting-recipe datapacks** that fill in the gaps left by vanilla. Each pack is a separate, optional install — pick and choose what you want, or use them all.
+A collection of **standalone crafting-recipe datapacks** that fill in the gaps left by vanilla. Each pack is a separate, optional install; pick and choose what you want, or use them all.
+
+### 🌿 [Dead Bush](craftables/dead-bush/)
+
+Give four sticks a promising start in botanical disappointment. Arrange them in a **Y shape to craft 1 dead bush**. Finally, a houseplant that thrives on neglect.
+
+![craftable dead bush](craftables/dead-bush/dead_bush.png)
+
+**Download**
+
+| Supported Versions | Download (.zip) |
+| --- | --- |
+| 1.20.0 – 26.3+ | 💾 [Download 2BN-Tweaks: Craftable Dead-Bush](craftables/dead-bush/2BN-Tweaks_Craftable_Dead-Bush.zip) |
 
 ### 🎨 [Dyes](craftables/dyes/)
 
@@ -171,6 +185,18 @@ Yes, it's expensive. Yes, it's overkill. Yes, it's *exactly what Notch didn't wa
 | Supported Versions | Download (.zip) |
 | --- | --- |
 | 1.20.0 – 26.3+ | 💾 [Download 2BN-Tweaks: Craftable Enchanted-Golden-Apple](craftables/enchanted-golden-apple/2BN-Tweaks_Craftable_Enchanted-Golden-Apple.zip) |
+
+### 🟨 [Gilded Blackstone](craftables/gilded-blackstone/)
+
+Give your blackstone a gold-plated ego. Combine **5 gold nuggets and 4 blackstone to craft 4 gilded blackstone**. All the Bastion chic, with fewer piglins questioning your renovation plans.
+
+![craftable gilded blackstone](craftables/gilded-blackstone/gilded_blackstone.png)
+
+**Download**
+
+| Supported Versions | Download (.zip) |
+| --- | --- |
+| 1.20.0 – 26.3+ | 💾 [Download 2BN-Tweaks: Craftable Gilded-Blackstone](craftables/gilded-blackstone/2BN-Tweaks_Craftable_Gilded-Blackstone.zip) |
 
 ### 🌊 [Heart of the Sea](craftables/heart-of-the-sea/)
 
