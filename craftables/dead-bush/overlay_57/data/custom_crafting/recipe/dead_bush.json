@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "S S",
+    " S ",
+    " S "
+  ],
+  "key": {
+    "S": "minecraft:stick"
+  },
+  "result": {
+    "id": "minecraft:dead_bush",
+    "count": 1
+  }
+}

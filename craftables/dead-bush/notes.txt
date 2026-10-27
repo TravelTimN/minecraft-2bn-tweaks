@@ -1,0 +1,156 @@
+2BN-Tweaks | Craftables | Dead Bush
+
+
+=== INFO ===
+
+Craftable dead bushes, using four sticks in a Y-shaped recipe.
+
+
+=== UPDATES ===
+
+https://minecraft.wiki/w/Pack_format#List_of_pack_formats
+
+1.20.0 [07 JUN 2023]:
+  Pack: 15
+  Custom recipe: 4 sticks -> 1 dead bush.
+  Directory: data/<namespace>/recipes/..
+  Recipe Result Attribute: `item`
+  Template: Recipe #1
+  Recipes: legacy (self)
+
+1.20.2 [21 SEP 2023]:
+  Pack: 18
+  Mojang introduced `overlay_#` in `pack.mcmeta`.
+  No need for `overlay_18`, recipe format is unchanged.
+
+1.21.0 [13 JUN 2024]:
+  Pack: 48
+  "Tricky Trials"
+  Renamed Recipe Directory: `recipes/` -> `recipe/`
+  Changed Recipe Result Attribute: `item` -> `id`
+  Directory: overlay_48/data/<namespace>/recipe/..
+  Template: Recipe #2
+  Recipes: legacy (redo), 48 (self)
+
+1.21.2 [22 OCT 2024]:
+  Pack: 57
+  "Bundles of Bravery"
+  Recipe ingredients use flat-method, instead of dicts with `tag`/`item`.
+  Directory: overlay_57/data/<namespace>/recipe/..
+  Template: Recipe #3
+  Recipes: legacy (redo), 48 (redo), 57 (self)
+
+Java Edition 25w31a [29 JUL 2025]:
+  Pack: 82.0
+  First snapshot for 1.21.9, introduced new pack formatting using decimals/floats.
+  Everything prior to 82.0 used whole integers, and everything beyond this will use decimals.
+
+1.21.9 [03 SEP 2025]:
+  Pack: 88.0
+  "The Copper Age": Reformatting of `pack.mcmeta` file. (https://minecraft.wiki/w/Pack.mcmeta)
+
+  pack.mcmeta:
+  - The supported_formats field has been removed.
+      - If the pack declares support for a pack version with the previous format (data pack < 82, resource pack < 65), it is still required.
+      - Otherwise, it is not allowed and must be removed.
+  - The pack_format field is now optional.
+      - If the pack declares support for a pack version with the previous format (data pack < 82, resource pack < 65), it is still required.
+  - Added required field min_format - specifies the minimum version supported.
+      - A full version is specified as a list of two integers, e.g [74, 1]
+      - Specifying a single integer is interpreted as that major version, e.g. 74 is the same thing as [74, 0].
+      - Specifying a list of a single integer is interpreted the same as specifying that integer alone.
+  - Added required field max_format - specified the maximum version supported.
+      - A full version is specified as a list of two integers, e.g [74, 1]
+      - Specifying a single integer is interpreted as any minor version, i.e. the minor version is 0x7fffffff.
+      - Specifying a list of a single integer is interpreted the same as specifying that integer alone.
+  - For overlay entries:
+      - The formats field has been removed.
+          - If the pack includes any overlay range that includes a pack version with the previous format (data pack < 82, resource pack < 65), it is still required for all overlay definitions.
+          - Otherwise, it is not allowed and must be removed.
+      - Added required field min_format and max_format with the same formats the fields above with the same name for the pack section.
+
+26.1 [24 MAR 2026]:
+  Pack: 101.1
+  No 2BN-Craftable Dead Bush recipes added.
+
+26.2 [16 JUN 2026]:
+  Pack: 107.1
+  No 2BN-Craftable Dead Bush recipes added.
+
+26.3 [15 SEP 2026]:
+  Pack: 121.0
+  No 2BN-Craftable Dead Bush recipes added.
+
+
+=== GENERATED ===
+
+  - Legacy      : dead_bush created
+  - Overlay 48  : dead_bush created
+  - Overlay 57  : dead_bush created
+
+
+=== BUGS ===
+
+Static JSON/overlay/zip checks passed; in-game testing not performed.
+
+
+
+=== RECIPE FORMATS : SHAPED ===
+
+Recipe #1: 1.20.0 - 1.20.6 (result.item)
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "S S",
+    " S ",
+    " S "
+  ],
+  "key": {
+    "S": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "minecraft:dead_bush",
+    "count": 1
+  }
+}
+
+Recipe #2: 1.21.0 - 1.21.1 (result.item -> result.id)
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "S S",
+    " S ",
+    " S "
+  ],
+  "key": {
+    "S": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "id": "minecraft:dead_bush",
+    "count": 1
+  }
+}
+
+Recipe #3: 1.21.2+ (flat ingredients, result.id)
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "S S",
+    " S ",
+    " S "
+  ],
+  "key": {
+    "S": "minecraft:stick"
+  },
+  "result": {
+    "id": "minecraft:dead_bush",
+    "count": 1
+  }
+}
