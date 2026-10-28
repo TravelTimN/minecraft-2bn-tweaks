@@ -5,6 +5,11 @@
 
 Inspiration from Vanilla Tweaks, but heavily modified.
 
+Carpets: 3 of the same color in one horizontal row -> 1 matching wool block.
+All 16 colors are supported from 1.20.0 onward; a crafting table is required.
+The single-row shaped pattern can occupy the top, middle, or bottom row.
+Mixed colors, vertical/diagonal layouts, and extra occupied slots do not match.
+
 
 === UPDATES ===
 
@@ -13,6 +18,9 @@ https://minecraft.wiki/w/Pack_format#List_of_pack_formats
 1.20.0 [07 JUN 2023]:
   Pack: 15
   "Trails & Tales": Introduced cherry & bamboo (+mosaic) blocks/items.
+  Carpet reverse recipes use the sheet's existing category, item IDs, quantity, and count.
+  The generator maps category `carpet` to shaped pattern ["CCC"]; all other categories stay shapeless.
+  No spreadsheet columns or values were changed.
   Directory: data/<namespace>/recipes/..
   Recipe Result Attribute: `item`
   Template: Recipe #1
@@ -124,18 +132,20 @@ Java Edition 25w31a [29 JUL 2025]:
 
 === GENERATED ===
 
-  - Legacy        : recipes generated = 234
-  - Overlay 48    : recipes generated = 291
-  - Overlay 57    : recipes generated = 291
-  - Overlay 61    : recipes generated = 306
-  - Overlay 88.0  : recipes generated = 318
-  - Overlay 107.1 : recipes generated = 336
-  - Overlay 121.0 : recipes generated = 429
+  - Legacy        : recipes generated = 250
+  - Overlay 48    : recipes generated = 307
+  - Overlay 57    : recipes generated = 307
+  - Overlay 61    : recipes generated = 322
+  - Overlay 88.0  : recipes generated = 334
+  - Overlay 107.1 : recipes generated = 352
+  - Overlay 121.0 : recipes generated = 445
 
 
 === BUGS ===
 
-No current bugs identified
+No current bugs identified.
+Carpet additions passed static JSON, grid, regression, and zip checks.
+In-game testing of the carpet recipes has not been performed.
 
 
 
@@ -194,22 +204,59 @@ Recipe #3: 1.21.2+ (flat ingredients, result.id)
   }
 }
 
-# shaped
+
+=== RECIPE FORMATS : SHAPED ===
+
+Carpets use one exact-color ingredient key and a single three-wide row.
+
+Recipe #1: 1.20.0 - 1.20.6 (object key, result.item)
 {
-  "type": "minecraft:crafting_shaped",
-  "group": f"{category_plural}_to_blocks",
-  "key": {
-    "A": f"minecraft:{ingredient_material1}",
-    "B": f"minecraft:{ingredient_material2}",
-    "C": f"minecraft:{ingredient_material3}",
-  },
-  "pattern": [
-    "AAA",
-    "BBB",
-    "CCC"
-  ],
-  "result": {
-    "count": {count},
-    "id": f"minecraft:{recipe_result}"
-  }
+    "type": "minecraft:crafting_shaped",
+    "group": "carpets_to_blocks",
+    "pattern": [
+        "CCC"
+    ],
+    "key": {
+        "C": {
+            "item": "minecraft:white_carpet"
+        }
+    },
+    "result": {
+        "count": 1,
+        "item": "minecraft:white_wool"
+    }
+}
+
+Recipe #2: 1.21.0 - 1.21.1 (object key, result.id)
+{
+    "type": "minecraft:crafting_shaped",
+    "group": "carpets_to_blocks",
+    "pattern": [
+        "CCC"
+    ],
+    "key": {
+        "C": {
+            "item": "minecraft:white_carpet"
+        }
+    },
+    "result": {
+        "count": 1,
+        "id": "minecraft:white_wool"
+    }
+}
+
+Recipe #3: 1.21.2+ (flat key, result.id)
+{
+    "type": "minecraft:crafting_shaped",
+    "group": "carpets_to_blocks",
+    "pattern": [
+        "CCC"
+    ],
+    "key": {
+        "C": "minecraft:white_carpet"
+    },
+    "result": {
+        "count": 1,
+        "id": "minecraft:white_wool"
+    }
 }

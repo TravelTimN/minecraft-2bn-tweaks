@@ -1,0 +1,14 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "group": "carpets_to_blocks",
+    "pattern": [
+        "CCC"
+    ],
+    "key": {
+        "C": "minecraft:magenta_carpet"
+    },
+    "result": {
+        "count": 1,
+        "id": "minecraft:magenta_wool"
+    }
+}

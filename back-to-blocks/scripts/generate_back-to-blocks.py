@@ -47,6 +47,10 @@ DO_NOT_PLURALIZE = {
     "resin", "sand", "stairs", "tuff"
 }
 
+# Only carpets need a shape; item IDs and yields still come from the sheet.
+# A single three-wide row can shift vertically, but cannot fit a 2x2 grid.
+SHAPED_PATTERNS = {"carpet": ["CCC"]}
+
 
 def pluralize(category):
     """Return plural form unless explicitly skipped."""
@@ -264,13 +268,33 @@ for pack in all_packs:
                 "id": f"minecraft:{result}"
             }
 
-        # Build the Recipe
-        recipe = {
-            "type": "minecraft:crafting_shapeless",
-            "group": f"{category_plural}_to_blocks",
-            "ingredients": ingredients,
-            "result": results
-        }
+        # Keep existing rows shapeless; the carpet category uses a horizontal row.
+        pattern = SHAPED_PATTERNS.get(category)
+        if pattern is not None:
+            if (
+                quantity != 3 or count != 1
+                or not ingredient.endswith("_carpet")
+                or result != ingredient.removesuffix("_carpet") + "_wool"
+            ):
+                raise ValueError(
+                    "Carpet rows must convert 3 matching carpets to 1 wool: "
+                    f"{ingredient} -> {result}"
+                )
+            recipe = {
+                "type": "minecraft:crafting_shaped",
+                "group": f"{category_plural}_to_blocks",
+                "pattern": pattern,
+                # Reuse the ingredient syntax selected for this pack version.
+                "key": {"C": ingredients[0]},
+                "result": results
+            }
+        else:
+            recipe = {
+                "type": "minecraft:crafting_shapeless",
+                "group": f"{category_plural}_to_blocks",
+                "ingredients": ingredients,
+                "result": results
+            }
 
         # Create the .json recipe
         filepath = os.path.join(category_path, filename)

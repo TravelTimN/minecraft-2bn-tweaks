@@ -1,0 +1,16 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "group": "carpets_to_blocks",
+    "pattern": [
+        "CCC"
+    ],
+    "key": {
+        "C": {
+            "item": "minecraft:green_carpet"
+        }
+    },
+    "result": {
+        "count": 1,
+        "id": "minecraft:green_wool"
+    }
+}
