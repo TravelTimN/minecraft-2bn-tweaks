@@ -35,8 +35,11 @@ A Minecraft datapack that adds hundreds of crafting recipes to reverse decorativ
 | boats | chest boats | rafts | chest rafts |
 | buttons | pressure plates | doors | trapdoors |
 | signs | hanging signs | slabs | stairs |
-| fences | fence gates | walls | cushions |
+| carpets | cushions | | |
+| fences | fence gates | walls | |
 | copper | resin | quartz | |
+
+Turn **3 carpets of the same color into 1 matching wool block** by placing them across any single row of a crafting table. All 16 colors are supported.
 
 <sup>*</sup> Lossy base form means the original materials aren't fully recoverable; reverse-crafting comes with a deliberate loss, and is not intended to be 1:1.
 
